@@ -22,7 +22,10 @@ Areas: `ai-automation`
 
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
+| [EL4CTEO/fast-anything](https://github.com/EL4CTEO/fast-anything) | repository | ai-automation, backend | experimental | 2026-11-23 |
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | repository | ai-automation, data-engineering | - | 2026-11-17 |
+| [n8n-io/n8n](https://github.com/n8n-io/n8n) | repository | ai-automation, api-integration | - | 2026-11-23 |
+| [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | repository | ai-automation | - | 2026-11-23 |
 | Code understanding: [build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | list | ai-automation | - | - |
 | Code understanding: [craft-anything](https://github.com/storytold/craft-anything) | repository | ai-automation | - | - |
 | Code understanding: [Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) | repository | ai-automation | - | - |
@@ -83,6 +86,7 @@ Areas: `security`, `qa-testing`
 
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
+| [bitwarden/server](https://github.com/bitwarden/server) | repository | security, backend | - | 2026-11-23 |
 | [zaproxy/zaproxy](https://github.com/zaproxy/zaproxy) | tool | security, qa-testing, api-integration | authorized-only | 2026-11-17 |
 | AI PR review: [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | repository | security, qa-testing | - | - |
 | AI PR review: [opencodereview](https://github.com/BridgLabs/opencodereview) | repository | security, qa-testing | - | - |
@@ -133,11 +137,16 @@ Areas: `content-creation`, `marketing`
 | [bradautomates/claude-video](https://github.com/bradautomates/claude-video) | repository | content-creation, ai-automation | experimental | 2026-11-17 |
 | [browser-use/video-use](https://github.com/browser-use/video-use) | repository | content-creation, ai-automation | experimental | 2026-11-17 |
 | [clonechat](https://github.com/felipeadeildo/clonechat) | repository | content-creation | tos-check, licensing-check | - |
+| [deenukhan/animation-styles](https://github.com/deenukhan/animation-styles) | repository | content-creation, frontend | - | 2026-11-23 |
 | [gradium-ai/xn-ptts](https://github.com/gradium-ai/xn-ptts) | repository | content-creation, ai-automation | experimental | 2026-11-17 |
 | [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) | repository | content-creation, operations | - | 2026-11-17 |
 | [kyutai-labs/pocket-tts](https://github.com/kyutai-labs/pocket-tts) | repository | content-creation, ai-automation | - | 2026-11-17 |
+| [lllyasviel/Fooocus](https://github.com/lllyasviel/Fooocus) | repository | content-creation | licensing-check | 2026-11-23 |
 | [plusxbt: Motion design workflow (X post)](https://x.com/plusxbt/status/2119418263029297167) | guide | content-creation, frontend, ux-design | - | 2026-11-17 |
+| [shinyobjectz/raea](https://github.com/shinyobjectz/raea) | repository | content-creation, ai-automation | experimental | 2026-11-23 |
+| [TubeLabHQ/youtube-research-skills](https://github.com/TubeLabHQ/youtube-research-skills) | repository | content-creation, marketing | tos-check | 2026-11-23 |
 | [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides) | repository | frontend, content-creation | - | 2026-11-17 |
+| [zenstory-ai/drama-skills](https://github.com/zenstory-ai/drama-skills) | repository | content-creation, ai-automation | - | 2026-11-23 |
 | [Zyphra/ZONOS3-Mini](https://github.com/Zyphra/ZONOS3-Mini) | repository | content-creation, ai-automation | licensing-check | 2026-11-17 |
 | Android/TV: [TeamNewPipe/NewPipe](https://github.com/TeamNewPipe/NewPipe) | repository | mobile-app | tos-check | - |
 | Audio and speech: [ace-step/ACE-Step-1.5](https://github.com/ace-step/ACE-Step-1.5) | repository | content-creation | licensing-check | - |
@@ -212,13 +221,19 @@ Areas: `content-creation`, `marketing`
 | Research skills: [appllama-skills](https://github.com/Appllama/appllama-skills) | repository | content-creation, marketing | - | - |
 | Research skills: [last30days-skill](https://github.com/mvanhorn/last30days-skill) | repository | content-creation, marketing | - | - |
 | Research skills: [social-media-research-skills](https://github.com/ScrapeCreators/social-media-research-skills) | repository | content-creation, marketing | - | - |
+| Short-form clipping: [Anil-matcha/AI-Youtube-Shorts-Generator](https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator) | repository | content-creation, ai-automation | licensing-check | 2026-11-23 |
+| Short-form clipping: [artbyjazi/autoclip](https://github.com/artbyjazi/autoclip) | repository | content-creation, ai-automation | licensing-check | 2026-11-23 |
 | Short-form clipping: [CelticMatheus: AI-only YouTube channel walkthrough (X thread)](https://x.com/CelticMatheus/status/2121649610951110914) | guide | content-creation, marketing | experimental | - |
 | Short-form clipping: [davixavier-coder/skill-clips](https://github.com/davixavier-coder/skill-clips) | repository | content-creation, marketing | licensing-check, experimental | - |
 | Short-form clipping: [divyaprakash0426/autoshorts](https://github.com/divyaprakash0426/autoshorts) | repository | content-creation, marketing | tos-check | - |
+| Short-form clipping: [FujiwaraChoki/supoclip](https://github.com/FujiwaraChoki/supoclip) | repository | content-creation | licensing-check | 2026-11-23 |
+| Short-form clipping: [Hacck3y/gtavi-claudecode](https://github.com/Hacck3y/gtavi-claudecode) | repository | content-creation, ai-automation | licensing-check, tos-check, experimental | 2026-11-23 |
 | Short-form clipping: [JayWebtech/autoshorts](https://github.com/JayWebtech/autoshorts) | repository | content-creation, marketing | tos-check | - |
 | Short-form clipping: [kamilstanuch/Autocrop-vertical](https://github.com/kamilstanuch/Autocrop-vertical) | repository | content-creation, marketing | tos-check | - |
+| Short-form clipping: [mehbul/chopify](https://github.com/mehbul/chopify) | repository | content-creation | licensing-check | 2026-11-23 |
 | Short-form clipping: [MinightDev/Autoshorts](https://github.com/MinightDev/Autoshorts) | repository | content-creation, marketing | tos-check | - |
 | Short-form clipping: [mutonby/openshorts](https://github.com/mutonby/openshorts) | repository | content-creation, marketing | tos-check | - |
+| Short-form clipping: [NaufalRizqullah/opensource-clipping](https://github.com/NaufalRizqullah/opensource-clipping) | repository | content-creation | licensing-check | 2026-11-23 |
 | Short-form clipping: [YILS-LIN/short-video-factory](https://github.com/YILS-LIN/short-video-factory) | repository | content-creation, marketing | tos-check | - |
 | Short-form clipping: [zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip) | repository | content-creation, marketing | tos-check | - |
 | Video/media: [anatomy](https://github.com/wheresryan22/anatomy) | repository | content-creation, marketing | - | - |
@@ -298,6 +313,9 @@ Areas: `security`
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
 | [Armur-Ai/Pentest-Swarm-AI](https://github.com/Armur-Ai/Pentest-Swarm-AI) | repository | security, ai-automation | authorized-only | 2026-11-17 |
+| [capture0x/Bug-Hunter](https://github.com/capture0x/Bug-Hunter) | tool | security | authorized-only | 2026-11-23 |
+| [MSNightmare/FastUnlock](https://github.com/MSNightmare/FastUnlock) | repository | security | authorized-only, experimental | 2026-11-23 |
+| [unvoiddd/Dolphy-App](https://github.com/unvoiddd/Dolphy-App) | repository | security, mobile-app | authorized-only, experimental | 2026-11-23 |
 | [usestrix/strix](https://github.com/usestrix/strix) | repository | security, ai-automation | authorized-only | 2026-11-17 |
 | Android privilege escalation research: [CVE-2026-43499-root-KernelSU](https://github.com/woshimaniubi8/CVE-2026-43499-root-KernelSU) | repository | security | authorized-only | - |
 | Audits and pentest automation: [BaaRai/ARTEX (English, AGPL-3.0)](https://github.com/BaaRai/ARTEX) | repository | security | authorized-only, experimental | - |
@@ -371,6 +389,7 @@ Areas: `desktop`, `mobile-app`
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
 | [renanleonel/windows-taskbar-battery](https://github.com/renanleonel/windows-taskbar-battery) | tool | desktop | - | 2026-11-17 |
+| [XiaoYouChR/Ghost-Downloader-3](https://github.com/XiaoYouChR/Ghost-Downloader-3) | tool | desktop | licensing-check | 2026-11-23 |
 | Android/TV: [blockads-android](https://github.com/pass-with-high-score/blockads-android) | repository | desktop, mobile-app | - | - |
 | Android/TV: [cleanyourtv](https://github.com/Gathin23/cleanyourtv) | repository | desktop, mobile-app | - | - |
 | Android/TV: [FreeMyTvWebOS](https://github.com/danielthejoker18/FreeMyTvWebOS) | repository | desktop, mobile-app | - | - |
@@ -406,6 +425,10 @@ Areas: `game-modding`, `game-port`
 
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
+| [ItsNotRexed/Leonida](https://github.com/ItsNotRexed/Leonida) | repository | game-port, decompilation | experimental, licensing-check | 2026-11-23 |
+| [Lucas-blip-png/dkb-pc-recomp](https://github.com/Lucas-blip-png/dkb-pc-recomp) | repository | game-port, decompilation | experimental, licensing-check | 2026-11-23 |
+| [R0Y00/Xbox2Windows](https://github.com/R0Y00/Xbox2Windows) | repository | game-port, decompilation | experimental, licensing-check | 2026-11-23 |
+| [sammwyy/xvalkyrie](https://github.com/sammwyy/xvalkyrie) | repository | game-port | experimental, licensing-check | 2026-11-23 |
 | [smoovplay/smoovplay](https://github.com/smoovplay/smoovplay) | repository | game-port, game-modding | experimental | 2026-11-17 |
 | 3D and game-engine agents: [ahujasid/mcp-for-blender](https://github.com/ahujasid/mcp-for-blender) | repository | game-modding, ai-automation | - | - |
 | 3D and game-engine agents: [blender/blender](https://github.com/blender/blender) | repository | game-modding, ai-automation | - | - |
@@ -427,8 +450,10 @@ Areas: `reverse-engineering`
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
 | [Apple device model IDs](https://gist.github.com/adamawolf/3048717) | guide | mobile-app, reverse-engineering | - | - |
+| [Archive: How to reverse anything (thread)](https://x.com/ArchiveExplorer/status/2116917748076834852) | guide | reverse-engineering | licensing-check | 2026-11-23 |
 | [Claude Code para Reverse Engineering](https://x.com/Gyome1_/status/2111774069783720195) | guide | reverse-engineering | - | - |
 | [GitHub topic: android-reverse-engineering](https://github.com/topics/android-reverse-engineering) | list | reverse-engineering | - | - |
+| [Movez: motion design studio with Opus 5.5 (thread)](https://x.com/0xMovez/status/2104216919033192746) | guide | content-creation | - | 2026-11-23 |
 | [Reverse Engineering com Opus](https://x.com/0xMovez/status/2109604520770548146) | guide | reverse-engineering | - | - |
 
 ## Other projects
@@ -437,8 +462,17 @@ Areas: `operations`
 
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
+| [AppFlowy-IO/AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) | repository | product-management, desktop | - | 2026-11-23 |
+| [duwqijlk/google-trial-tool](https://github.com/duwqijlk/google-trial-tool) | tool | ai-automation | tos-check, experimental | 2026-11-23 |
+| [ebertti/awesome-telegram](https://github.com/ebertti/awesome-telegram) | list | api-integration | - | 2026-11-23 |
 | [gerenciador-viagens](https://github.com/AntonioMontanha/gerenciador-viagens) | repository | operations | - | - |
+| [hatsunemiku-ai/google-one-tools](https://github.com/hatsunemiku-ai/google-one-tools) | tool | ai-automation | tos-check, experimental | 2026-11-23 |
+| [havenicec/google-qr-sms-helper](https://github.com/havenicec/google-qr-sms-helper) | tool | browser-extension | tos-check, experimental | 2026-11-23 |
+| [hydra-ecosystem/hydra](https://github.com/hydra-ecosystem/hydra) | repository | backend | - | 2026-11-23 |
+| [JenkinWoo/sheeridVerify](https://github.com/JenkinWoo/sheeridVerify) | tool | ai-automation | tos-check, experimental | 2026-11-23 |
 | [louvorja/desktop](https://github.com/louvorja/desktop) | repository | operations | - | - |
+| [penpot/penpot](https://github.com/penpot/penpot) | repository | ux-design, frontend | - | 2026-11-23 |
+| [stanlll-cloud/edu-verify-workbench](https://github.com/stanlll-cloud/edu-verify-workbench) | tool | ai-automation | tos-check, experimental | 2026-11-23 |
 | General utilities: [Cambridge Dictionary](https://dictionary.cambridge.org/) | site | content-creation | - | - |
 | General utilities: [Escola Virtual Gov](https://www.escolavirtual.gov.br/) | site | content-creation | - | - |
 | General utilities: [Gerador de chassi](https://geradornv.com.br/gerador-chassi/) | site | qa-testing | - | - |
@@ -492,8 +526,10 @@ Areas: `reverse-engineering`, `api-integration`, `security`
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
 | [asar](https://github.com/electron/asar) | tool | reverse-engineering, api-integration, security | - | - |
+| [calcom/cal.diy](https://github.com/calcom/cal.diy) | repository | backend, api-integration | - | 2026-11-23 |
 | [mitmproxy](https://github.com/mitmproxy/mitmproxy) | tool | reverse-engineering, api-integration, security | - | - |
 | [mitmproxy2swagger](https://github.com/alufers/mitmproxy2swagger) | tool | reverse-engineering, api-integration, security | - | - |
+| [plausible/analytics](https://github.com/plausible/analytics) | repository | data-analytics, marketing | - | 2026-11-23 |
 | [Scrapling](https://github.com/D4Vinci/Scrapling) | tool | reverse-engineering, api-integration, security | - | - |
 | [webcrack](https://github.com/j4k0xb/webcrack) | tool | reverse-engineering, api-integration, security | - | - |
 | Dev utilities: [ARM converter](https://armconverter.com/) | site | reverse-engineering | - | - |
@@ -599,6 +635,7 @@ Areas: `game-modding`, `mobile-app`, `content-creation`
 
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
+| [baairon/torlink](https://github.com/baairon/torlink) | tool | desktop | piracy | 2026-11-23 |
 | Piracy · Course downloads: [DownloadCursos.gratis — paid-course downloads](https://downloadcursos.gratis/) | site | content-creation | piracy, licensing-check, tos-check | - |
 | Piracy · Course downloads: [DownloadCursos.top — paid-course downloads](https://downloadcursos.top/) | site | content-creation | piracy, licensing-check, tos-check | - |
 | Piracy · Megathreads, wikis and communities: [FMHY — Free Media Heck Yeah wiki](https://fmhy.net/) | site | game-modding, content-creation | piracy, licensing-check, tos-check | - |

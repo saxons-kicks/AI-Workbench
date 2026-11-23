@@ -6346,6 +6346,500 @@
         "experimental"
       ],
       "reviewed": "2026-11-17"
+    },
+    "anil-matcha-ai-youtube-shorts-generator": {
+      "title": "Anil-matcha/AI-Youtube-Shorts-Generator",
+      "url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator",
+      "category": "content-media",
+      "kind": "repository",
+      "areas": [
+        "content-creation",
+        "ai-automation"
+      ],
+      "risk": [
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-23",
+      "group": "Short-form clipping"
+    },
+    "artbyjazi-autoclip": {
+      "title": "artbyjazi/autoclip",
+      "url": "https://github.com/artbyjazi/autoclip",
+      "category": "content-media",
+      "kind": "repository",
+      "areas": [
+        "content-creation",
+        "ai-automation"
+      ],
+      "risk": [
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-23",
+      "group": "Short-form clipping"
+    },
+    "fujiwarachoki-supoclip": {
+      "title": "FujiwaraChoki/supoclip",
+      "url": "https://github.com/FujiwaraChoki/supoclip",
+      "category": "content-media",
+      "kind": "repository",
+      "areas": [
+        "content-creation"
+      ],
+      "risk": [
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-23",
+      "group": "Short-form clipping"
+    },
+    "mehbul-chopify": {
+      "title": "mehbul/chopify",
+      "url": "https://github.com/mehbul/chopify",
+      "category": "content-media",
+      "kind": "repository",
+      "areas": [
+        "content-creation"
+      ],
+      "risk": [
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-23",
+      "group": "Short-form clipping"
+    },
+    "naufalrizqullah-opensource-clipping": {
+      "title": "NaufalRizqullah/opensource-clipping",
+      "url": "https://github.com/NaufalRizqullah/opensource-clipping",
+      "category": "content-media",
+      "kind": "repository",
+      "areas": [
+        "content-creation"
+      ],
+      "risk": [
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-23",
+      "group": "Short-form clipping"
+    },
+    "hacck3y-gtavi-claudecode": {
+      "title": "Hacck3y/gtavi-claudecode",
+      "url": "https://github.com/Hacck3y/gtavi-claudecode",
+      "category": "content-media",
+      "kind": "repository",
+      "areas": [
+        "content-creation",
+        "ai-automation"
+      ],
+      "risk": [
+        "licensing-check",
+        "tos-check",
+        "experimental"
+      ],
+      "reviewed": "2026-11-23",
+      "group": "Short-form clipping"
+    },
+    "deenukhan-animation-styles": {
+      "title": "deenukhan/animation-styles",
+      "url": "https://github.com/deenukhan/animation-styles",
+      "category": "content-media",
+      "kind": "repository",
+      "areas": [
+        "content-creation",
+        "frontend"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23"
+    },
+    "shinyobjectz-raea": {
+      "title": "shinyobjectz/raea",
+      "url": "https://github.com/shinyobjectz/raea",
+      "category": "content-media",
+      "kind": "repository",
+      "areas": [
+        "content-creation",
+        "ai-automation"
+      ],
+      "risk": [
+        "experimental"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "zenstory-ai-drama-skills": {
+      "title": "zenstory-ai/drama-skills",
+      "url": "https://github.com/zenstory-ai/drama-skills",
+      "category": "content-media",
+      "kind": "repository",
+      "areas": [
+        "content-creation",
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23"
+    },
+    "tubelabhq-youtube-research-skills": {
+      "title": "TubeLabHQ/youtube-research-skills",
+      "url": "https://github.com/TubeLabHQ/youtube-research-skills",
+      "category": "content-media",
+      "kind": "repository",
+      "areas": [
+        "content-creation",
+        "marketing"
+      ],
+      "risk": [
+        "tos-check"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "lllyasviel-fooocus": {
+      "title": "lllyasviel/Fooocus",
+      "url": "https://github.com/lllyasviel/Fooocus",
+      "category": "content-media",
+      "kind": "repository",
+      "areas": [
+        "content-creation"
+      ],
+      "risk": [
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "x-com-0xmovez-status-2104216919033192746": {
+      "title": "Movez: motion design studio with Opus 5.5 (thread)",
+      "url": "https://x.com/0xMovez/status/2104216919033192746",
+      "category": "guides",
+      "kind": "guide",
+      "areas": [
+        "content-creation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23"
+    },
+    "x-com-archiveexplorer-status-2116917748076834852": {
+      "title": "Archive: How to reverse anything (thread)",
+      "url": "https://x.com/ArchiveExplorer/status/2116917748076834852",
+      "category": "guides",
+      "kind": "guide",
+      "areas": [
+        "reverse-engineering"
+      ],
+      "risk": [
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "pingdotgg-t3code": {
+      "title": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23"
+    },
+    "el4cteo-fast-anything": {
+      "title": "EL4CTEO/fast-anything",
+      "url": "https://github.com/EL4CTEO/fast-anything",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation",
+        "backend"
+      ],
+      "risk": [
+        "experimental"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "n8n-io-n8n": {
+      "title": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation",
+        "api-integration"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23"
+    },
+    "hydra-ecosystem-hydra": {
+      "title": "hydra-ecosystem/hydra",
+      "url": "https://github.com/hydra-ecosystem/hydra",
+      "category": "other",
+      "kind": "repository",
+      "areas": [
+        "backend"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23"
+    },
+    "appflowy-io-appflowy": {
+      "title": "AppFlowy-IO/AppFlowy",
+      "url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "category": "other",
+      "kind": "repository",
+      "areas": [
+        "product-management",
+        "desktop"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23"
+    },
+    "penpot-penpot": {
+      "title": "penpot/penpot",
+      "url": "https://github.com/penpot/penpot",
+      "category": "other",
+      "kind": "repository",
+      "areas": [
+        "ux-design",
+        "frontend"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23"
+    },
+    "calcom-cal-diy": {
+      "title": "calcom/cal.diy",
+      "url": "https://github.com/calcom/cal.diy",
+      "category": "web-api",
+      "kind": "repository",
+      "areas": [
+        "backend",
+        "api-integration"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23"
+    },
+    "plausible-analytics": {
+      "title": "plausible/analytics",
+      "url": "https://github.com/plausible/analytics",
+      "category": "web-api",
+      "kind": "repository",
+      "areas": [
+        "data-analytics",
+        "marketing"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23"
+    },
+    "bitwarden-server": {
+      "title": "bitwarden/server",
+      "url": "https://github.com/bitwarden/server",
+      "category": "review-security",
+      "kind": "repository",
+      "areas": [
+        "security",
+        "backend"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23"
+    },
+    "ebertti-awesome-telegram": {
+      "title": "ebertti/awesome-telegram",
+      "url": "https://github.com/ebertti/awesome-telegram",
+      "category": "other",
+      "kind": "list",
+      "areas": [
+        "api-integration"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23"
+    },
+    "xiaoyouchr-ghost-downloader-3": {
+      "title": "XiaoYouChR/Ghost-Downloader-3",
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "category": "desktop-tools",
+      "kind": "tool",
+      "areas": [
+        "desktop"
+      ],
+      "risk": [
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "capture0x-bug-hunter": {
+      "title": "capture0x/Bug-Hunter",
+      "url": "https://github.com/capture0x/Bug-Hunter",
+      "category": "red-team",
+      "kind": "tool",
+      "areas": [
+        "security"
+      ],
+      "risk": [
+        "authorized-only"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "msnightmare-fastunlock": {
+      "title": "MSNightmare/FastUnlock",
+      "url": "https://github.com/MSNightmare/FastUnlock",
+      "category": "red-team",
+      "kind": "repository",
+      "areas": [
+        "security"
+      ],
+      "risk": [
+        "authorized-only",
+        "experimental"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "unvoiddd-dolphy-app": {
+      "title": "unvoiddd/Dolphy-App",
+      "url": "https://github.com/unvoiddd/Dolphy-App",
+      "category": "red-team",
+      "kind": "repository",
+      "areas": [
+        "security",
+        "mobile-app"
+      ],
+      "risk": [
+        "authorized-only",
+        "experimental"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "lucas-blip-png-dkb-pc-recomp": {
+      "title": "Lucas-blip-png/dkb-pc-recomp",
+      "url": "https://github.com/Lucas-blip-png/dkb-pc-recomp",
+      "category": "gaming",
+      "kind": "repository",
+      "areas": [
+        "game-port",
+        "decompilation"
+      ],
+      "risk": [
+        "experimental",
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "r0y00-xbox2windows": {
+      "title": "R0Y00/Xbox2Windows",
+      "url": "https://github.com/R0Y00/Xbox2Windows",
+      "category": "gaming",
+      "kind": "repository",
+      "areas": [
+        "game-port",
+        "decompilation"
+      ],
+      "risk": [
+        "experimental",
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "sammwyy-xvalkyrie": {
+      "title": "sammwyy/xvalkyrie",
+      "url": "https://github.com/sammwyy/xvalkyrie",
+      "category": "gaming",
+      "kind": "repository",
+      "areas": [
+        "game-port"
+      ],
+      "risk": [
+        "experimental",
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "baairon-torlink": {
+      "title": "baairon/torlink",
+      "url": "https://github.com/baairon/torlink",
+      "category": "piracy-indexes",
+      "kind": "tool",
+      "areas": [
+        "desktop"
+      ],
+      "risk": [
+        "piracy"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "duwqijlk-google-trial-tool": {
+      "title": "duwqijlk/google-trial-tool",
+      "url": "https://github.com/duwqijlk/google-trial-tool",
+      "category": "other",
+      "kind": "tool",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [
+        "tos-check",
+        "experimental"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "hatsunemiku-ai-google-one-tools": {
+      "title": "hatsunemiku-ai/google-one-tools",
+      "url": "https://github.com/hatsunemiku-ai/google-one-tools",
+      "category": "other",
+      "kind": "tool",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [
+        "tos-check",
+        "experimental"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "havenicec-google-qr-sms-helper": {
+      "title": "havenicec/google-qr-sms-helper",
+      "url": "https://github.com/havenicec/google-qr-sms-helper",
+      "category": "other",
+      "kind": "tool",
+      "areas": [
+        "browser-extension"
+      ],
+      "risk": [
+        "tos-check",
+        "experimental"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "jenkinwoo-sheeridverify": {
+      "title": "JenkinWoo/sheeridVerify",
+      "url": "https://github.com/JenkinWoo/sheeridVerify",
+      "category": "other",
+      "kind": "tool",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [
+        "tos-check",
+        "experimental"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "stanlll-cloud-edu-verify-workbench": {
+      "title": "stanlll-cloud/edu-verify-workbench",
+      "url": "https://github.com/stanlll-cloud/edu-verify-workbench",
+      "category": "other",
+      "kind": "tool",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [
+        "tos-check",
+        "experimental"
+      ],
+      "reviewed": "2026-11-23"
+    },
+    "itsnotrexed-leonida": {
+      "title": "ItsNotRexed/Leonida",
+      "url": "https://github.com/ItsNotRexed/Leonida",
+      "category": "gaming",
+      "kind": "repository",
+      "areas": [
+        "game-port",
+        "decompilation"
+      ],
+      "risk": [
+        "experimental",
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-23"
     }
   }
 }
