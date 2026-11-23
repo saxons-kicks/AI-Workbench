@@ -155,7 +155,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Skill collections"
+      "group": "Skill collections",
+      "description": "Skills for Real Engineers. Straight from my .agents directory."
     },
     "alirezarezvani-claude-skills": {
       "title": "alirezarezvani/claude-skills",
@@ -166,7 +167,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Skill collections"
+      "group": "Skill collections",
+      "description": "410 Claude Code skills & agent skills & plugins (120+ Agents, custom commands, 410+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial"
     },
     "msitarzewski-agency-agents": {
       "title": "msitarzewski/agency-agents",
@@ -177,7 +179,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Skill collections"
+      "group": "Skill collections",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
     },
     "dietrichgebert-ponytail": {
       "title": "DietrichGebert/ponytail",
@@ -188,7 +191,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Skill collections"
+      "group": "Skill collections",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
     },
     "technomadcode-ai-product-development-toolkit": {
       "title": "TechNomadCode/AI-Product-Development-Toolkit",
@@ -199,7 +203,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Skill collections"
+      "group": "Skill collections",
+      "description": "Plan, build and launch products with AI: guided planning prompts, an AI App Starter for Next.js, Supabase and Vercel, and agent configurations."
     },
     "jqueryscript-awesome-claude-code": {
       "title": "awesome-claude-code",
@@ -210,7 +215,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Curated lists"
+      "group": "Curated lists",
+      "description": "A curated list of awesome tools, IDE integrations, frameworks, and other resources for developers working with Anthropic's Claude Code."
     },
     "rohitg00-awesome-claude-code-toolkit": {
       "title": "awesome-claude-code-toolkit",
@@ -221,7 +227,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Curated lists"
+      "group": "Curated lists",
+      "description": "The most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills, 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps, 52 ecosystem entries, and more."
     },
     "shanraisshan-claude-code-best-practice": {
       "title": "claude-code-best-practice",
@@ -232,7 +239,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Curated lists"
+      "group": "Curated lists",
+      "description": "from vibe coding to agentic engineering - practice makes claude perfect"
     },
     "punkpeye-awesome-mcp-servers": {
       "title": "awesome-mcp-servers",
@@ -243,7 +251,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Curated lists"
+      "group": "Curated lists",
+      "description": "A collection of MCP servers."
     },
     "shubhamsaboo-awesome-llm-apps": {
       "title": "awesome-llm-apps",
@@ -254,7 +263,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Curated lists"
+      "group": "Curated lists",
+      "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source."
     },
     "anomalyco-opencode": {
       "title": "opencode",
@@ -265,7 +275,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Harnesses"
+      "group": "Harnesses",
+      "description": "The open source coding agent."
     },
     "nousresearch-hermes-agent": {
       "title": "hermes-agent",
@@ -276,7 +287,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Harnesses"
+      "group": "Harnesses",
+      "description": "The agent that grows with you"
     },
     "1jehuang-jcode": {
       "title": "jcode",
@@ -287,7 +299,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Harnesses"
+      "group": "Harnesses",
+      "description": "High performance coding agent harness written in Rust, built for heavy multi-agent dev workflows"
     },
     "deepseek-ai-deepseek-harness": {
       "title": "deepseek-harness",
@@ -298,7 +311,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Harnesses"
+      "group": "Harnesses",
+      "description": "DeepSeek Harness: Everything is a Plugin."
     },
     "akitaonrails-ai-memory": {
       "title": "ai-memory",
@@ -311,7 +325,8 @@
       "risk": [],
       "group": "Continuity and cost",
       "reviewed": "2026-11-10",
-      "license": "MIT"
+      "license": "MIT",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors"
     },
     "microsoft-tokeneconomizer": {
       "title": "TokenEconomizer",
@@ -322,7 +337,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Continuity and cost"
+      "group": "Continuity and cost",
+      "description": "Experience-Driven Black-Box Cost Control for Coding Agents"
     },
     "garrytan-gbrain": {
       "title": "gbrain",
@@ -335,7 +351,8 @@
       "risk": [],
       "group": "Continuity and cost",
       "reviewed": "2026-11-10",
-      "license": "MIT"
+      "license": "MIT",
+      "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain"
     },
     "karpathy-llm-wiki": {
       "title": "LLM Wiki",
@@ -362,7 +379,8 @@
       ],
       "group": "Continuity and cost",
       "reviewed": "2026-11-10",
-      "license": "MIT"
+      "license": "MIT",
+      "description": "An always-on second brain you talk to. Voice notes in Telegram → typed, linked knowledge in your Obsidian vault. Runs 24/7 on the Claude subscription you already have."
     },
     "huytieu-cog-second-brain": {
       "title": "COG-second-brain",
@@ -375,7 +393,8 @@
       "risk": [],
       "group": "Continuity and cost",
       "reviewed": "2026-11-10",
-      "license": "MIT"
+      "license": "MIT",
+      "description": "Self-evolving second brain with 35 AI skills, 10 agents, and people CRM. Closed-loop harness: a V-model verification lifecycle where the worker never grades its own homework. Plus paired anti-slop design skills for marketing and product UI. Works with Claude Code, Cursor, Kiro, Gemini CLI, Codex."
     },
     "smokeeaasd-flawless-ui-ux": {
       "title": "flawless-ui-ux",
@@ -389,7 +408,8 @@
       "risk": [],
       "group": "Skill collections",
       "reviewed": "2026-11-10",
-      "license": "MIT"
+      "license": "MIT",
+      "description": "A UI/UX skill for coding agents to build distinctive, usable interfaces."
     },
     "shadcn-improve": {
       "title": "improve",
@@ -403,7 +423,8 @@
       "risk": [],
       "group": "Skill collections",
       "reviewed": "2026-11-10",
-      "license": "MIT"
+      "license": "MIT",
+      "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute."
     },
     "egonex-ai-understand-anything": {
       "title": "Understand-Anything",
@@ -414,7 +435,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Code understanding"
+      "group": "Code understanding",
+      "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more."
     },
     "storytold-craft-anything": {
       "title": "craft-anything",
@@ -425,7 +447,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Code understanding"
+      "group": "Code understanding",
+      "description": "Craft Anything: understand how any software works, and craft your own."
     },
     "codecrafters-io-build-your-own-x": {
       "title": "build-your-own-x",
@@ -436,7 +459,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Code understanding"
+      "group": "Code understanding",
+      "description": "Master programming by recreating your favorite technologies from scratch."
     },
     "vercel-labs-agent-desktop": {
       "title": "agent-desktop",
@@ -448,7 +472,8 @@
         "qa-testing"
       ],
       "risk": [],
-      "group": "Computer/browser use"
+      "group": "Computer/browser use",
+      "description": "Computer use CLI for AI agents"
     },
     "lightpanda-io-browser": {
       "title": "Lightpanda",
@@ -460,7 +485,8 @@
         "qa-testing"
       ],
       "risk": [],
-      "group": "Computer/browser use"
+      "group": "Computer/browser use",
+      "description": "Lightpanda: the headless browser designed for AI and automation"
     },
     "bridglabs-opencodereview": {
       "title": "opencodereview",
@@ -472,7 +498,8 @@
         "qa-testing"
       ],
       "risk": [],
-      "group": "AI PR review"
+      "group": "AI PR review",
+      "description": "Source-available AI code review for GitHub pull requests. Runs Claude Code, OpenCode or Codex on your own machine with the plan you already pay for."
     },
     "alibaba-open-code-review": {
       "title": "alibaba/open-code-review",
@@ -484,7 +511,8 @@
         "qa-testing"
       ],
       "risk": [],
-      "group": "AI PR review"
+      "group": "AI PR review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible."
     },
     "cloudflare-security-audit-skill": {
       "title": "cloudflare/security-audit-skill",
@@ -496,7 +524,8 @@
         "qa-testing"
       ],
       "risk": [],
-      "group": "Audits and pentest automation"
+      "group": "Audits and pentest automation",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings"
     },
     "keygraphhq-shannon": {
       "title": "Shannon",
@@ -510,7 +539,8 @@
       "risk": [
         "authorized-only"
       ],
-      "group": "Audits and pentest automation"
+      "group": "Audits and pentest automation",
+      "description": "Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies attack vectors, and executes real exploits to prove vulnerabilities before they reach production."
     },
     "zakirkun-guardian-cli": {
       "title": "guardian-cli",
@@ -524,7 +554,8 @@
       "risk": [
         "authorized-only"
       ],
-      "group": "Audits and pentest automation"
+      "group": "Audits and pentest automation",
+      "description": "Guardian is a production-ready AI-powered penetration testing automation CLI tool that leverages Google Gemini and LangChain to orchestrate intelligent, step-by-step penetration testing workflows while maintaining ethical hacking standards."
     },
     "sagarbiswas-multihat-the-blackhat-roadmap": {
       "title": "The-BlackHAT-roadmap",
@@ -536,7 +567,8 @@
         "qa-testing"
       ],
       "risk": [],
-      "group": "Learning path"
+      "group": "Learning path",
+      "description": "The complete hacking & penetration testing roadmap. From beginner to elite. 44,982 lines, 150+ Diagram across the roadmap: OPSEC, web security, Active Directory, binary exploitation, EDR evasion, and 0-day research. 300+ tools, 200+ MITRE techniques, C & Rust payloads, lab guides, books, courses, bl"
     },
     "morluto-rea": {
       "title": "rea",
@@ -548,7 +580,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "REA ecosystem"
+      "group": "REA ecosystem",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries."
     },
     "aicodeking-leanrea": {
       "title": "leanrea",
@@ -560,7 +593,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "REA ecosystem"
+      "group": "REA ecosystem",
+      "description": "One 8 KB skill that replaces REA (Reverse Engineer Anything): plain CLI tools, no MCP. Benchmarked: 38% faster, 35% cheaper."
     },
     "joasasantos-rea-prompts": {
       "title": "REA-Prompts",
@@ -572,7 +606,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "REA ecosystem"
+      "group": "REA ecosystem",
+      "description": "REAP - Prompts for you to use REA (Reverse Engineer Anything), get the most out of it, and clone or break down any program"
     },
     "pablodiazjorge-rea-lab": {
       "title": "rea-lab",
@@ -584,7 +619,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "REA ecosystem"
+      "group": "REA ecosystem",
+      "description": "Reverse engineering with AI agents on Windows: verifying, measuring and visualising the tools agents use, with rea and Ghidra"
     },
     "reacher-z-awesome-rea": {
       "title": "Awesome-REA",
@@ -596,7 +632,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "REA ecosystem"
+      "group": "REA ecosystem",
+      "description": "Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocols. Source-reviewed, English and Chinese."
     },
     "aishihzong-awesome-reverse-engineer-anything": {
       "title": "awesome-reverse-engineer-anything",
@@ -608,7 +645,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "REA ecosystem"
+      "group": "REA ecosystem",
+      "description": "Awesome REA (Reverse Engineer Anything): curated AI reverse engineering cases. What AI agents (REA, Craft Anything, Claude Code, Codex) reverse-engineered and rebuilt, open-source alternatives by app, and which ones really used REA. Unofficial, bilingual, every case checked."
     },
     "michaelshimeles-rec-rs": {
       "title": "rec-rs",
@@ -620,7 +658,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Example rebuilds"
+      "group": "Example rebuilds",
+      "description": "Fast macOS screen and camera recorder in Rust, an OBS alternative reverse engineered (clean-room) from OBS Studio"
     },
     "n0zom1z0-dx-ball": {
       "title": "dx-ball",
@@ -632,7 +671,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Example rebuilds"
+      "group": "Example rebuilds",
+      "description": "Reconstructing DX-Ball 1.07 with REA, backed by original-x86 differential tests and pinned MSVC byte-exact oracles."
     },
     "rehan-remade-universal-modder": {
       "title": "universal-modder",
@@ -644,7 +684,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Game modding"
+      "group": "Game modding",
+      "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos."
     },
     "i12bp8-decomp-wtf": {
       "title": "decomp.wtf",
@@ -656,7 +697,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Game modding"
+      "group": "Game modding",
+      "description": "What The Function: your AI agent decompiles games you own into C that compiles to the exact same bytes. Runs locally."
     },
     "mlabonne-llm-course": {
       "title": "llm-course",
@@ -667,7 +709,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Courses"
+      "group": "Courses",
+      "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks."
     },
     "microsoft-ai-agents-for-beginners": {
       "title": "ai-agents-for-beginners",
@@ -678,7 +721,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Courses"
+      "group": "Courses",
+      "description": "18 Lessons to Get Started Building AI Agents"
     },
     "nirdiamant-rag-techniques": {
       "title": "RAG_Techniques",
@@ -689,7 +733,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Courses"
+      "group": "Courses",
+      "description": "This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. Each technique has a detailed notebook tutorial."
     },
     "a-ghorbani-pocketpal-ai": {
       "title": "pocketpal-ai",
@@ -700,7 +745,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Local inference"
+      "group": "Local inference",
+      "description": "An app that brings language models directly to your phone."
     },
     "fareedkhan-dev-kimi-k3-in-c": {
       "title": "kimi-k3-in-c",
@@ -713,7 +759,8 @@
       "risk": [
         "experimental"
       ],
-      "group": "Local inference"
+      "group": "Local inference",
+      "description": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU."
     },
     "hexgrad-kokoro": {
       "title": "kokoro",
@@ -724,7 +771,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Local inference"
+      "group": "Local inference",
+      "description": "https://hf.co/hexgrad/Kokoro-82M"
     },
     "debpalash-voicestudio": {
       "title": "VoiceStudio",
@@ -735,7 +783,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Local inference"
+      "group": "Local inference",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages."
     },
     "opencut-app-opencut": {
       "title": "OpenCut",
@@ -747,7 +796,8 @@
         "marketing"
       ],
       "risk": [],
-      "group": "Video/media"
+      "group": "Video/media",
+      "description": "The open-source CapCut alternative"
     },
     "harry0703-moneyprinterturbo": {
       "title": "MoneyPrinterTurbo",
@@ -761,7 +811,8 @@
       "risk": [
         "licensing-check"
       ],
-      "group": "Video/media"
+      "group": "Video/media",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow."
     },
     "segfault42-heliosgen": {
       "title": "HeliosGen",
@@ -773,7 +824,8 @@
         "marketing"
       ],
       "risk": [],
-      "group": "Video/media"
+      "group": "Video/media",
+      "description": "🏆 Self Hosted Gen AI desktop app. Free alternative to Higgsfield, OpenArt, Freepik...."
     },
     "juneyaooo-rea-video": {
       "title": "rea-video",
@@ -785,7 +837,8 @@
         "marketing"
       ],
       "risk": [],
-      "group": "Video/media"
+      "group": "Video/media",
+      "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。"
     },
     "charlie947-motion-graphics-skills": {
       "title": "motion-graphics-skills",
@@ -797,7 +850,8 @@
         "marketing"
       ],
       "risk": [],
-      "group": "Video/media"
+      "group": "Video/media",
+      "description": "13 Claude Code skills for launch-grade motion graphics. Every frame is code. No After Effects, no video generator."
     },
     "wheresryan22-anatomy": {
       "title": "anatomy",
@@ -809,7 +863,8 @@
         "marketing"
       ],
       "risk": [],
-      "group": "Video/media"
+      "group": "Video/media",
+      "description": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional WebGL shaders and 3D effects."
     },
     "mvanhorn-last30days-skill": {
       "title": "last30days-skill",
@@ -821,7 +876,8 @@
         "marketing"
       ],
       "risk": [],
-      "group": "Research skills"
+      "group": "Research skills",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
     },
     "scrapecreators-social-media-research-skills": {
       "title": "social-media-research-skills",
@@ -833,7 +889,8 @@
         "marketing"
       ],
       "risk": [],
-      "group": "Research skills"
+      "group": "Research skills",
+      "description": "AI agent skills for social media research. Outlier posts, comment mining, competitor teardowns, ad libraries & trends across TikTok, Instagram, YouTube, Reddit, X, LinkedIn & more. Powered by ScrapeCreators. Works with Claude Code, Cursor, Codex, Gemini CLI."
     },
     "appllama-appllama-skills": {
       "title": "appllama-skills",
@@ -845,7 +902,8 @@
         "marketing"
       ],
       "risk": [],
-      "group": "Research skills"
+      "group": "Research skills",
+      "description": "A builder, not just a researcher. Agent skills that turn top-grossing app patterns into native-quality mobile screens."
     },
     "openbq-org-openbb": {
       "title": "OpenBB",
@@ -857,7 +915,8 @@
       ],
       "risk": [
         "financial-risk"
-      ]
+      ],
+      "description": "Open Data Platform for analysts, quants and AI agents."
     },
     "freqtrade-freqtrade": {
       "title": "freqtrade",
@@ -869,7 +928,8 @@
       ],
       "risk": [
         "financial-risk"
-      ]
+      ],
+      "description": "Free, open source crypto trading bot"
     },
     "tauricresearch-tradingagents": {
       "title": "TradingAgents",
@@ -881,7 +941,8 @@
       ],
       "risk": [
         "financial-risk"
-      ]
+      ],
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework"
     },
     "hkuds-vibe-trading": {
       "title": "Vibe-Trading",
@@ -893,7 +954,8 @@
       ],
       "risk": [
         "financial-risk"
-      ]
+      ],
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\""
     },
     "shiyu-coder-kronos": {
       "title": "Kronos",
@@ -905,7 +967,8 @@
       ],
       "risk": [
         "financial-risk"
-      ]
+      ],
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets"
     },
     "zhulinsen-daily-stock-analysis": {
       "title": "daily_stock_analysis",
@@ -917,7 +980,8 @@
       ],
       "risk": [
         "financial-risk"
-      ]
+      ],
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs."
     },
     "shy3130-tick-stock-panel": {
       "title": "tick-stock-panel",
@@ -929,7 +993,8 @@
       ],
       "risk": [
         "financial-risk"
-      ]
+      ],
+      "description": "TSP自托管、零运维的 A 股「自建策略 + 监控 + 回测」量化工作台 | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据"
     },
     "jakeschincariol-trader-skill": {
       "title": "trader-skill",
@@ -941,7 +1006,8 @@
       ],
       "risk": [
         "financial-risk"
-      ]
+      ],
+      "description": "11 Claude skills that copy the investors you trust, watch the news and Congress, size every trade to your budget, and never place an order without your yes."
     },
     "jakeschincariol-day-trader-skill": {
       "title": "day-trader-skill",
@@ -953,7 +1019,8 @@
       ],
       "risk": [
         "financial-risk"
-      ]
+      ],
+      "description": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar."
     },
     "wilsonfreitas-awesome-quant": {
       "title": "awesome-quant",
@@ -965,7 +1032,8 @@
       ],
       "risk": [
         "financial-risk"
-      ]
+      ],
+      "description": "A curated list of insanely awesome libraries, packages and resources for Quants (Quantitative Finance)"
     },
     "juliodelimas-gen-ai-para-produtividade-em-testes": {
       "title": "gen-ai-para-produtividade-em-testes",
@@ -975,7 +1043,8 @@
       "areas": [
         "qa-testing"
       ],
-      "risk": []
+      "risk": [],
+      "description": "Prompts que uso para trazer mais produtividade para as atividades de teste de software"
     },
     "vinnypessoni-api-clientes-exemplo-microservico": {
       "title": "api-clientes-exemplo-microservico",
@@ -985,7 +1054,8 @@
       "areas": [
         "qa-testing"
       ],
-      "risk": []
+      "risk": [],
+      "description": "Exemplo de API para estudo de programação e testes automatizados do http://viniciuspessoni.com"
     },
     "z4nzu-hackingtool": {
       "title": "hackingtool",
@@ -998,7 +1068,8 @@
       "risk": [
         "authorized-only"
       ],
-      "group": "Offensive toolkits and scanners"
+      "group": "Offensive toolkits and scanners",
+      "description": "ALL IN ONE Hacking Tool For Hackers"
     },
     "assetnote-php2shell-scanner": {
       "title": "php2shell-scanner",
@@ -1011,7 +1082,8 @@
       "risk": [
         "authorized-only"
       ],
-      "group": "Offensive toolkits and scanners"
+      "group": "Offensive toolkits and scanners",
+      "description": "High fidelity scanner for php2shell (CVE-2026-109618 and CVE-2026-109619)"
     },
     "woshimaniubi8-cve-2026-43499-root-kernelsu": {
       "title": "CVE-2026-43499-root-KernelSU",
@@ -1024,7 +1096,8 @@
       "risk": [
         "authorized-only"
       ],
-      "group": "Android privilege escalation research"
+      "group": "Android privilege escalation research",
+      "description": "基于内核漏洞CVE-2026-43499的本地提权适配，集成嵌入式 KernelSU.CVE-2026-43499+KernelSU越狱模式"
     },
     "togg53192-cmd-jailbreaks": {
       "title": "togg53192-cmd/jailbreaks",
@@ -1037,7 +1110,8 @@
       "risk": [
         "authorized-only"
       ],
-      "group": "LLM safety/jailbreak corpora (red-teaming evaluation)"
+      "group": "LLM safety/jailbreak corpora (red-teaming evaluation)",
+      "description": "LIST OF ALL MY JAILBREAKS"
     },
     "alejandros17487-ai-jailbreaks": {
       "title": "ai-jailbreaks",
@@ -1050,7 +1124,8 @@
       "risk": [
         "authorized-only"
       ],
-      "group": "LLM safety/jailbreak corpora (red-teaming evaluation)"
+      "group": "LLM safety/jailbreak corpora (red-teaming evaluation)",
+      "description": "AI jailbreaks: 35 paste-ready AI jailbreak prompts for 25+ frontier and open-weight models - system prompts, AGENTS.md specs, and Ollama Modelfiles. Built for AI security research and red-team testing."
     },
     "v1ktorrr0x-antigravity-filter-bypass": {
       "title": "antigravity-filter-bypass",
@@ -1078,7 +1153,8 @@
       ],
       "risk": [
         "tos-check"
-      ]
+      ],
+      "description": "Use Claude Code, Codex, Antigravity, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)"
     },
     "tashfeenahmed-freellmapi": {
       "title": "freellmapi",
@@ -1090,7 +1166,8 @@
       ],
       "risk": [
         "tos-check"
-      ]
+      ],
+      "description": "10.1 billion tokens per month. 87 free LLM providers. 1,313 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only."
     },
     "cheaper-inference-omniroute": {
       "title": "OmniRoute",
@@ -1102,7 +1179,8 @@
       ],
       "risk": [
         "tos-check"
-      ]
+      ],
+      "description": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop"
     },
     "zenmux-ai": {
       "title": "ZenMux",
@@ -1138,7 +1216,8 @@
       ],
       "risk": [
         "tos-check"
-      ]
+      ],
+      "description": "The all-in-one local AI studio for your desktop: chat, image and video generation and a coding agent in one free, open source app. Windows and Linux. No Docker, no terminal, no cloud required."
     },
     "seerge-g-helper": {
       "title": "g-helper",
@@ -1150,7 +1229,8 @@
         "mobile-app"
       ],
       "risk": [],
-      "group": "Windows/PC"
+      "group": "Windows/PC",
+      "description": "Lightweight Armoury Crate alternative for Asus laptops with nearly the same functionality. Works with ROG Zephyrus, Flow, TUF, Strix, Scar, ProArt, Vivobook, Zenbook, Expertbook, ROG Ally, and more."
     },
     "blinue-magpie": {
       "title": "Magpie",
@@ -1162,7 +1242,8 @@
         "mobile-app"
       ],
       "risk": [],
-      "group": "Windows/PC"
+      "group": "Windows/PC",
+      "description": "A general-purpose window upscaler for Windows 10/11."
     },
     "zagitta-gpu-unlock": {
       "title": "gpu-unlock",
@@ -1176,7 +1257,8 @@
       "risk": [
         "experimental"
       ],
-      "group": "Windows/PC"
+      "group": "Windows/PC",
+      "description": "Your GeForce runs AI at half speed. This fixes it for 20/30/40 series cards. Up to 2× FP16 / BF16 / TF32 tensor throughput"
     },
     "nodix-tech-mfg-super-motion": {
       "title": "MFG-SUPER-MOTION",
@@ -1190,7 +1272,8 @@
       "risk": [
         "experimental"
       ],
-      "group": "Windows/PC"
+      "group": "Windows/PC",
+      "description": "Oh my God, it's free for everyone; we won't sell this."
     },
     "xevrion-hatchzip": {
       "title": "hatchzip",
@@ -1202,7 +1285,8 @@
         "mobile-app"
       ],
       "risk": [],
-      "group": "Windows/PC"
+      "group": "Windows/PC",
+      "description": "HatchZip is a free, open-source archive extractor for Windows, macOS and Linux that extracts ZIP, 7z, RAR, tar and split archives in place, so it needs free space for the extracted files only. Desktop app and CLI."
     },
     "storytold-photocraft": {
       "title": "photocraft",
@@ -1214,7 +1298,8 @@
         "mobile-app"
       ],
       "risk": [],
-      "group": "Windows/PC"
+      "group": "Windows/PC",
+      "description": "PhotoCraft: An open-source photo editor written from scratch in pure Rust"
     },
     "openselena-omniget": {
       "title": "omniget",
@@ -1229,7 +1314,8 @@
         "licensing-check",
         "tos-check"
       ],
-      "group": "Downloads/media"
+      "group": "Downloads/media",
+      "description": "Open-source download manager for courses (Udemy/Hotmart), YouTube, music & 1,800+ sites. Built with Tauri 2.0, Rust & Svelte."
     },
     "pablostanley-yoinks": {
       "title": "yoinks",
@@ -1244,7 +1330,8 @@
         "licensing-check",
         "tos-check"
       ],
-      "group": "Downloads/media"
+      "group": "Downloads/media",
+      "description": "yoink any video from your terminal. no shady ads."
     },
     "t8rin-imagetoolbox": {
       "title": "ImageToolbox",
@@ -1256,7 +1343,8 @@
         "mobile-app"
       ],
       "risk": [],
-      "group": "Android/TV"
+      "group": "Android/TV",
+      "description": "🖼️ Image Toolbox is a powerful app for advanced image manipulation. It offers dozens of features, from basic tools like crop and draw to filters, OCR, and a wide range of image processing options"
     },
     "pass-with-high-score-blockads-android": {
       "title": "blockads-android",
@@ -1268,7 +1356,8 @@
         "mobile-app"
       ],
       "risk": [],
-      "group": "Android/TV"
+      "group": "Android/TV",
+      "description": "Block ads system-wide on Android using local VPN-based DNS filtering. No root needed. No data collection."
     },
     "gathin23-cleanyourtv": {
       "title": "cleanyourtv",
@@ -1280,7 +1369,8 @@
         "mobile-app"
       ],
       "risk": [],
-      "group": "Android/TV"
+      "group": "Android/TV",
+      "description": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home."
     },
     "danielthejoker18-freemytvwebos": {
       "title": "FreeMyTvWebOS",
@@ -1292,7 +1382,8 @@
         "mobile-app"
       ],
       "risk": [],
-      "group": "Android/TV"
+      "group": "Android/TV",
+      "description": "Fast, ad-free 60fps home screen for LG webOS TVs: frosted glass app shelf, live weather, trending picks. Open source, unrooted, no telemetry."
     },
     "crmne-zapfast": {
       "title": "zapfast",
@@ -1305,7 +1396,8 @@
         "api-integration"
       ],
       "risk": [],
-      "group": "Messaging"
+      "group": "Messaging",
+      "description": "ZapFast: a fast, native WhatsApp client in Rust and egui"
     },
     "mrifqidaffaaditya-wa-akg": {
       "title": "WA-AKG",
@@ -1318,7 +1410,8 @@
         "api-integration"
       ],
       "risk": [],
-      "group": "Messaging"
+      "group": "Messaging",
+      "description": "A self-hosted WhatsApp Gateway & Dashboard built with Next.js 16, Baileys, and Prisma. Manage multi-session accounts, schedule messages, create auto-replies, and integrate via Webhooks."
     },
     "awesome-scripts-awesome-userscripts": {
       "title": "awesome-userscripts",
@@ -1331,7 +1424,8 @@
         "browser-extension"
       ],
       "risk": [],
-      "group": "Browser"
+      "group": "Browser",
+      "description": "📖 A curated list of Awesome Userscripts."
     },
     "hydralauncher-hydra": {
       "title": "Hydra Launcher",
@@ -1345,7 +1439,8 @@
       "risk": [
         "licensing-check"
       ],
-      "group": "Launchers/catalogs (verify content licensing)"
+      "group": "Launchers/catalogs (verify content licensing)",
+      "description": "Hydra Launcher is an open-source gaming platform created to be the single tool that you need"
     },
     "nookieai-ps3-game-scraper": {
       "title": "PS3-Game-Scraper",
@@ -1359,7 +1454,8 @@
       "risk": [
         "licensing-check"
       ],
-      "group": "Launchers/catalogs (verify content licensing)"
+      "group": "Launchers/catalogs (verify content licensing)",
+      "description": "Browse, search, and download PS3 games with cover art, multiple download mirrors, and a self-updating desktop app for Windows, Mac, and Linux"
     },
     "gamebanana-com-mods-737074": {
       "title": "Ocarina of Time controller UI mod",
@@ -1399,7 +1495,8 @@
       "risk": [
         "experimental"
       ],
-      "group": "Additional ports/runtimes"
+      "group": "Additional ports/runtimes",
+      "description": "Bloodborne running natively on Windows 10/11: launcher in 13 languages, DLSS, FSR 3.1/4, unlocked FPS, cheats, mods, one-click updates."
     },
     "cuesta4-shadps4": {
       "title": "cuesta4/shadPS4",
@@ -1413,7 +1510,8 @@
       "risk": [
         "experimental"
       ],
-      "group": "Additional ports/runtimes"
+      "group": "Additional ports/runtimes",
+      "description": "PlayStation 4 emulator for Windows, Linux, macOS and FreeBSD written in C++"
     },
     "x-com-gyome1-status-2111774069783720195": {
       "title": "Claude Code para Reverse Engineering",
@@ -1474,7 +1572,8 @@
         "reverse-engineering",
         "decompilation"
       ],
-      "risk": []
+      "risk": [],
+      "description": "Ghidra is a software reverse engineering (SRE) framework"
     },
     "werwolv-imhex": {
       "title": "ImHex",
@@ -1485,7 +1584,8 @@
         "reverse-engineering",
         "decompilation"
       ],
-      "risk": []
+      "risk": [],
+      "description": "🔍 A Hex Editor for Reverse Engineers, Programmers and people who value their retinas when working at 3 AM."
     },
     "x64dbg-x64dbg": {
       "title": "x64dbg",
@@ -1496,7 +1596,8 @@
         "reverse-engineering",
         "decompilation"
       ],
-      "risk": []
+      "risk": [],
+      "description": "An open-source user mode debugger for Windows. Optimized for reverse engineering and malware analysis."
     },
     "frida-frida": {
       "title": "Frida",
@@ -1507,7 +1608,8 @@
         "reverse-engineering",
         "decompilation"
       ],
-      "risk": []
+      "risk": [],
+      "description": "Main repo for hosting release binaries"
     },
     "kaitai-io-kaitai-struct": {
       "title": "Kaitai Struct",
@@ -1518,7 +1620,8 @@
         "reverse-engineering",
         "decompilation"
       ],
-      "risk": []
+      "risk": [],
+      "description": "Kaitai Struct: declarative language to generate binary data parsers in C++ / C# / Go / Java / JavaScript / Lua / Nim / Perl / PHP / Python / Ruby / Rust"
     },
     "refirmlabs-binwalk": {
       "title": "binwalk",
@@ -1529,7 +1632,8 @@
         "reverse-engineering",
         "decompilation"
       ],
-      "risk": []
+      "risk": [],
+      "description": "Firmware Analysis Tool"
     },
     "icsharpcode-ilspy": {
       "title": "ILSpy",
@@ -1540,7 +1644,8 @@
         "reverse-engineering",
         "mobile-app"
       ],
-      "risk": []
+      "risk": [],
+      "description": ".NET Decompiler with support for PDB generation, ReadyToRun, Metadata (&more) - cross-platform!"
     },
     "skylot-jadx": {
       "title": "jadx",
@@ -1551,7 +1656,8 @@
         "reverse-engineering",
         "mobile-app"
       ],
-      "risk": []
+      "risk": [],
+      "description": "Dex to Java decompiler"
     },
     "ibotpeaches-apktool": {
       "title": "Apktool",
@@ -1562,7 +1668,8 @@
         "reverse-engineering",
         "mobile-app"
       ],
-      "risk": []
+      "risk": [],
+      "description": "A tool for reverse engineering Android apk files"
     },
     "ax-apk-sh": {
       "title": "apk.sh",
@@ -1573,7 +1680,8 @@
         "reverse-engineering",
         "mobile-app"
       ],
-      "risk": []
+      "risk": [],
+      "description": "Makes reverse engineering Android apps easier, automating repetitive tasks like pulling, decoding, rebuilding and patching an APK."
     },
     "reandroid-apkeditor": {
       "title": "APKEditor",
@@ -1584,7 +1692,8 @@
         "reverse-engineering",
         "mobile-app"
       ],
-      "risk": []
+      "risk": [],
+      "description": "Powerful android apk editor - aapt/aapt2 independent"
     },
     "j4k0xb-webcrack": {
       "title": "webcrack",
@@ -1596,7 +1705,8 @@
         "api-integration",
         "security"
       ],
-      "risk": []
+      "risk": [],
+      "description": "Deobfuscate obfuscator.io, unminify and unpack bundled javascript"
     },
     "electron-asar": {
       "title": "asar",
@@ -1608,7 +1718,8 @@
         "api-integration",
         "security"
       ],
-      "risk": []
+      "risk": [],
+      "description": "Simple extensive tar-like archive format with indexing"
     },
     "mitmproxy-mitmproxy": {
       "title": "mitmproxy",
@@ -1620,7 +1731,8 @@
         "api-integration",
         "security"
       ],
-      "risk": []
+      "risk": [],
+      "description": "An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers."
     },
     "alufers-mitmproxy2swagger": {
       "title": "mitmproxy2swagger",
@@ -1632,7 +1744,8 @@
         "api-integration",
         "security"
       ],
-      "risk": []
+      "risk": [],
+      "description": "Automagically reverse-engineer REST APIs via capturing traffic"
     },
     "d4vinci-scrapling": {
       "title": "Scrapling",
@@ -1644,7 +1757,8 @@
         "api-integration",
         "security"
       ],
-      "risk": []
+      "risk": [],
+      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev"
     },
     "blueheisenberg-scskiller": {
       "title": "SCSKiller",
@@ -1654,7 +1768,8 @@
       "areas": [
         "game-port"
       ],
-      "risk": []
+      "risk": [],
+      "description": "Kill shader compilation stutter before you play. Compiles your games' shaders into the GPU driver's cache ahead of time. Windows, NVIDIA and AMD."
     },
     "horsicq-detect-it-easy": {
       "title": "Detect-It-Easy",
@@ -1666,7 +1781,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Identify"
+      "group": "Identify",
+      "description": "Program for determining types of files for Windows, Linux and MacOS."
     },
     "mandiant-capa": {
       "title": "capa",
@@ -1678,7 +1794,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Identify"
+      "group": "Identify",
+      "description": "The FLARE team's open-source tool to identify capabilities in executable files."
     },
     "lief-project-lief": {
       "title": "LIEF",
@@ -1690,7 +1807,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Identify"
+      "group": "Identify",
+      "description": "LIEF - Library to Instrument Executable Formats (C++, Python, Rust)"
     },
     "angr-angr": {
       "title": "angr",
@@ -1702,7 +1820,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Read the logic"
+      "group": "Read the logic",
+      "description": "A powerful and user-friendly binary analysis platform!"
     },
     "radareorg-radare2": {
       "title": "radare2",
@@ -1714,7 +1833,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Read the logic"
+      "group": "Read the logic",
+      "description": "UNIX-like reverse engineering framework and command-line toolset"
     },
     "rizinorg-cutter": {
       "title": "Cutter",
@@ -1726,7 +1846,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Read the logic"
+      "group": "Read the logic",
+      "description": "Free and Open Source Reverse Engineering Platform powered by rizin"
     },
     "mrexodia-ida-pro-mcp": {
       "title": "ida-pro-mcp",
@@ -1738,7 +1859,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Read the logic"
+      "group": "Read the logic",
+      "description": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP."
     },
     "sensepost-objection": {
       "title": "objection",
@@ -1750,7 +1872,8 @@
         "mobile-app"
       ],
       "risk": [],
-      "group": "Watch it run"
+      "group": "Watch it run",
+      "description": "📱 objection - runtime mobile exploration"
     },
     "wireshark-wireshark": {
       "title": "Wireshark",
@@ -1763,7 +1886,8 @@
         "security"
       ],
       "risk": [],
-      "group": "Follow the traffic"
+      "group": "Follow the traffic",
+      "description": "Read-only mirror of Wireshark's Git repository at https://gitlab.com/wireshark/wireshark. You're welcome to submit pull requests there."
     },
     "rea-tools": {
       "title": "REA official site and guides",
@@ -1872,7 +1996,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Clean-room examples"
+      "group": "Clean-room examples",
+      "description": "LightCraft: An open-source non-destructive photo editor written from scratch in pure Rust"
     },
     "storytold-filmcraft": {
       "title": "FilmCraft",
@@ -1883,7 +2008,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Clean-room examples"
+      "group": "Clean-room examples",
+      "description": "FilmCraft: An open-source, nonlinear video editor written from scratch in pure Rust"
     },
     "percyitchy-dolly": {
       "title": "Dolly (screen recorder rebuilt from a spec)",
@@ -1895,7 +2021,8 @@
         "desktop"
       ],
       "risk": [],
-      "group": "Clean-room examples"
+      "group": "Clean-room examples",
+      "description": "Free, open-source screen recorder for Mac and Windows. Zooms in on every click, smooths your cursor and exports polished videos. No account needed, also no watermark. Built by @zodchiii."
     },
     "morluto-awesome-reverse-engineering": {
       "title": "awesome-reverse-engineering (morluto)",
@@ -1907,7 +2034,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Lists"
+      "group": "Lists",
+      "description": "Curated reverse-engineering tools and learning resources for binaries, apps, firmware, formats, and protocols."
     },
     "sqwu-rea-gems": {
       "title": "rea-gems",
@@ -1919,7 +2047,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Lists"
+      "group": "Lists",
+      "description": "A curated, auto-updated gallery of excellent reverse-engineering cases built with REA (reverse engineer anything) - refreshed daily by GitHub Actions"
     },
     "alexgaoth-awesome-reverse-engineered": {
       "title": "awesome-reverse-engineered",
@@ -1931,7 +2060,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Lists"
+      "group": "Lists",
+      "description": "Don't reverse engineer it twice. 17,000+ open-source tools built by reverse engineering closed apps, APIs, devices, protocols, file formats, games and AI tools. Search site + agent skill + MCP server, refreshed nightly."
     },
     "mytechnotalent-reverse-engineering": {
       "title": "mytechnotalent Reverse-Engineering tutorial",
@@ -1943,7 +2073,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Courses"
+      "group": "Courses",
+      "description": "A FREE comprehensive reverse engineering tutorial covering x86, x64, 32-bit/64-bit ARM, 8-bit AVR and 32-bit RISC-V architectures."
     },
     "wtsxdev-reverse-engineering": {
       "title": "reverse-engineering (wtsxDev)",
@@ -1955,7 +2086,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Lists"
+      "group": "Lists",
+      "description": "List of awesome reverse engineering resources"
     },
     "tylerha97-awesome-reversing": {
       "title": "awesome-reversing",
@@ -1967,7 +2099,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Lists"
+      "group": "Lists",
+      "description": "A curated list of awesome reversing resources"
     },
     "onethawt-reverseengineering-reading-list": {
       "title": "reverseengineering-reading-list",
@@ -1979,7 +2112,8 @@
         "decompilation"
       ],
       "risk": [],
-      "group": "Lists"
+      "group": "Lists",
+      "description": "A list of Reverse Engineering articles, books, and papers"
     },
     "guyinatuxedo-nightmare": {
       "title": "Nightmare",
@@ -2005,7 +2139,8 @@
         "security"
       ],
       "risk": [],
-      "group": "Courses"
+      "group": "Courses",
+      "description": "Course materials for Modern Binary Exploitation by RPISEC"
     },
     "pwn-college-intro-re-pwn-5933fc84-reversing": {
       "title": "pwn.college reverse engineering",
@@ -2226,7 +2361,8 @@
         "ux-design"
       ],
       "risk": [],
-      "group": "Observe"
+      "group": "Observe",
+      "description": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)"
     },
     "capsoftware-cap": {
       "title": "Cap",
@@ -2238,7 +2374,8 @@
         "desktop"
       ],
       "risk": [],
-      "group": "Observe"
+      "group": "Observe",
+      "description": "Open source Loom alternative. Beautiful, shareable screen recordings."
     },
     "ggml-org-whisper-cpp": {
       "title": "whisper.cpp",
@@ -2250,7 +2387,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Rebuild"
+      "group": "Rebuild",
+      "description": "Port of OpenAI's Whisper model in C/C++"
     },
     "huggingface-transformers-js": {
       "title": "transformers.js",
@@ -2262,7 +2400,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Rebuild"
+      "group": "Rebuild",
+      "description": "State-of-the-art Machine Learning for the web. Run 🤗 Transformers directly in your browser, with no need for a server!"
     },
     "ffmpegwasm-ffmpeg-wasm": {
       "title": "ffmpeg.wasm",
@@ -2274,7 +2413,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Rebuild"
+      "group": "Rebuild",
+      "description": "FFmpeg for browser, powered by WebAssembly"
     },
     "mrdoob-three-js": {
       "title": "three.js",
@@ -2286,7 +2426,8 @@
         "game-modding"
       ],
       "risk": [],
-      "group": "Rebuild"
+      "group": "Rebuild",
+      "description": "JavaScript 3D Library."
     },
     "pmndrs-postprocessing": {
       "title": "postprocessing",
@@ -2297,7 +2438,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Rebuild"
+      "group": "Rebuild",
+      "description": "A post processing library for three.js."
     },
     "runacapital-awesome-oss-alternatives": {
       "title": "awesome-oss-alternatives",
@@ -2309,7 +2451,8 @@
         "ux-design"
       ],
       "risk": [],
-      "group": "Find an open-source base"
+      "group": "Find an open-source base",
+      "description": "Awesome list of open-source startup alternatives to well-known SaaS products 🚀"
     },
     "ranxianglei-billion-context": {
       "title": "billion-context",
@@ -2322,7 +2465,8 @@
       "risk": [
         "experimental"
       ],
-      "group": "Continuity and cost"
+      "group": "Continuity and cost",
+      "description": "A context-compression plugin for month-long single sessions (billions of tokens) and small context windows (a 100K context is enough), billion-context is all you need ."
     },
     "qybaihe-bla": {
       "title": "BLA (Blind LLM Agents)",
@@ -2337,7 +2481,8 @@
       "risk": [
         "experimental"
       ],
-      "group": "Anti-AI reverse-engineering hardening"
+      "group": "Anti-AI reverse-engineering hardening",
+      "description": "🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protecting JS/TS, Electron ASAR, WASM, Python, Native Binaries, SQLite, GGUF/Safetensors & Android DEX against AI reverse-engineering agents (REA)."
     },
     "open-free-llm-api-awesome-freellm-apis": {
       "title": "awesome-freellm-apis",
@@ -2352,7 +2497,8 @@
         "tos-check",
         "experimental"
       ],
-      "group": "Free LLM API lists"
+      "group": "Free LLM API lists",
+      "description": "134+ free LLM APIs & AI API keys from 40+ providers. Google Gemini, NVIDIA NIM, Groq, OpenRouter & more. One-click setup for Claude Code, Cursor and Codex."
     },
     "bitllm": {
       "title": "BitLLM (P2P inference)",
@@ -2378,7 +2524,8 @@
       "risk": [
         "authorized-only"
       ],
-      "group": "OSINT"
+      "group": "OSINT",
+      "description": "Hunt down social media accounts by username across social networks"
     },
     "hackvault-xss-polyglot": {
       "title": "Ultimate XSS Polyglot (HackVault)",
@@ -2418,7 +2565,8 @@
       ],
       "risk": [
         "licensing-check"
-      ]
+      ],
+      "description": "Custom Game Patches for PlayStation 4 and PlayStation 5 Games"
     },
     "weshayoub92-shadps4-ayoub1080p": {
       "title": "shadPS4 (AYOUB1080p fork)",
@@ -2431,7 +2579,8 @@
       "risk": [
         "licensing-check",
         "experimental"
-      ]
+      ],
+      "description": "Unofficial shadPS4 fork tuned for inFAMOUS Second Son. Independent project, not affiliated with or endorsed by Sony."
     },
     "chrissotraidis-bluewake": {
       "title": "bluewake",
@@ -2445,7 +2594,8 @@
       "risk": [
         "licensing-check",
         "experimental"
-      ]
+      ],
+      "description": "The Legend of Zelda: The Wind Waker Recompiled. Native for MacOS, iOS, Windows, Linux, and Android."
     },
     "twigpine-openclaude": {
       "title": "openclaude",
@@ -2458,7 +2608,8 @@
       "risk": [
         "tos-check",
         "experimental"
-      ]
+      ],
+      "description": "runs anywhere. uses anything"
     },
     "nirdiamant-agents-towards-production": {
       "title": "agents-towards-production",
@@ -2468,7 +2619,8 @@
       "areas": [
         "ai-automation"
       ],
-      "risk": []
+      "risk": [],
+      "description": "End-to-end, code-first tutorials for building production-grade GenAI agents. From prototype to enterprise deployment."
     },
     "adamawolf-apple-device-model-ids": {
       "title": "Apple device model IDs",
@@ -2492,7 +2644,8 @@
       "risk": [
         "tos-check",
         "licensing-check"
-      ]
+      ],
+      "description": "A chat cloner for Telegram Chats"
     },
     "microsoft-activation-scripts": {
       "title": "Microsoft Activation Scripts",
@@ -2506,7 +2659,8 @@
         "licensing-check",
         "tos-check"
       ],
-      "group": "Windows setup"
+      "group": "Windows setup",
+      "description": "Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with advanced troubleshooting."
     },
     "asn-lookup": {
       "title": "ASN Lookup",
@@ -3617,7 +3771,8 @@
         "licensing-check",
         "experimental"
       ],
-      "group": "Additional ports/runtimes"
+      "group": "Additional ports/runtimes",
+      "description": "Static recompilation of Mario Kart World (Nintendo Switch 2) to a native PC program"
     },
     "recomp-launcher": {
       "title": "RecompLauncher",
@@ -3656,7 +3811,8 @@
       ],
       "risk": [
         "experimental"
-      ]
+      ],
+      "description": "Apex Neural Rendering (ANR) by Apex Compute"
     },
     "apex-unified-engine": {
       "title": "apex-compute/unified-engine",
@@ -3682,7 +3838,8 @@
         "authorized-only",
         "experimental"
       ],
-      "group": "Audits and pentest automation"
+      "group": "Audits and pentest automation",
+      "description": "ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)"
     },
     "failsafe-artex": {
       "title": "failsafe-security/artex",
@@ -3696,7 +3853,8 @@
         "authorized-only",
         "experimental"
       ],
-      "group": "Audits and pentest automation"
+      "group": "Audits and pentest automation",
+      "description": "Source-built, locally bound FailSafe distribution of ARTEX (v0.3.15)"
     },
     "pentestcode": {
       "title": "s0ld13rr/pentestcode",
@@ -3711,7 +3869,8 @@
         "authorized-only",
         "experimental"
       ],
-      "group": "Audits and pentest automation"
+      "group": "Audits and pentest automation",
+      "description": "PentestCode - Multi-agent AI penetration testing system with persistent engagement state, strategic coordination, and parallel autonomous operations."
     },
     "promptfoo": {
       "title": "promptfoo/promptfoo",
@@ -3724,7 +3883,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "QA tools"
+      "group": "QA tools",
+      "description": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, DeepSeek, and more. Simple declarative configs with command line and CI/CD integration. Used by OpenAI and Anthropic."
     },
     "open-webui": {
       "title": "open-webui/open-webui",
@@ -3735,7 +3895,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Chat UIs and routers"
+      "group": "Chat UIs and routers",
+      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
     },
     "libretranslate": {
       "title": "LibreTranslate/LibreTranslate",
@@ -3747,7 +3908,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Local inference"
+      "group": "Local inference",
+      "description": "Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup."
     },
     "buzz": {
       "title": "chidiwilliams/buzz",
@@ -3758,7 +3920,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Media and file utilities"
+      "group": "Media and file utilities",
+      "description": "Buzz transcribes and translates audio offline on your personal computer. Powered by OpenAI's Whisper."
     },
     "rembg": {
       "title": "danielgatis/rembg",
@@ -3770,7 +3933,8 @@
         "ux-design"
       ],
       "risk": [],
-      "group": "Media and file utilities"
+      "group": "Media and file utilities",
+      "description": "Rembg is a tool to remove images background"
     },
     "upscayl": {
       "title": "upscayl/upscayl",
@@ -3781,7 +3945,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Media and file utilities"
+      "group": "Media and file utilities",
+      "description": "🆙 Upscayl - #1 Free and Open Source AI Image Upscaler for Linux, MacOS and Windows."
     },
     "stirling-pdf": {
       "title": "Stirling-Tools/Stirling-PDF",
@@ -3792,7 +3957,8 @@
         "operations"
       ],
       "risk": [],
-      "group": "Media and file utilities"
+      "group": "Media and file utilities",
+      "description": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere"
     },
     "matheusgobbi-claude-video": {
       "title": "Editar vídeo com o Claude — Matheus Gobbi",
@@ -3815,7 +3981,8 @@
         "operations"
       ],
       "risk": [],
-      "group": "Media and file utilities"
+      "group": "Media and file utilities",
+      "description": "High performance self-hosted photo and video management solution."
     },
     "jellyfin": {
       "title": "jellyfin/jellyfin",
@@ -3828,7 +3995,8 @@
       "risk": [
         "licensing-check"
       ],
-      "group": "Video/media"
+      "group": "Video/media",
+      "description": "The Free Software Media System - Server Backend & API"
     },
     "invidious": {
       "title": "iv-org/invidious",
@@ -3841,7 +4009,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Video/media"
+      "group": "Video/media",
+      "description": "Invidious is an alternative front-end to YouTube"
     },
     "newpipe": {
       "title": "TeamNewPipe/NewPipe",
@@ -3854,7 +4023,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Android/TV"
+      "group": "Android/TV",
+      "description": "A libre lightweight streaming front-end for Android."
     },
     "libreget": {
       "title": "OpenSelena/libreget",
@@ -3868,7 +4038,8 @@
         "tos-check",
         "licensing-check"
       ],
-      "group": "Downloads/media"
+      "group": "Downloads/media",
+      "description": "Open-source download manager for courses (Udemy/Hotmart), YouTube, music & 1,800+ sites. Built with Tauri 2.0, Rust & Svelte."
     },
     "localsend": {
       "title": "localsend/localsend",
@@ -3879,7 +4050,8 @@
         "desktop"
       ],
       "risk": [],
-      "group": "General utilities"
+      "group": "General utilities",
+      "description": "An open-source cross-platform alternative to AirDrop"
     },
     "pi-hole": {
       "title": "pi-hole/pi-hole",
@@ -3891,7 +4063,8 @@
         "security"
       ],
       "risk": [],
-      "group": "General utilities"
+      "group": "General utilities",
+      "description": "A black hole for Internet advertisements"
     },
     "win11debloat": {
       "title": "Raphire/Win11Debloat",
@@ -3904,7 +4077,8 @@
       "risk": [
         "experimental"
       ],
-      "group": "Windows setup"
+      "group": "Windows setup",
+      "description": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11."
     },
     "apkstart": {
       "title": "RoutineMiku/apkstart",
@@ -3918,7 +4092,8 @@
       "risk": [
         "experimental"
       ],
-      "group": "Android/TV"
+      "group": "Android/TV",
+      "description": "Windows 上的安卓应用运行器：双击 APK 即装，应用以独立窗口与桌面图标运行，自持 QEMU 运行时"
     },
     "reverse-engineer-marketing": {
       "title": "dansugc/reverse-engineer-marketing",
@@ -3932,7 +4107,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Research skills"
+      "group": "Research skills",
+      "description": "Paste a link, get the whole marketing machine behind it: paid ads, organic social, SEO, Reddit, founders, funnel — evidence-cited. CLI, MCP server and a local web app that uses your Claude Code or Codex plan."
     },
     "emissor-nfse-nacional": {
       "title": "gabrielbuzziv/emissor-nfse-nacional",
@@ -3943,7 +4119,8 @@
         "api-integration"
       ],
       "risk": [],
-      "group": "Dev utilities"
+      "group": "Dev utilities",
+      "description": "Emissor de NFS-e direto na API do Sistema Nacional NFS-e, sem custo por nota, rodando na sua conta da Cloudflare."
     },
     "fritchii": {
       "title": "Frizti/Fritchii",
@@ -3957,7 +4134,8 @@
         "licensing-check",
         "experimental"
       ],
-      "group": "Additional ports/runtimes"
+      "group": "Additional ports/runtimes",
+      "description": "Frontier GREEN HAT BOY ADVENTURE specialized Lichii fork, i'm the goat"
     },
     "veyra-nrvideo": {
       "title": "Likely7/Veyra-NRVideo",
@@ -3970,7 +4148,8 @@
       "risk": [
         "experimental"
       ],
-      "group": "Video/media"
+      "group": "Video/media",
+      "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experie"
     },
     "comfyui": {
       "title": "Comfy-Org/ComfyUI",
@@ -3982,7 +4161,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Media and file utilities"
+      "group": "Media and file utilities",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world."
     },
     "viralcutter": {
       "title": "RafaelGodoyEbert/ViralCutter",
@@ -3996,7 +4176,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Video/media"
+      "group": "Video/media",
+      "description": "Free tool to create viral videos from YouTube, generating clips optimized for TikTok and Instagram with automatic transcription and 9:16 editing."
     },
     "piracy-1337x-to": {
       "title": "1337x — general torrent index",
@@ -4826,7 +5007,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Design skills"
+      "group": "Design skills",
+      "description": "Huashu Design 3.4 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / App Store 宣传图 / 小红书图文 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 92 种带样张的风格库 · 该是图的地方放真图 · HTML-native design skill for Claude Code, Codex, Cursor & any agent"
     },
     "dominikmartn-nothing-design-skill": {
       "title": "dominikmartn/nothing-design-skill",
@@ -4838,7 +5020,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Design skills"
+      "group": "Design skills",
+      "description": "A Claude Code skill for generating UI in the Nothing design language. Monochrome, typographic, industrial."
     },
     "kaankiziltug-logo-design-skill": {
       "title": "kaankiziltug/logo-design-skill",
@@ -4850,7 +5033,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Design skills"
+      "group": "Design skills",
+      "description": "A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library."
     },
     "nutlope-hallmark": {
       "title": "Nutlope/hallmark",
@@ -4862,7 +5046,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Design skills"
+      "group": "Design skills",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex."
     },
     "pbakaus-impeccable": {
       "title": "pbakaus/impeccable",
@@ -4874,7 +5059,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Design skills"
+      "group": "Design skills",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships."
     },
     "nexu-io-open-design": {
       "title": "nexu-io/open-design",
@@ -4886,7 +5072,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Design skills"
+      "group": "Design skills",
+      "description": "The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Share work, exchange feedback, and iterate together in one workspace."
     },
     "op7418-guizang-ppt-skill": {
       "title": "op7418/guizang-ppt-skill",
@@ -4898,7 +5085,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Design skills"
+      "group": "Design skills",
+      "description": "AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentation runtime."
     },
     "cocoon-ai-architecture-diagram-generator": {
       "title": "Cocoon-AI/architecture-diagram-generator",
@@ -4910,7 +5098,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Design skills"
+      "group": "Design skills",
+      "description": "Generate beautiful dark-themed system architecture diagrams as standalone HTML/SVG files. Works as a Claude AI skill."
     },
     "anthropics-skills": {
       "title": "anthropics/skills",
@@ -4921,7 +5110,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Skill collections"
+      "group": "Skill collections",
+      "description": "Public repository for Agent Skills"
     },
     "conardli-garden-skills": {
       "title": "ConardLi/garden-skills",
@@ -4932,7 +5122,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Skill collections"
+      "group": "Skill collections",
+      "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more."
     },
     "google-labs-code-stitch-skills": {
       "title": "google-labs-code/stitch-skills",
@@ -4943,7 +5134,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Skill collections"
+      "group": "Skill collections",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor."
     },
     "greensock-gsap": {
       "title": "greensock/GSAP",
@@ -4955,7 +5147,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "GSAP (GreenSock Animation Platform), a JavaScript animation library for the modern web"
     },
     "greensock-gsap-skills": {
       "title": "greensock/gsap-skills",
@@ -4967,7 +5160,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "Official AI skills for GSAP. These skills teach AI coding agents how to correctly use GSAP (GreenSock Animation Platform), including best practices, common animation patterns, and plugin usage."
     },
     "oil-oil-oil-motion": {
       "title": "oil-oil/oil-motion",
@@ -4979,7 +5173,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "Web animation skill for Claude Code & Codex. 帮你做跟着滚动和鼠标动的网页动画。"
     },
     "remotion-dev-remotion": {
       "title": "remotion-dev/remotion",
@@ -4991,7 +5186,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "🎥 Make videos programmatically with React"
     },
     "remotion-dev-skills": {
       "title": "remotion-dev/skills",
@@ -5003,7 +5199,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "Agent Skills"
     },
     "heygen-com-hyperframes": {
       "title": "heygen-com/hyperframes",
@@ -5015,7 +5212,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "Open-source AI video editor: edit your own footage, or create and remake any video with Claude Code, Codex or the free Studio app. Write HTML, render MP4. By HeyGen."
     },
     "mromidev-claude-animated-shorts": {
       "title": "mromidev/claude-animated-shorts",
@@ -5027,7 +5225,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "Free Claude skill: viral animated story shorts (2D characters in a 3D world) with three.js + Remotion"
     },
     "vincentwei1021-anything2explainer": {
       "title": "Vincentwei1021/anything2explainer",
@@ -5039,7 +5238,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion."
     },
     "vincentwei1021-video-shotcraft": {
       "title": "Vincentwei1021/video-shotcraft",
@@ -5051,7 +5251,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe cards, 150 motion previews, beat sync, sound design, Motion Workbench & JianYing (CapCut CN) export."
     },
     "openmontageinc-openmontage": {
       "title": "OpenMontageInc/OpenMontage",
@@ -5063,7 +5264,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio."
     },
     "patch-gg-pixelfx": {
       "title": "patch-gg/pixelfx",
@@ -5075,7 +5277,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own."
     },
     "divyaprakash0426-autoshorts": {
       "title": "divyaprakash0426/autoshorts",
@@ -5089,7 +5292,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Short-form clipping"
+      "group": "Short-form clipping",
+      "description": "Automatically generate viral-ready vertical short clips from long-form gameplay footage using AI-powered scene analysis, GPU-accelerated rendering, and optional AI voiceovers."
     },
     "jaywebtech-autoshorts": {
       "title": "JayWebtech/autoshorts",
@@ -5103,7 +5307,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Short-form clipping"
+      "group": "Short-form clipping",
+      "description": "AutoShorts is a local-first desktop application for turning long-form video or audio recordings into high-impact, vertical short-form clip candidates (9:16 portrait) with AI-powered viral moment ranking."
     },
     "minightdev-autoshorts": {
       "title": "MinightDev/Autoshorts",
@@ -5117,7 +5322,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Short-form clipping"
+      "group": "Short-form clipping",
+      "description": "Autoshorts AI transforms long videos into engaging viral shorts using the power of artificial intelligence. It analyzes video content, identifying key topics or moments likely to interest viewers. It then automatically generates shorts based on these topics."
     },
     "kamilstanuch-autocrop-vertical": {
       "title": "kamilstanuch/Autocrop-vertical",
@@ -5131,7 +5337,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Short-form clipping"
+      "group": "Short-form clipping",
+      "description": "Smart video converter using YOLOv8 and FFmpeg to convert horizontal video to vertical 9:16 format for social media."
     },
     "mutonby-openshorts": {
       "title": "mutonby/openshorts",
@@ -5145,7 +5352,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Short-form clipping"
+      "group": "Short-form clipping",
+      "description": "Open source AI clip generator: turns long videos into viral 9:16 shorts with AI moment detection, face tracking, subtitles and dubbing. Self-host free with Docker (MIT), or use the cloud with GPU speed from $12/mo. MCP server and API for AI agents."
     },
     "zhouxiaoka-autoclip": {
       "title": "zhouxiaoka/autoclip",
@@ -5159,7 +5367,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Short-form clipping"
+      "group": "Short-form clipping",
+      "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing."
     },
     "audacity-audacity": {
       "title": "audacity/audacity",
@@ -5170,7 +5379,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "Audio Editor"
     },
     "csteinmetz1-pyloudnorm": {
       "title": "csteinmetz1/pyloudnorm",
@@ -5181,7 +5391,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "Flexible audio loudness meter in Python with implementation of ITU-R BS.1770-4 loudness algorithm"
     },
     "facebookresearch-audiocraft": {
       "title": "facebookresearch/audiocraft",
@@ -5192,7 +5403,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "Audiocraft is a library for audio processing and generation with deep learning. It features the state-of-the-art EnCodec audio compressor / tokenizer, along with MusicGen, a simple and controllable music generation LM with textual and melodic conditioning."
     },
     "facebookresearch-demucs": {
       "title": "facebookresearch/demucs",
@@ -5203,7 +5415,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "Code for the paper Hybrid Spectrogram and Waveform Source Separation"
     },
     "fishaudio-fish-speech": {
       "title": "fishaudio/fish-speech",
@@ -5214,7 +5427,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "SOTA Open Source TTS"
     },
     "jiaaro-pydub": {
       "title": "jiaaro/pydub",
@@ -5225,7 +5439,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "Manipulate audio with a simple and easy high level interface"
     },
     "librosa-librosa": {
       "title": "librosa/librosa",
@@ -5236,7 +5451,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "Python library for audio and music analysis"
     },
     "m-bain-whisperx": {
       "title": "m-bain/whisperX",
@@ -5247,7 +5463,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "WhisperX: Automatic Speech Recognition with Word-level Timestamps (& Diarization)"
     },
     "openai-whisper": {
       "title": "openai/whisper",
@@ -5258,7 +5475,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "Robust Speech Recognition via Large-Scale Weak Supervision"
     },
     "systran-faster-whisper": {
       "title": "SYSTRAN/faster-whisper",
@@ -5269,7 +5487,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "Faster Whisper transcription with CTranslate2"
     },
     "pyannote-pyannote-audio": {
       "title": "pyannote/pyannote-audio",
@@ -5280,7 +5499,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "Neural building blocks for speaker diarization: speech activity detection, speaker change detection, overlapped speech detection, speaker embedding"
     },
     "spotify-basic-pitch": {
       "title": "spotify/basic-pitch",
@@ -5291,7 +5511,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "A lightweight yet powerful audio-to-MIDI converter with pitch bend detection"
     },
     "spotify-pedalboard": {
       "title": "spotify/pedalboard",
@@ -5302,7 +5523,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "🎛 🔊 A Python library for audio."
     },
     "suno-ai-bark": {
       "title": "suno-ai/bark",
@@ -5313,7 +5535,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "🔊 Text-Prompted Generative Audio Model"
     },
     "tonejs-tone-js": {
       "title": "Tonejs/Tone.js",
@@ -5324,7 +5547,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "A Web Audio framework for making interactive music in the browser."
     },
     "myshell-ai-openvoice": {
       "title": "myshell-ai/OpenVoice",
@@ -5337,7 +5561,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "Instant voice cloning by MIT and MyShell. Audio foundation model."
     },
     "rvc-project-retrieval-based-voice-conversion-webui": {
       "title": "RVC — retrieval-based voice conversion WebUI",
@@ -5350,7 +5575,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "Easily train a good VC model with voice data <= 10 mins!"
     },
     "ffmpeg-ffmpeg": {
       "title": "FFmpeg/FFmpeg",
@@ -5361,7 +5587,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Media and scientific libraries"
+      "group": "Media and scientific libraries",
+      "description": "Mirror of https://git.ffmpeg.org/ffmpeg.git"
     },
     "opencv-opencv": {
       "title": "opencv/opencv",
@@ -5372,7 +5599,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Media and scientific libraries"
+      "group": "Media and scientific libraries",
+      "description": "Open Source Computer Vision Library"
     },
     "python-pillow-pillow": {
       "title": "python-pillow/Pillow",
@@ -5383,7 +5611,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Media and scientific libraries"
+      "group": "Media and scientific libraries",
+      "description": "Python Imaging Library (fork)"
     },
     "numpy-numpy": {
       "title": "numpy/numpy",
@@ -5394,7 +5623,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Media and scientific libraries"
+      "group": "Media and scientific libraries",
+      "description": "The fundamental package for scientific computing with Python."
     },
     "scipy-scipy": {
       "title": "scipy/scipy",
@@ -5405,7 +5635,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Media and scientific libraries"
+      "group": "Media and scientific libraries",
+      "description": "SciPy library main repository"
     },
     "numba-numba": {
       "title": "numba/numba",
@@ -5416,7 +5647,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Media and scientific libraries"
+      "group": "Media and scientific libraries",
+      "description": "NumPy aware dynamic Python compiler using LLVM"
     },
     "puppeteer-puppeteer": {
       "title": "puppeteer/puppeteer",
@@ -5428,7 +5660,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "QA tools"
+      "group": "QA tools",
+      "description": "JavaScript API for Chrome and Firefox"
     },
     "blender-blender": {
       "title": "blender/blender",
@@ -5440,7 +5673,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "3D and game-engine agents"
+      "group": "3D and game-engine agents",
+      "description": "Official mirror of Blender"
     },
     "ahujasid-mcp-for-blender": {
       "title": "ahujasid/mcp-for-blender",
@@ -5452,7 +5686,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "3D and game-engine agents"
+      "group": "3D and game-engine agents",
+      "description": "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation."
     },
     "coplaydev-unity-mcp": {
       "title": "CoplayDev/unity-mcp",
@@ -5464,7 +5699,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "3D and game-engine agents"
+      "group": "3D and game-engine agents",
+      "description": "Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity."
     },
     "gamedev-skills-awesome-gamedev-agent-skills": {
       "title": "gamedev-skills/awesome-gamedev-agent-skills",
@@ -5476,7 +5712,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "3D and game-engine agents"
+      "group": "3D and game-engine agents",
+      "description": "Make games with your AI coding agent: 79 game-dev skills and a router for Godot, Unity, Unreal, Roblox, three.js, Phaser and 6 more engines. Checked on the real engines."
     },
     "0xcodez-duodesk": {
       "title": "0xCodez/DuoDesk",
@@ -5489,7 +5726,8 @@
       "risk": [
         "experimental"
       ],
-      "group": "General utilities"
+      "group": "General utilities",
+      "description": "All your computers and your phone, working as one desk. Aurora redesign of TwinDesk. GPL-3.0"
     },
     "francescoinweb3-status-2108882188624121896": {
       "title": "Build your own AI production studio (X thread)",
@@ -5548,7 +5786,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Web 3D and graphics libraries"
+      "group": "Web 3D and graphics libraries",
+      "description": "Procedural Noise Shader Routines compatible with WebGL"
     },
     "elalish-manifold": {
       "title": "elalish/manifold",
@@ -5560,7 +5799,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Web 3D and graphics libraries"
+      "group": "Web 3D and graphics libraries",
+      "description": "Geometry library for topological robustness"
     },
     "kripken-ammo-js": {
       "title": "kripken/ammo.js",
@@ -5572,7 +5812,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Web 3D and graphics libraries"
+      "group": "Web 3D and graphics libraries",
+      "description": "Direct port of the Bullet physics engine to JavaScript using Emscripten"
     },
     "metafizzy-zdog": {
       "title": "metafizzy/zdog",
@@ -5584,7 +5825,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Web 3D and graphics libraries"
+      "group": "Web 3D and graphics libraries",
+      "description": "Flat, round, designer-friendly pseudo-3D engine for canvas & SVG"
     },
     "mkkellogg-gaussiansplats3d": {
       "title": "mkkellogg/GaussianSplats3D",
@@ -5596,7 +5838,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Web 3D and graphics libraries"
+      "group": "Web 3D and graphics libraries",
+      "description": "Three.js-based implementation of 3D Gaussian splatting"
     },
     "n8python-n8ao": {
       "title": "N8python/n8ao",
@@ -5608,7 +5851,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Web 3D and graphics libraries"
+      "group": "Web 3D and graphics libraries",
+      "description": "An efficient and visually pleasing implementation of SSAO with an emphasis on temporal stability and artist control."
     },
     "veltman-flubber": {
       "title": "veltman/flubber",
@@ -5620,7 +5864,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Web 3D and graphics libraries"
+      "group": "Web 3D and graphics libraries",
+      "description": "Tools for smoother shape animations."
     },
     "zeux-meshoptimizer": {
       "title": "zeux/meshoptimizer",
@@ -5632,7 +5877,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Web 3D and graphics libraries"
+      "group": "Web 3D and graphics libraries",
+      "description": "Mesh optimization library that makes meshes smaller and faster to render"
     },
     "jannisx11-blockbench": {
       "title": "JannisX11/blockbench",
@@ -5644,7 +5890,8 @@
         "ux-design"
       ],
       "risk": [],
-      "group": "3D and game-engine agents"
+      "group": "3D and game-engine agents",
+      "description": "Blockbench - A low poly 3D model editor"
     },
     "dlr-rm-blenderproc": {
       "title": "DLR-RM/BlenderProc",
@@ -5656,7 +5903,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "3D and game-engine agents"
+      "group": "3D and game-engine agents",
+      "description": "A procedural Blender pipeline for photorealistic training image generation"
     },
     "cth9191-animate": {
       "title": "cth9191/animate",
@@ -5668,7 +5916,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "Procedural animation in any style for Claude Code: short single-file canvas videos with story, look and storyboard check-ins. 7 built-in styles or one matched from your references, your own music (beat-mapped), real product screenshots, every format from one piece."
     },
     "studioigor-3d-animator-skill": {
       "title": "studioigor/3d-animator-skill",
@@ -5692,7 +5941,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Design skills"
+      "group": "Design skills",
+      "description": "Skills for Designers and Engineers."
     },
     "elder-plinius-cl4r1t4s": {
       "title": "elder-plinius/CL4R1T4S",
@@ -5705,7 +5955,8 @@
       "risk": [
         "licensing-check"
       ],
-      "group": "Curated lists"
+      "group": "Curated lists",
+      "description": "LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPLIT, AND MORE! - AI SYSTEMS TRANSPARENCY FOR ALL! 👐"
     },
     "imnotsharingmyname-pcportastrobot": {
       "title": "imnotsharingmyname/pcportastrobot",
@@ -5735,7 +5986,8 @@
         "authorized-only",
         "experimental"
       ],
-      "group": "REA ecosystem"
+      "group": "REA ecosystem",
+      "description": "MCP (Model Context Protocol) server for game hacking & reverse engineering. A structured knowledge base of 6.000+ skills with full source code archives, specialized agents, and workflow tools - designed to be plugged into Claude, Codex, Cursor, or any MCP-compatible client."
     },
     "zhuyansen-awesome-claude-video-skills": {
       "title": "zhuyansen/awesome-claude-video-skills",
@@ -5747,7 +5999,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "Open-source skills and toolkits that let Claude Code, Codex and other coding agents make video. 180 repos by type, each security-graded. English / 中文."
     },
     "jamiepine-voicebox": {
       "title": "jamiepine/voicebox",
@@ -5758,7 +6011,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "The open-source AI voice studio. Clone, dictate, create."
     },
     "fknt-dev-zimatise-docs": {
       "title": "fknt-dev/zimatise_docs",
@@ -5769,7 +6023,8 @@
         "content-creation"
       ],
       "risk": [],
-      "group": "Media and file utilities"
+      "group": "Media and file utilities",
+      "description": "Zimatise Docs and Tutorials"
     },
     "x-com-celticmatheus-status-2121649610951110914": {
       "title": "CelticMatheus: AI-only YouTube channel walkthrough (X thread)",
@@ -5795,7 +6050,8 @@
         "backend"
       ],
       "risk": [],
-      "group": "Harnesses"
+      "group": "Harnesses",
+      "description": "The agent engineering platform."
     },
     "langchain-ai-social-media-agent": {
       "title": "langchain-ai/social-media-agent",
@@ -5810,7 +6066,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Harnesses"
+      "group": "Harnesses",
+      "description": "📲 An agent for sourcing, curating, and scheduling social media posts with human-in-the-loop."
     },
     "oxylabs-web-api-mcp": {
       "title": "oxylabs/web-api-mcp",
@@ -5824,7 +6081,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Computer/browser use"
+      "group": "Computer/browser use",
+      "description": "Self-hostable MCP server for the Oxylabs Web API"
     },
     "learningcircuit-local-deep-research": {
       "title": "LearningCircuit/local-deep-research",
@@ -5835,7 +6093,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Research skills"
+      "group": "Research skills",
+      "description": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted."
     },
     "dosukasol-pushfps": {
       "title": "DosukaSOL/PushFPS",
@@ -5846,7 +6105,8 @@
         "desktop"
       ],
       "risk": [],
-      "group": "Windows/PC"
+      "group": "Windows/PC",
+      "description": "PushFPS: push 30 FPS console games to 60 or 120 FPS. Real-time AI frame generation for any capture card on Windows, with NVIDIA RTX and AMD support. Free and open source, based on Veyra."
     },
     "alztrk-opentaskbar": {
       "title": "alztrk/opentaskbar",
@@ -5857,7 +6117,8 @@
         "desktop"
       ],
       "risk": [],
-      "group": "Windows/PC"
+      "group": "Windows/PC",
+      "description": "Lightweight macOS-inspired floating dock and taskbar replacement for Windows 10 and 11"
     },
     "unstructured-io-unstructured": {
       "title": "Unstructured-IO/unstructured",
@@ -5869,7 +6130,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Media and file utilities"
+      "group": "Media and file utilities",
+      "description": "Convert documents to structured data effortlessly. Unstructured is open-source ETL solution for transforming complex documents into clean, structured formats for language models. Visit our website to learn more about our enterprise grade Platform product for production grade workflows, partitioning,"
     },
     "allenai-olmocr": {
       "title": "allenai/olmocr",
@@ -5881,7 +6143,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Media and scientific libraries"
+      "group": "Media and scientific libraries",
+      "description": "Toolkit for linearizing PDFs for LLM datasets/training"
     },
     "facebookresearch-nougat": {
       "title": "facebookresearch/nougat",
@@ -5895,7 +6158,8 @@
       "risk": [
         "licensing-check"
       ],
-      "group": "Media and scientific libraries"
+      "group": "Media and scientific libraries",
+      "description": "Implementation of Nougat Neural Optical Understanding for Academic Documents"
     },
     "datalab-to-surya": {
       "title": "datalab-to/surya",
@@ -5909,7 +6173,8 @@
       "risk": [
         "licensing-check"
       ],
-      "group": "Media and scientific libraries"
+      "group": "Media and scientific libraries",
+      "description": "OCR, layout analysis, reading order, table recognition in 90+ languages"
     },
     "opendatalab-mineru": {
       "title": "opendatalab/MinerU",
@@ -5923,7 +6188,8 @@
       "risk": [
         "licensing-check"
       ],
-      "group": "Media and scientific libraries"
+      "group": "Media and scientific libraries",
+      "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows."
     },
     "paddlepaddle-paddleocr": {
       "title": "PaddlePaddle/PaddleOCR",
@@ -5935,7 +6201,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Media and scientific libraries"
+      "group": "Media and scientific libraries",
+      "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages."
     },
     "docling-project-docling": {
       "title": "docling-project/docling",
@@ -5947,7 +6214,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Media and scientific libraries"
+      "group": "Media and scientific libraries",
+      "description": "Get your documents ready for gen AI"
     },
     "ocrmypdf-ocrmypdf": {
       "title": "ocrmypdf/OCRmyPDF",
@@ -5959,7 +6227,8 @@
         "data-engineering"
       ],
       "risk": [],
-      "group": "Media and file utilities"
+      "group": "Media and file utilities",
+      "description": "OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched"
     },
     "jsvine-pdfplumber": {
       "title": "jsvine/pdfplumber",
@@ -5971,7 +6240,8 @@
         "data-analytics"
       ],
       "risk": [],
-      "group": "Media and file utilities"
+      "group": "Media and file utilities",
+      "description": "Plumb a PDF for detailed information about each char, rectangle, line, et cetera — and easily extract text and tables."
     },
     "krillinai-awesome-opus-animation": {
       "title": "krillinai/awesome-opus-animation",
@@ -5983,7 +6253,8 @@
         "frontend"
       ],
       "risk": [],
-      "group": "Curated lists"
+      "group": "Curated lists",
+      "description": "A curated collection of AI-assisted animations, interactive scenes, and playable projects, with previews, prompts, and creator credits. Starting with Claude Opus 5.5."
     },
     "davixavier-coder-skill-clips": {
       "title": "davixavier-coder/skill-clips",
@@ -6012,7 +6283,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Video/media"
+      "group": "Video/media",
+      "description": "Formerly KrillinAI, VideoTranslation and Dubbing Tool for 120+ Languages. Open-source AI workspace for creators, powered by Codex. Video downloader, video translation, create videos, images, audios, and edits with Agents in one place. For your Social Media like YouTube, TikTok, Instagram, etc."
     },
     "ace-step-ace-step-1-5": {
       "title": "ace-step/ACE-Step-1.5",
@@ -6025,7 +6297,8 @@
       "risk": [
         "licensing-check"
       ],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices."
     },
     "souzatharsis-podcastfy": {
       "title": "souzatharsis/podcastfy",
@@ -6037,7 +6310,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "group": "Audio and speech"
+      "group": "Audio and speech",
+      "description": "An Open Source Python alternative to NotebookLM's podcast feature: Transforming Multimodal Content into Captivating Multilingual Audio Conversations with GenAI"
     },
     "black-forest-labs-flux2": {
       "title": "black-forest-labs/flux2",
@@ -6051,7 +6325,8 @@
       "risk": [
         "licensing-check"
       ],
-      "group": "Video/media"
+      "group": "Video/media",
+      "description": "Official inference repo for FLUX.2 models"
     },
     "flashml-org-freevideo": {
       "title": "FlashML-org/FreeVideo",
@@ -6064,7 +6339,8 @@
       "risk": [
         "licensing-check"
       ],
-      "group": "Motion and video generation"
+      "group": "Motion and video generation",
+      "description": "Make videos on the computer you already own. FreeVideo runs MiniMax H3 in as little as 8 GB of VRAM and 16 GB of RAM, and adapts its acceleration path to your hardware."
     },
     "finktheartist-sakuga-vfx": {
       "title": "finktheartist/sakuga-vfx",
@@ -6076,7 +6352,8 @@
         "ux-design"
       ],
       "risk": [],
-      "group": "Web 3D and graphics libraries"
+      "group": "Web 3D and graphics libraries",
+      "description": "Twelve ordinary UI controls that react like anime. One file each, no dependencies."
     },
     "yils-lin-short-video-factory": {
       "title": "YILS-LIN/short-video-factory",
@@ -6090,7 +6367,8 @@
       "risk": [
         "tos-check"
       ],
-      "group": "Short-form clipping"
+      "group": "Short-form clipping",
+      "description": "一键生成产品营销与泛内容短视频，AI批量自动剪辑，高颜值跨平台桌面端工具 One click generation of product marketing and general content short videos, AI batch automatic cliping, beautiful cross platform desktop tool"
     },
     "renanleonel-windows-taskbar-battery": {
       "title": "renanleonel/windows-taskbar-battery",
@@ -6101,7 +6379,8 @@
         "desktop"
       ],
       "risk": [],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Battery levels of your wireless mouse, headset, earbuds and keyboard on the Windows 11 taskbar. Logitech (HID++) and Bluetooth. Tiny Rust app."
     },
     "smoovplay-smoovplay": {
       "title": "smoovplay/smoovplay",
@@ -6115,7 +6394,8 @@
       "risk": [
         "experimental"
       ],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Your console. Your GPU. Smoother gameplay. Open-source real-time frame generation & upscaling for console gaming."
     },
     "cathrynlavery-diagram-design": {
       "title": "cathrynlavery/diagram-design",
@@ -6129,7 +6409,8 @@
       ],
       "risk": [],
       "group": "Skill collections",
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop."
     },
     "senlindesign-taste-skill": {
       "title": "senlindesign/taste-skill",
@@ -6143,7 +6424,8 @@
       ],
       "risk": [],
       "group": "Skill collections",
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Claude Code skill — reverse-engineer any website's design taste: concrete tokens + opinionated trade-offs (WHY, not just WHAT)"
     },
     "graphify-labs-graphify": {
       "title": "Graphify-Labs/graphify",
@@ -6155,7 +6437,8 @@
         "data-engineering"
       ],
       "risk": [],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store."
     },
     "blader-humanizer": {
       "title": "blader/humanizer",
@@ -6168,7 +6451,8 @@
       ],
       "risk": [],
       "group": "Skill collections",
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Agent skill that removes signs of AI-generated writing from text"
     },
     "erkamyaman-rust-anything": {
       "title": "erkamyaman/rust-anything",
@@ -6183,7 +6467,8 @@
       "risk": [
         "experimental"
       ],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java."
     },
     "armur-ai-pentest-swarm-ai": {
       "title": "Armur-Ai/Pentest-Swarm-AI",
@@ -6197,7 +6482,8 @@
       "risk": [
         "authorized-only"
       ],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Open-source autonomous AI pentester (the open-source XBOW alternative). A swarm of recon, exploit and report agents tests web apps and REST/GraphQL APIs, checks findings with non-LLM verification oracles, and runs on Claude, Gemini, OpenAI-compatible or local Ollama models. Go, AGPL-3.0, alpha."
     },
     "zaproxy-zaproxy": {
       "title": "zaproxy/zaproxy",
@@ -6212,7 +6498,8 @@
       "risk": [
         "authorized-only"
       ],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "The ZAP by Checkmarx Core project"
     },
     "usestrix-strix": {
       "title": "usestrix/strix",
@@ -6226,7 +6513,8 @@
       "risk": [
         "authorized-only"
       ],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities."
     },
     "diegosouzapw-omniroute": {
       "title": "diegosouzapw/OmniRoute",
@@ -6240,7 +6528,8 @@
       "risk": [
         "experimental"
       ],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop"
     },
     "plusxbt-motion-design-x": {
       "title": "plusxbt: Motion design workflow (X post)",
@@ -6267,7 +6556,8 @@
       "risk": [
         "experimental"
       ],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Edit videos with coding agents"
     },
     "bradautomates-claude-video": {
       "title": "bradautomates/claude-video",
@@ -6281,7 +6571,8 @@
       "risk": [
         "experimental"
       ],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude."
     },
     "zarazhangrui-frontend-slides": {
       "title": "zarazhangrui/frontend-slides",
@@ -6293,7 +6584,8 @@
         "content-creation"
       ],
       "risk": [],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Create beautiful slides on the web using a coding agent's frontend skills"
     },
     "hugohe3-ppt-master": {
       "title": "hugohe3/ppt-master",
@@ -6305,7 +6597,8 @@
         "operations"
       ],
       "risk": [],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He"
     },
     "kyutai-labs-pocket-tts": {
       "title": "kyutai-labs/pocket-tts",
@@ -6317,7 +6610,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "A TTS that fits in your CPU (and pocket)"
     },
     "zyphra-zonos3-mini": {
       "title": "Zyphra/ZONOS3-Mini",
@@ -6331,7 +6625,8 @@
       "risk": [
         "licensing-check"
       ],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "compact zero-shot voice-cloning TTS with state-of-the-art performance, leading voice control, real-time on-device."
     },
     "gradium-ai-xn-ptts": {
       "title": "gradium-ai/xn-ptts",
@@ -6345,7 +6640,8 @@
       "risk": [
         "experimental"
       ],
-      "reviewed": "2026-11-17"
+      "reviewed": "2026-11-17",
+      "description": "Phonon TTS inference using xn"
     },
     "anil-matcha-ai-youtube-shorts-generator": {
       "title": "Anil-matcha/AI-Youtube-Shorts-Generator",
@@ -6360,7 +6656,8 @@
         "licensing-check"
       ],
       "reviewed": "2026-11-23",
-      "group": "Short-form clipping"
+      "group": "Short-form clipping",
+      "description": "Open-source alternative to Opus Clip, Vidyo.ai, Klap & SubMagic. Turn long-form YouTube videos into viral 9:16 shorts using LLM highlight detection, Whisper transcription, and auto vertical cropping — free, no watermarks, no per-clip credits."
     },
     "artbyjazi-autoclip": {
       "title": "artbyjazi/autoclip",
@@ -6375,7 +6672,8 @@
         "licensing-check"
       ],
       "reviewed": "2026-11-23",
-      "group": "Short-form clipping"
+      "group": "Short-form clipping",
+      "description": "Open-source, local-first AI video clipper. Long video in, caption-burned speaker-tracked 9:16 clips out. Fully offline with Whisper + Ollama, or bring your own API key."
     },
     "fujiwarachoki-supoclip": {
       "title": "FujiwaraChoki/supoclip",
@@ -6389,7 +6687,8 @@
         "licensing-check"
       ],
       "reviewed": "2026-11-23",
-      "group": "Short-form clipping"
+      "group": "Short-form clipping",
+      "description": "An open-source OpusClip alternative"
     },
     "mehbul-chopify": {
       "title": "mehbul/chopify",
@@ -6403,7 +6702,8 @@
         "licensing-check"
       ],
       "reviewed": "2026-11-23",
-      "group": "Short-form clipping"
+      "group": "Short-form clipping",
+      "description": "Free local AI video clipper for Shorts, Reels and TikTok. Browser dashboard and CLI with resumable batch projects, editable captions/SRT, brand presets, semantic search and podcast split-screen. Open source; no subscription or cloud upload."
     },
     "naufalrizqullah-opensource-clipping": {
       "title": "NaufalRizqullah/opensource-clipping",
@@ -6417,7 +6717,8 @@
         "licensing-check"
       ],
       "reviewed": "2026-11-23",
-      "group": "Short-form clipping"
+      "group": "Short-form clipping",
+      "description": "Open-source AI video clipper with Web Studio, CLI & Colab/Kaggle notebooks. Turn long videos and podcasts into shorts with face tracking, karaoke captions, split-screen, B-roll, voiceovers, and scheduled YouTube/Facebook uploads. Supports Gemini, NVIDIA NIM & self-hosted vLLM."
     },
     "hacck3y-gtavi-claudecode": {
       "title": "Hacck3y/gtavi-claudecode",
@@ -6434,7 +6735,8 @@
         "experimental"
       ],
       "reviewed": "2026-11-23",
-      "group": "Short-form clipping"
+      "group": "Short-form clipping",
+      "description": "It turns GTA 6 streams into vertical clips using Grok, Antigravity, Claude, or any coding agent."
     },
     "deenukhan-animation-styles": {
       "title": "deenukhan/animation-styles",
@@ -6446,7 +6748,8 @@
         "frontend"
       ],
       "risk": [],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "39 animation styles drawn in code with Remotion, as a Claude Code skill. One 5-second chai film in every style, ready to retell with your own story."
     },
     "shinyobjectz-raea": {
       "title": "shinyobjectz/raea",
@@ -6460,7 +6763,8 @@
       "risk": [
         "experimental"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Render Anything Engine: tell your AI what to make. Videos, motion graphics, 3D and games as React and TypeScript, rendered on your own GPU. Rust + Bevy, macOS, Linux and Windows."
     },
     "zenstory-ai-drama-skills": {
       "title": "zenstory-ai/drama-skills",
@@ -6472,7 +6776,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "AI 短剧与漫剧制作 Agent 技能包：小说改剧本、视觉设定、分镜、生图/生视频提示词与剪辑成片，适配 Claude Code / Codex 等 ｜ Agent skills for AI short dramas & motion comics"
     },
     "tubelabhq-youtube-research-skills": {
       "title": "TubeLabHQ/youtube-research-skills",
@@ -6486,7 +6791,8 @@
       "risk": [
         "tos-check"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "AI agent skills for YouTube research. Outlier videos, niche finding & validation, competitor research, comment mining, title formulas, thumbnail concepts, script breakdowns, monetization gaps & sponsor prospecting. Powered by TubeLab. Works with Claude Code, Cursor, Codex, ChatGPT, Grok."
     },
     "lllyasviel-fooocus": {
       "title": "lllyasviel/Fooocus",
@@ -6499,7 +6805,8 @@
       "risk": [
         "licensing-check"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Focus on prompting and generating"
     },
     "x-com-0xmovez-status-2104216919033192746": {
       "title": "Movez: motion design studio with Opus 5.5 (thread)",
@@ -6534,7 +6841,8 @@
         "ai-automation"
       ],
       "risk": [],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "The best way to control Claude Code, Codex and more from any computer or phone"
     },
     "el4cteo-fast-anything": {
       "title": "EL4CTEO/fast-anything",
@@ -6548,7 +6856,8 @@
       "risk": [
         "experimental"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same."
     },
     "n8n-io-n8n": {
       "title": "n8n-io/n8n",
@@ -6560,7 +6869,8 @@
         "api-integration"
       ],
       "risk": [],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
     },
     "hydra-ecosystem-hydra": {
       "title": "hydra-ecosystem/hydra",
@@ -6571,7 +6881,8 @@
         "backend"
       ],
       "risk": [],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Hydra is a framework for elegantly configuring complex applications"
     },
     "appflowy-io-appflowy": {
       "title": "AppFlowy-IO/AppFlowy",
@@ -6583,7 +6894,8 @@
         "desktop"
       ],
       "risk": [],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Bring projects, wikis, and teams together with AI. AppFlowy is the AI collaborative workspace where you achieve more without losing control of your data. The leading open source Notion alternative."
     },
     "penpot-penpot": {
       "title": "penpot/penpot",
@@ -6595,7 +6907,8 @@
         "frontend"
       ],
       "risk": [],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Penpot: The open-source design platform for Product teams that need scalable collaboration."
     },
     "calcom-cal-diy": {
       "title": "calcom/cal.diy",
@@ -6607,7 +6920,8 @@
         "api-integration"
       ],
       "risk": [],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Scheduling infrastructure for absolutely everyone."
     },
     "plausible-analytics": {
       "title": "plausible/analytics",
@@ -6619,7 +6933,8 @@
         "marketing"
       ],
       "risk": [],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Open source, privacy-first web analytics. Lightweight, cookie-free Google Analytics alternative. Self-hosted or cloud."
     },
     "bitwarden-server": {
       "title": "bitwarden/server",
@@ -6631,7 +6946,8 @@
         "backend"
       ],
       "risk": [],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Bitwarden infrastructure/backend (API, database, Docker, etc)."
     },
     "ebertti-awesome-telegram": {
       "title": "ebertti/awesome-telegram",
@@ -6642,7 +6958,8 @@
         "api-integration"
       ],
       "risk": [],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Collection great groups, channels, bots and libraries for Telegram"
     },
     "xiaoyouchr-ghost-downloader-3": {
       "title": "XiaoYouChR/Ghost-Downloader-3",
@@ -6655,7 +6972,8 @@
       "risk": [
         "licensing-check"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "The only downloader you need. 下载器的集大成者。"
     },
     "capture0x-bug-hunter": {
       "title": "capture0x/Bug-Hunter",
@@ -6668,7 +6986,8 @@
       "risk": [
         "authorized-only"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "A straightforward tool for bug bounty hunters to simplify vulnerability scanning"
     },
     "msnightmare-fastunlock": {
       "title": "MSNightmare/FastUnlock",
@@ -6682,7 +7001,8 @@
         "authorized-only",
         "experimental"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "FastUnlock : Windows Narrator LockScreen Bypass 0day Vulnerability"
     },
     "unvoiddd-dolphy-app": {
       "title": "unvoiddd/Dolphy-App",
@@ -6697,7 +7017,8 @@
         "authorized-only",
         "experimental"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Android multi-tool for wireless protocol research (NFC, BLE, IR) and mobile hardware emulation. No root required."
     },
     "lucas-blip-png-dkb-pc-recomp": {
       "title": "Lucas-blip-png/dkb-pc-recomp",
@@ -6712,7 +7033,8 @@
         "experimental",
         "licensing-check"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Static recompilation of Donkey Kong Bananza (Switch 2) to native Windows and Linux with Vulkan. 0.5.1 out: NVIDIA shader cache fix, player 2 rumble; one-file Windows launcher, presets, local co-op, 16:10, Thai. Requirements: docs/requirements.md. Roadmap: #10. No game files included."
     },
     "r0y00-xbox2windows": {
       "title": "R0Y00/Xbox2Windows",
@@ -6727,7 +7049,8 @@
         "experimental",
         "licensing-check"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Static recompilation research for Xbox Series X|S software on x64 Windows, with source-built CPU and GPU tests. Full-game startup is unverified."
     },
     "sammwyy-xvalkyrie": {
       "title": "sammwyy/xvalkyrie",
@@ -6741,7 +7064,8 @@
         "experimental",
         "licensing-check"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Experimental Xbox One (Durango) & Series X|S (Scarlett) compatibility layer for Windows"
     },
     "baairon-torlink": {
       "title": "baairon/torlink",
@@ -6754,7 +7078,8 @@
       "risk": [
         "piracy"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "👾 A sleek, zero-setup torrent finder and downloader that lives right in your terminal."
     },
     "duwqijlk-google-trial-tool": {
       "title": "duwqijlk/google-trial-tool",
@@ -6796,7 +7121,8 @@
         "tos-check",
         "experimental"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Chrome Extension (MV3) to switch Google's mandatory QR code verification back to standard 6-digit SMS verification via iPad Mini profile & [3,null,4] RPC fallback."
     },
     "jenkinwoo-sheeridverify": {
       "title": "JenkinWoo/sheeridVerify",
@@ -6839,7 +7165,8 @@
         "experimental",
         "licensing-check"
       ],
-      "reviewed": "2026-11-23"
+      "reviewed": "2026-11-23",
+      "description": "Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6"
     }
   }
 }

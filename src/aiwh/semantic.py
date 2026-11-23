@@ -52,7 +52,7 @@ def _collect_documents(home=DEFAULT_HOME, source='all', project=None):
                 'title': ref.get('title', ''),
                 'url': ref.get('url', ''),
                 'tags': ' '.join([ref.get('category', ''), ref.get('kind', '')] + ref.get('areas', [])),
-                'body': ' '.join(ref.get('risk', [])),
+                'body': ' '.join([ref.get('description', '')] + ref.get('risk', [])),
             })
     if source in ('all', 'skills'):
         from .workbench import registry

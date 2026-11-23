@@ -4,8 +4,10 @@ Safety properties:
 - References are suggestions; nothing is cloned, installed or executed.
 - Freshness checks only read public repository metadata through an already
   authenticated ``gh`` binary, and only when the user explicitly runs them.
-- Curation reads user-selected sources and prints candidates; it never edits
-  the canonical catalog or stores personal bookmark metadata in the repository.
+- Curation reads user-selected sources and prints candidates. Only an explicit
+  ``--accept``/``--decisions`` edits the canonical catalog, and it stores public
+  fields only (never folders, dates added or other personal bookmark metadata).
+- Rejections live in the private home directory, never in the repository.
 """
 from __future__ import annotations
 
@@ -21,7 +23,9 @@ from .workbench import CAPABILITIES, ROOT
 
 CATALOG_PATH = CAPABILITIES / 'references' / 'catalog.json'
 KINDS = {'repository', 'list', 'guide', 'site', 'tool', 'book', 'paper', 'course'}
-REFERENCE_KEYS = {'title', 'url', 'category', 'kind', 'areas', 'risk', 'group', 'reviewed', 'license'}
+REFERENCE_KEYS = {'title', 'url', 'category', 'kind', 'areas', 'risk', 'group', 'reviewed', 'license',
+                  'description'}
+DESCRIPTION_LIMIT = 300
 DEFAULT_LIMIT = 10
 DEFAULT_DOCUMENT = ROOT / 'docs' / 'REFERENCES.md'
 
@@ -81,6 +85,10 @@ def validate_references(data=None):
             raise ValueError(f'Reference {key} reviewed date must be YYYY-MM-DD')
         if 'license' in ref and (not isinstance(ref['license'], str) or not ref['license'].strip()):
             raise ValueError(f'Reference {key} license note must be a non-empty string')
+        if 'description' in ref and (not isinstance(ref['description'], str) or not ref['description'].strip()
+                                     or len(ref['description']) > DESCRIPTION_LIMIT):
+            raise ValueError(f'Reference {key} description must be a non-empty string of at most '
+                             f'{DESCRIPTION_LIMIT} characters')
         reviewed += 'reviewed' in ref
         canonical = canonical_url(url)
         if canonical in seen:
@@ -223,6 +231,146 @@ def check_references(*, stale_days=365, fetch=None, today=None):
     return report
 
 
+README_PATH = ROOT / 'README.md'
+_README_COUNTS = {
+    'references': [r'(\*\*)(\d+)(\*\* curated public references)', r'(Filter )(\d+)( curated public references)'],
+    'skills': [r'(Validates \*\*)(\d+)(\*\* canonical skills)', r'(profiles, )(\d+)( skills,)'],
+}
+
+
+def readme_counts():
+    """Counts the README states, computed from the catalogs it describes."""
+    from .workbench import registry
+    return {'references': len(reference_catalog()['references']), 'skills': len(registry()['skills'])}
+
+
+def readme_with_counts(text, counts=None):
+    counts = counts or readme_counts()
+    for name, patterns in _README_COUNTS.items():
+        for pattern in patterns:
+            text = re.sub(pattern, lambda m, n=name: f'{m.group(1)}{counts[n]}{m.group(3)}', text)
+    return text
+
+
+def readme_is_current(path=README_PATH):
+    text = Path(path).read_bytes().decode('utf-8')
+    return text == readme_with_counts(text)
+
+
+def write_readme_counts(path=README_PATH):
+    """Rewrite only the count tokens in README; returns True when the file changed."""
+    path = Path(path)
+    raw = path.read_bytes().decode('utf-8')
+    updated = readme_with_counts(raw)
+    if updated == raw:
+        return False
+    path.write_bytes(updated.encode('utf-8'))
+    return True
+
+
+def reference_key(url):
+    """Stable catalog key: ``owner-repo`` for GitHub, host-and-path slug otherwise."""
+    base = re.sub(r'^https?://', '', repo_key(url))
+    base = re.sub(r'^github\.com/', '', base)
+    return re.sub(r'[^a-z0-9]+', '-', base.lower()).strip('-')[:80]
+
+
+def _today():
+    return datetime.now(timezone.utc).date().isoformat()
+
+
+def accept_reference(entry, *, catalog_path=None, today=None):
+    """Add one reviewed reference to the canonical catalog; returns its key.
+
+    ``entry`` needs url, category and areas; title defaults to the GitHub slug or URL,
+    kind to ``repository`` for GitHub and ``site`` otherwise. Raises ValueError on
+    duplicates or invalid fields; the file is only written after validation passes.
+    """
+    from .core import redact_url, sensitive_url_reason
+    path = Path(catalog_path or CATALOG_PATH)
+    data = json.loads(path.read_text(encoding='utf-8'))
+    url = str(entry.get('url', '')).strip()
+    if not url:
+        raise ValueError('accept needs a url')
+    reason = sensitive_url_reason(url)
+    if reason:
+        raise ValueError(f'Refusing to add {url[:80]}: {reason}')
+    url = redact_url(url)
+    wanted = repo_key(url)
+    for key, ref in data['references'].items():
+        if repo_key(ref['url']) == wanted:
+            raise ValueError(f'Already in catalog as {key}')
+    slug = _github_slug(url)
+    ref = {'title': entry.get('title') or slug or url,
+           'url': url,
+           'category': entry.get('category'),
+           'kind': entry.get('kind') or ('repository' if slug else 'site'),
+           'areas': list(entry.get('areas') or []),
+           'risk': list(entry.get('risk') or []),
+           'reviewed': entry.get('reviewed') or today or _today()}
+    for optional in ('group', 'license', 'description'):
+        if entry.get(optional):
+            value = ' '.join(str(entry[optional]).split())
+            ref[optional] = value[:DESCRIPTION_LIMIT] if optional == 'description' else value
+    key = entry.get('key') or reference_key(url)
+    if key in data['references']:
+        raise ValueError(f'Catalog key {key} already exists; pass an explicit key')
+    data['references'][key] = ref
+    validate_references(data)
+    path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n', encoding='utf-8', newline='\n')
+    return key
+
+
+def load_decisions(path):
+    """Read a curation decisions file (JSON or YAML).
+
+    Either a mapping ``{accept: [...], reject: [...]}`` or a list whose items carry
+    ``decision: accept|reject`` (accept is the default).
+    """
+    path = Path(path)
+    text = path.read_text(encoding='utf-8')
+    if path.suffix.lower() in {'.yaml', '.yml'}:
+        import yaml
+        data = yaml.safe_load(text)
+    else:
+        data = json.loads(text)
+    if isinstance(data, list):
+        if not all(isinstance(d, dict) for d in data):
+            raise ValueError(f'{path}: every decision must be a mapping')
+        data = {'accept': [d for d in data if d.get('decision', 'accept') == 'accept'],
+                'reject': [d for d in data if d.get('decision') == 'reject']}
+    if not isinstance(data, dict):
+        raise ValueError(f'{path}: expected a list or a mapping with accept/reject')
+    return {'accept': list(data.get('accept') or []), 'reject': list(data.get('reject') or [])}
+
+
+def rejections_path(home):
+    return Path(home) / 'curation-rejections.json'
+
+
+def read_rejections(home):
+    path = rejections_path(home)
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding='utf-8'))
+    return data.get('rejected', {}) if isinstance(data, dict) else {}
+
+
+def reject_reference(home, url, reason='', today=None):
+    """Record a private rejection so curate stops listing the URL; returns its key."""
+    home = Path(home)
+    home.mkdir(parents=True, exist_ok=True)
+    rejected = read_rejections(home)
+    key = repo_key(url)
+    rejected[key] = {'reason': ' '.join(str(reason or '').split()), 'at': today or _today()}
+    path = rejections_path(home)
+    tmp = path.with_name(path.name + '.tmp')
+    tmp.write_text(json.dumps({'version': 1, 'rejected': dict(sorted(rejected.items()))},
+                              indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+    tmp.replace(path)
+    return key
+
+
 def known_urls():
     """Every URL referenced by canonical capabilities and public docs."""
     text = []
@@ -248,10 +396,13 @@ def suggest_areas(item, area_entries=None):
     return [{'area': key, 'terms': hits[:4]} for _, key, hits in scored[:3]]
 
 
-def curate(incoming, *, baseline=(), known=None):
-    """Return reference candidates that are new to the repository (and baseline)."""
+def curate(incoming, *, baseline=(), known=None, rejected=()):
+    """Return reference candidates new to the repository (and baseline), minus private rejections."""
+    from .core import sanitize_resources
     known = known if known is not None else known_urls()
-    skip = {repo_key(url) for url in known} | {repo_key(item.get('url')) for item in baseline}
+    incoming, _ = sanitize_resources(incoming)
+    skip = ({repo_key(url) for url in known} | {repo_key(item.get('url')) for item in baseline}
+            | {repo_key(url) for url in rejected})
     candidates, seen = [], set()
     for item in incoming:
         url = repo_key(item.get('url'))

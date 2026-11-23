@@ -76,7 +76,7 @@ Global option: `--home PATH` (overrides `~/.ai-workbench-hub`) precedes the subc
 | `areas` / `profiles` / `capabilities` | List the 27 composable areas, 29 technical profiles, 54 skills, and 21 agent role templates |
 | `recommend` | Explainable area/skill/MCP/plugin plan with top-5 contextual shortlist and MCP Advisor (`--json`) |
 | `search` | Local SQLite FTS5 (or hybrid `sqlite-vec` + `fastembed` RRF) search across private catalog and public references |
-| `sync` / `curate` / `attach` / `report` | Read-only ingestion (`gh` stars, Chromium/HTML bookmarks), candidate triage, project attachment, and offline HTML view (`--html`) |
+| `sync` / `curate` / `attach` / `report` | Read-only ingestion (`gh` stars, Chromium/HTML bookmarks; account-specific and credential-bearing URLs are dropped or redacted), candidate triage with `curate --accept`/`--reject`/`--decisions` (rejections stay private), project attachment, and offline HTML view (`--html`) |
 | `references` / `catalog check` | Filter 535 curated public references (`--area`, `--risk`, `--unreviewed`), regenerate `docs/REFERENCES.md` (`--write`/`--check`), or check GitHub freshness |
 | `skills lint \| import` | Lint skills (`--strict` exits 1 on findings) or import local skills with provenance (`--dry-run`) |
 | `mcp plan` | Preview MCP config for `claude`, `codex`, `hermes`, or `generic` (`--apply` writes manifest-owned Claude `.mcp.json`) |

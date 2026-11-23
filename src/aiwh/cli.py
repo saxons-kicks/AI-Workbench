@@ -9,7 +9,7 @@ from pathlib import Path
 from .core import (DEFAULT_HOME, attach, browser_html_export, catalog_metadata,
                    chromelike_bookmarks, detect_browser_files, github_from_gh, github_stars,
                    json_read, last_new_batch, merged_index, new_since, record_sync, now, project_profile, read_catalog,
-                   save_catalog)
+                   sanitize_resources, save_catalog)
 from .workbench import (AGENTS, bootstrap, inspect_project, registry, resume,
                         global_integration, remove_managed)
 from .areas import catalog as area_catalog, recommend, markdown_plan, validate_catalog
@@ -40,6 +40,19 @@ def get_parser():
     cu.add_argument('--enrich', action='store_true', help='opt-in local Ollama enrichment (summary, areas, risk)')
     cu.add_argument('--model', help='local Ollama model name for --enrich')
     cu.add_argument('--output', type=Path, help='write the Markdown/JSON report to this file')
+    cu.add_argument('--include-rejected', action='store_true', help='also list privately rejected URLs')
+    cu.add_argument('--accept', metavar='URL', help='add a reviewed URL to capabilities/references/catalog.json')
+    cu.add_argument('--reject', metavar='URL', help='record a private rejection so curate stops listing URL')
+    cu.add_argument('--decisions', type=Path, metavar='FILE',
+                    help='apply a JSON/YAML file of accept/reject decisions')
+    cu.add_argument('--category', help='--accept: catalog category')
+    cu.add_argument('--areas', nargs='+', default=[], help='--accept: one or more areas')
+    cu.add_argument('--risk', nargs='*', default=[], help='--accept: risk labels')
+    cu.add_argument('--kind', help='--accept: repository, site, tool, list, guide, ...')
+    cu.add_argument('--title', help='--accept: title (default: GitHub owner/repo or URL)')
+    cu.add_argument('--group', help='--accept: optional group label')
+    cu.add_argument('--description', help='--accept: short public description')
+    cu.add_argument('--reason', default='', help='--reject: private note on why')
     rf = sub.add_parser('references', help='list curated public references with risk labels')
     rf.add_argument('--area', action='append', default=[])
     rf.add_argument('--risk', help='only references carrying this risk label')
@@ -260,6 +273,19 @@ def _utf8_stdout():
 def main(argv=None):
     _utf8_stdout()
     args = get_parser().parse_args(argv)
+    if args.command in {'sync', 'curate'}:
+        try:
+            return _main(args)
+        except FileNotFoundError as error:
+            print(f'aiwh {args.command}: file not found: {error.filename or error}', file=sys.stderr)
+            return 2
+        except (ValueError, RuntimeError) as error:
+            print(f'aiwh {args.command}: {error}', file=sys.stderr)
+            return 2
+    return _main(args)
+
+
+def _main(args):
     home = args.home.expanduser()
     if args.command == 'init':
         report = bootstrap(args.path, agent=args.agent, profiles=args.profile or None,
@@ -378,6 +404,9 @@ def main(argv=None):
         if not has_source:
             print('Specify a source: aiwh sync --browser-auto --github (or --show-new to list the last batch)')
             return 2
+        incoming, dropped = sanitize_resources(incoming)
+        if dropped:
+            print(f'Skipped {dropped} account-specific or oversized URLs (not stored).')
         old = read_catalog(home)
         stamp = now()
         merged = merged_index(old, incoming, seen_at=stamp)
@@ -418,7 +447,34 @@ def main(argv=None):
         print(json.dumps(result, indent=2, ensure_ascii=False))
         return 0
     if args.command == 'curate':
-        from .references import curate, curate_markdown
+        from .references import (accept_reference, curate, curate_markdown, load_decisions, read_rejections,
+                                 reject_reference, write_document, write_readme_counts)
+        if args.accept or args.reject or args.decisions:
+            accepts, rejects = [], []
+            if args.accept:
+                accepts.append({'url': args.accept, 'category': args.category, 'areas': args.areas,
+                                'risk': args.risk, 'kind': args.kind, 'title': args.title,
+                                'group': args.group, 'description': args.description})
+            if args.reject:
+                rejects.append({'url': args.reject, 'reason': args.reason})
+            if args.decisions:
+                loaded = load_decisions(args.decisions)
+                accepts += loaded['accept']
+                rejects += loaded['reject']
+            failures = 0
+            for entry in accepts:
+                try:
+                    print(f'Accepted: {accept_reference(entry)}')
+                except ValueError as error:
+                    failures += 1
+                    print(f'Not accepted {entry.get("url")}: {error}', file=sys.stderr)
+            for entry in rejects:
+                print(f'Rejected (private): {reject_reference(home, entry["url"], entry.get("reason", ""))}')
+            if accepts and failures < len(accepts):
+                print(f'Written: {write_document()}')
+                if write_readme_counts():
+                    print('README counts updated.')
+            return 1 if failures else 0
         incoming = []
         for path in args.html:
             incoming += browser_html_export(path)
@@ -435,7 +491,8 @@ def main(argv=None):
             print('The specified sources yielded 0 items.')
             return 0
         baseline = [x for path in args.baseline_html for x in browser_html_export(path)]
-        candidates = curate(incoming, baseline=baseline)
+        rejected = () if args.include_rejected else read_rejections(home)
+        candidates = curate(incoming, baseline=baseline, rejected=rejected)
         if args.enrich and candidates:
             from .enrich import enrich_candidates
             candidates = enrich_candidates(candidates, model=args.model)
@@ -447,17 +504,23 @@ def main(argv=None):
             print(text, end='')
         return 0
     if args.command == 'references':
-        from .references import (DEFAULT_DOCUMENT, document_is_current, references_for, references_markdown,
-                                 risk_suffix, validate_references, write_document)
+        from .references import (DEFAULT_DOCUMENT, document_is_current, readme_is_current, references_for,
+                                 references_markdown, risk_suffix, validate_references, write_document,
+                                 write_readme_counts)
         validate_references()
         if args.write is not None and args.check is not None:
             print('Use either --write or --check, not both.')
             return 2
         if args.write is not None:
             print(f'Written: {write_document(DEFAULT_DOCUMENT if args.write is True else args.write)}')
+            if args.write is True and write_readme_counts():
+                print('README counts updated.')
             return 0
         if args.check is not None:
             target = DEFAULT_DOCUMENT if args.check is True else args.check
+            if args.check is True and not readme_is_current():
+                print('Out of date: README.md counts (run aiwh references --write)')
+                return 1
             if document_is_current(target):
                 print(f'Current: {target}')
                 return 0

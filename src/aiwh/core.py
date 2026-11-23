@@ -56,6 +56,63 @@ def canonical_url(value):
         return value
 
 
+# Hosts whose bookmarked URLs are per-account checkout, payment or sign-in flows; never stored.
+SENSITIVE_HOSTS = {'tokenized.play.google.com', 'payments.google.com', 'pay.google.com',
+                   'accounts.google.com', 'login.microsoftonline.com', 'checkout.stripe.com'}
+# Query parameters that carry credentials, session state or account identifiers; stripped before storage.
+SENSITIVE_PARAMS = {'token', 'access_token', 'id_token', 'refresh_token', 'auth', 'authuser', 'rpctoken',
+                    'session', 'sessionid', 'sid', 'ear', 'apikey', 'api_key', 'secret', 'password',
+                    'signature', 'jsh', '_gfid', 'x-amz-signature', 'x-amz-credential',
+                    'x-amz-security-token'}
+MAX_URL_LENGTH = 2048
+
+
+def sensitive_url_reason(value):
+    """Why a URL must not be stored at all (sensitive host or oversized), or '' when it may be kept."""
+    value = str(value or '').strip()
+    if len(value) > MAX_URL_LENGTH:
+        return f'longer than {MAX_URL_LENGTH} characters'
+    try:
+        host = (urlsplit(value).hostname or '').lower()
+    except ValueError:
+        return ''
+    if host in SENSITIVE_HOSTS:
+        return f'account-specific host {host}'
+    return ''
+
+
+def redact_url(value):
+    """URL without credential/session query parameters; other parts are kept unchanged."""
+    value = str(value or '').strip()
+    try:
+        p = urlsplit(value)
+    except ValueError:
+        return value
+    if not p.query:
+        return value
+    pairs = parse_qsl(p.query, keep_blank_values=True)
+    kept = [(k, v) for k, v in pairs if k.lower() not in SENSITIVE_PARAMS]
+    if len(kept) == len(pairs):
+        return value
+    return urlunsplit((p.scheme, p.netloc, p.path, urlencode(kept), p.fragment))
+
+
+def sanitize_resources(items):
+    """(kept, dropped_count): sensitive URLs removed, credential parameters stripped from the rest."""
+    kept, dropped = [], 0
+    for item in items:
+        if sensitive_url_reason(item.get('url')):
+            dropped += 1
+            continue
+        clean = redact_url(item.get('url'))
+        if clean != item.get('url'):
+            item = {**item, 'url': clean}
+            if item.get('canonical_url'):
+                item['canonical_url'] = canonical_url(clean)
+        kept.append(item)
+    return kept, dropped
+
+
 _GITHUB_REPO = re.compile(r'^(?:https?://)?(?:www\.)?github\.com/([^/?#\s]+)/([^/?#\s]+)', re.I)
 
 
@@ -192,7 +249,13 @@ def categories_for(item, taxonomy=None):
 def merged_index(old, incoming, seen_at=None):
     """Merge resources; new IDs get ``first_seen`` so later reports can show deltas."""
     seen_at = seen_at or now()
-    db = {str(x['id']): x for x in old}
+    old, _ = sanitize_resources(old)
+    incoming, _ = sanitize_resources(incoming)
+    db = {}
+    for item in old:
+        normalized = canonical_url(item.get('url'))
+        key = hashlib.sha256(normalized.encode('utf-8')).hexdigest()[:20] if normalized else str(item['id'])
+        db[key] = {**item, 'id': key, 'canonical_url': normalized} if key != str(item['id']) else item
     for item in incoming:
         normalized = canonical_url(item.get('url'))
         if not normalized:
@@ -233,7 +296,9 @@ def catalog_metadata(home=DEFAULT_HOME):
 
 def read_catalog(home=DEFAULT_HOME):
     path = Path(home) / 'catalog.json'
-    return json_read(path).get('items', []) if path.exists() else []
+    if not path.exists():
+        return []
+    return sanitize_resources(json_read(path).get('items', []))[0]
 
 
 SYNC_HISTORY_LIMIT = 20
