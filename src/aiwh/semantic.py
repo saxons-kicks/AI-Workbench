@@ -90,6 +90,13 @@ def _collect_documents(home=DEFAULT_HOME, source='all', project=None):
                         })
             except (OSError, ValueError):
                 pass
+    if source in ('all', 'docs'):
+        from .doc_index import collect_registered_documents
+        seen = {d['key'] for d in docs}
+        for doc in collect_registered_documents(home):
+            if doc['key'] not in seen:
+                seen.add(doc['key'])
+                docs.append(doc)
     return docs
 
 

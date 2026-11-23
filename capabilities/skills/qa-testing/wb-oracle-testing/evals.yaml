@@ -1,0 +1,10 @@
+- description: plants failures to validate the oracle
+  prompt: "How do I know my comparison oracle for a ported parser is trustworthy?"
+  assert:
+    - {type: regex, value: "(?i)(planted|mutant|wrong variant)"}
+    - {type: icontains, value: reference}
+- description: re-audits after an oracle fix
+  prompt: "My oracle accepted a planted wrong variant. I fixed it. Can I trust the earlier green runs?"
+  assert:
+    - {type: regex, value: "(?i)(suspect|re-run|rerun|audit)"}
+    - {type: not-icontains, value: "yes, you can trust"}

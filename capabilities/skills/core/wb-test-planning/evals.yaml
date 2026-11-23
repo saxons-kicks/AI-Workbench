@@ -1,0 +1,13 @@
+- description: covers negative and edge cases
+  prompt: "Plan tests for a feature: users can transfer money between their own accounts."
+  assert:
+    - {type: icontains, value: negative}
+    - {type: icontains, value: edge}
+    - {type: icontains, value: unit}
+- description: maps scenarios to test layers
+  prompt: "Plan tests for a REST endpoint POST /orders that persists to a database."
+  assert:
+    - {type: regex, value: "(?i)(contract|api)"}
+    - {type: icontains, value: integration}
+    - type: llm-rubric
+      value: The plan maps scenarios to test layers and priority and does not invent test results.

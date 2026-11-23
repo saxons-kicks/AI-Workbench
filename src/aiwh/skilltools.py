@@ -36,6 +36,9 @@ HYPE_PHRASES = re.compile(
 )
 
 
+DEFAULT_BUDGET_BYTES = 8192
+
+
 def _frontmatter_and_body(path):
     text = path.read_text(encoding='utf-8')
     lines = text.splitlines()
@@ -58,13 +61,30 @@ def _body_lines(body):
             if line.strip() and not line.lstrip().startswith('#') and len(line.strip()) > 20}
 
 
-def lint_skills(skills=None, *, shared_threshold=None, similarity=0.6):
-    """Report vague metadata, oversized bodies and duplicated boilerplate. Warnings only."""
+def _budget_override(path):
+    """Optional integer ``budget_bytes:`` frontmatter key (extra keys are allowed by validation)."""
+    text = Path(path).read_text(encoding='utf-8')
+    lines = text.splitlines()
+    end = lines.index('---', 1)
+    match = re.search(r'^budget_bytes:\s*(\d+)\s*$', '\n'.join(lines[1:end]), re.MULTILINE)
+    return int(match.group(1)) if match else None
+
+
+def lint_skills(skills=None, *, shared_threshold=None, similarity=0.6, budget_bytes=DEFAULT_BUDGET_BYTES):
+    """Report vague metadata, oversized skills and duplicated boilerplate. Warnings only.
+
+    ``budget_bytes`` caps the size of each SKILL.md (0 or None disables); a skill may
+    override it with a ``budget_bytes: N`` frontmatter key.
+    """
     skills = skills or registry()['skills']
     data = {}
     for name, directory in sorted(skills.items()):
-        description, body = _frontmatter_and_body(Path(directory) / 'SKILL.md')
-        data[name] = {'description': description, 'body': body, 'lines': _body_lines(body)}
+        skill_file = Path(directory) / 'SKILL.md'
+        description, body = _frontmatter_and_body(skill_file)
+        data[name] = {'description': description, 'body': body, 'lines': _body_lines(body),
+                      'bytes': skill_file.stat().st_size,
+                      'tokens': estimate_tokens(skill_file.read_text(encoding='utf-8')),
+                      'budget': _budget_override(skill_file) or budget_bytes}
     counts = {}
     for entry in data.values():
         for line in entry['lines']:
@@ -83,6 +103,10 @@ def lint_skills(skills=None, *, shared_threshold=None, similarity=0.6):
         if tokens > 5000:
             findings.append({'skill': name, 'rule': 'large-body',
                              'detail': f'~{tokens} tokens; move details to referenced files'})
+        if entry['budget'] and entry['bytes'] > entry['budget']:
+            findings.append({'skill': name, 'rule': 'size-budget',
+                             'detail': f"SKILL.md is {entry['bytes']} bytes (~{entry['tokens']} tokens), "
+                                       f"over the {entry['budget']}-byte budget; move details to referenced files"})
         if entry['lines']:
             ratio = len(entry['lines'] & shared) / len(entry['lines'])
             if ratio >= 0.5:

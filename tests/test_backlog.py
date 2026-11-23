@@ -316,6 +316,24 @@ class SkillToolTests(unittest.TestCase):
         self.assertIn(('near-duplicate', 'a-one, a-three, a-two'), rules)
         self.assertFalse([f for f in result['findings'] if f['skill'] == 'good'])
 
+    def test_size_budget_rule_and_override(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            desc = 'Detailed description of when this specific skill applies.'
+            dirs = {'big': skill(temporary, 'big', desc, 'unique line number one here ' * 100),
+                    'small': skill(temporary, 'small', desc, 'tiny distinct body of text here')}
+            over = lambda r: [f['skill'] for f in r['findings'] if f['rule'] == 'size-budget']
+            self.assertEqual(over(lint_skills(dirs, budget_bytes=1000)), ['big'])
+            self.assertIn('tokens', lint_skills(dirs, budget_bytes=1000)['findings'][0]['detail'])
+            self.assertEqual(over(lint_skills(dirs, budget_bytes=0)), [])
+            self.assertEqual(over(lint_skills(dirs)), [])
+            text = (dirs['big'] / 'SKILL.md').read_text(encoding='utf-8')
+            (dirs['big'] / 'SKILL.md').write_text(text.replace('description:', 'budget_bytes: 5000\ndescription:', 1),
+                                                  encoding='utf-8')
+            self.assertEqual(over(lint_skills(dirs, budget_bytes=1000)), [])
+
+    def test_repository_skills_within_default_budget(self):
+        self.assertFalse([f for f in lint_skills()['findings'] if f['rule'] == 'size-budget'])
+
     def test_repository_lint_runs(self):
         result = lint_skills()
         self.assertEqual(result['skills'], 54)

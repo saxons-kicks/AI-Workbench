@@ -8,6 +8,7 @@ from __future__ import annotations
 import ast
 import json
 import os
+import re
 from pathlib import Path
 
 from .areas import IGNORED
@@ -138,6 +139,7 @@ def map_project(project):
         for script_name, target in manifests['pyproject.toml'].get('scripts', {}).items():
             entrypoints.append(f'{script_name} -> {target}')
     edges = _internal_edges(modules)
+    summary = graphify_summary(root)
     return {
         'schema': 'aiwh-map/1',
         'project': str(root),
@@ -148,6 +150,7 @@ def map_project(project):
         'manifests': manifests,
         'modules': modules,
         'edges': edges,
+        **({'graphify': summary} if summary else {}),
     }
 
 
@@ -174,6 +177,11 @@ def project_map_markdown(mapping):
     if mapping['edges']:
         lines += ['', '## Internal dependencies', '']
         lines += [f'- `{e["from"]}` -> `{e["to"]}` (`{e["import"]}`)' for e in mapping['edges'][:50]]
+    gfy = mapping.get('graphify')
+    if gfy:
+        lines += ['', '## Graphify graph', '',
+                  f'`graphify-out/graph.json`: {gfy["nodes"]} nodes, {gfy["edges"]} edges', '']
+        lines += [f'- `{n["label"]}` (degree {n["degree"]})' for n in gfy['top_nodes']]
     return '\n'.join(lines) + '\n'
 
 
@@ -186,3 +194,57 @@ def save_project_map(project, mapping):
     json_path.write_text(json.dumps(mapping, indent=2, ensure_ascii=False) + '\n', encoding='utf-8', newline='\n')
     md_path.write_text(project_map_markdown(mapping), encoding='utf-8', newline='\n')
     return {'json': str(json_path), 'markdown': str(md_path)}
+
+
+def project_map_to_graph(mapping):
+    """Convert a project map to graphify-compatible networkx node-link JSON (``nodes`` + ``links``)."""
+    def node_id(path):
+        return re.sub(r'[^a-z0-9]+', '_', Path(path).with_suffix('').as_posix().lower()).strip('_')
+
+    nodes, links, known = [], [], {}
+    for mod in mapping['modules']:
+        nid = node_id(mod['path'])
+        known[mod['path']] = nid
+        nodes.append({'id': nid, 'label': Path(mod['path']).name, 'file_type': 'code',
+                      'source_file': mod['path'], 'source_location': None})
+        for symbol in mod.get('classes', []) + mod.get('functions', []):
+            sid = f'{nid}_{re.sub(r"[^a-z0-9]+", "_", symbol.lower()).strip("_")}'
+            nodes.append({'id': sid, 'label': symbol, 'file_type': 'code',
+                          'source_file': mod['path'], 'source_location': None})
+            links.append({'source': nid, 'target': sid, 'relation': 'contains', 'confidence': 'EXTRACTED',
+                          'confidence_score': 1.0, 'source_file': mod['path'], 'weight': 1.0})
+    for edge in mapping['edges']:
+        if edge['from'] in known and edge['to'] in known:
+            links.append({'source': known[edge['from']], 'target': known[edge['to']], 'relation': 'imports',
+                          'confidence': 'EXTRACTED', 'confidence_score': 1.0,
+                          'source_file': edge['from'], 'weight': 1.0})
+    return {'directed': False, 'multigraph': False, 'graph': {'generator': 'aiwh-map', 'schema': mapping['schema']},
+            'nodes': nodes, 'links': links, 'hyperedges': []}
+
+
+def save_graph(repo, mapping, path=None):
+    """Write the graph JSON (default ``.ai-workbench/graph.json``, a gitignored area)."""
+    target = Path(path) if path else Path(repo).expanduser().resolve() / '.ai-workbench' / 'graph.json'
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(json.dumps(project_map_to_graph(mapping), indent=2, ensure_ascii=False) + '\n',
+                      encoding='utf-8', newline='\n')
+    return str(target)
+
+
+def graphify_summary(project, top=10):
+    """Summarise an existing ``graphify-out/graph.json`` (read-only); None when absent or unreadable."""
+    path = Path(project).expanduser().resolve() / 'graphify-out' / 'graph.json'
+    try:
+        data = json.loads(path.read_text(encoding='utf-8'))
+        nodes = data.get('nodes', [])
+        links = data.get('links', data.get('edges', []))
+    except (OSError, ValueError, AttributeError):
+        return None
+    degree = {}
+    for link in links:
+        for end in (link.get('source'), link.get('target')):
+            degree[end] = degree.get(end, 0) + 1
+    labels = {n.get('id'): n.get('label', n.get('id')) for n in nodes if isinstance(n, dict)}
+    ranked = sorted(degree.items(), key=lambda kv: (-kv[1], str(kv[0])))[:top]
+    return {'path': str(path), 'nodes': len(nodes), 'edges': len(links),
+            'top_nodes': [{'id': k, 'label': labels.get(k, k), 'degree': v} for k, v in ranked]}

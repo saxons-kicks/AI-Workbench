@@ -22,10 +22,21 @@ Areas: `ai-automation`
 
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
+| [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) | repository | devops, qa-testing | - | 2026-11-23 |
+| [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | repository | ai-automation | - | 2026-11-23 |
 | [EL4CTEO/fast-anything](https://github.com/EL4CTEO/fast-anything) | repository | ai-automation, backend | experimental | 2026-11-23 |
+| [exa-labs/exa-mcp-server](https://github.com/exa-labs/exa-mcp-server) | repository | ai-automation | - | 2026-11-23 |
+| [firecrawl/firecrawl-mcp-server](https://github.com/firecrawl/firecrawl-mcp-server) | repository | ai-automation, data-engineering | tos-check | 2026-11-23 |
+| [getsentry/sentry-mcp](https://github.com/getsentry/sentry-mcp) | repository | qa-testing, devops | - | 2026-11-23 |
+| [github/github-mcp-server](https://github.com/github/github-mcp-server) | repository | ai-automation, devops | - | 2026-11-23 |
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | repository | ai-automation, data-engineering | - | 2026-11-17 |
+| [JetBrains/mcpProxy](https://github.com/JetBrains/mcpProxy) | repository | ai-automation | - | 2026-11-23 |
 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | repository | ai-automation, api-integration | - | 2026-11-23 |
+| [oraios/serena](https://github.com/oraios/serena) | repository | ai-automation | - | 2026-11-23 |
 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | repository | ai-automation | - | 2026-11-23 |
+| [shashankss1205/CodeGraphContext](https://github.com/shashankss1205/CodeGraphContext) | repository | ai-automation | - | 2026-11-23 |
+| [supabase-community/supabase-mcp](https://github.com/supabase-community/supabase-mcp) | repository | backend, data-engineering | - | 2026-11-23 |
+| [upstash/context7](https://github.com/upstash/context7) | repository | ai-automation | - | 2026-11-23 |
 | Code understanding: [build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | list | ai-automation | - | - |
 | Code understanding: [craft-anything](https://github.com/storytold/craft-anything) | repository | ai-automation | - | - |
 | Code understanding: [Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) | repository | ai-automation | - | - |
@@ -86,7 +97,12 @@ Areas: `security`, `qa-testing`
 
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
+| [anthropics/claude-code-security-review](https://github.com/anthropics/claude-code-security-review) | repository | security, qa-testing | - | 2026-11-23 |
 | [bitwarden/server](https://github.com/bitwarden/server) | repository | security, backend | - | 2026-11-23 |
+| [NVIDIA/skillspector](https://github.com/NVIDIA/skillspector) | repository | security, ai-automation | - | 2026-11-23 |
+| [semgrep/semgrep](https://github.com/semgrep/semgrep) | repository | security, qa-testing | - | 2026-11-23 |
+| [snyk/studio-mcp](https://github.com/snyk/studio-mcp) | repository | security | - | 2026-11-23 |
+| [StacklokLabs/osv-mcp](https://github.com/StacklokLabs/osv-mcp) | repository | security | - | 2026-11-23 |
 | [zaproxy/zaproxy](https://github.com/zaproxy/zaproxy) | tool | security, qa-testing, api-integration | authorized-only | 2026-11-17 |
 | AI PR review: [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | repository | security, qa-testing | - | - |
 | AI PR review: [opencodereview](https://github.com/BridgLabs/opencodereview) | repository | security, qa-testing | - | - |
@@ -138,6 +154,7 @@ Areas: `content-creation`, `marketing`
 | [browser-use/video-use](https://github.com/browser-use/video-use) | repository | content-creation, ai-automation | experimental | 2026-11-17 |
 | [clonechat](https://github.com/felipeadeildo/clonechat) | repository | content-creation | tos-check, licensing-check | - |
 | [deenukhan/animation-styles](https://github.com/deenukhan/animation-styles) | repository | content-creation, frontend | - | 2026-11-23 |
+| [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) | repository | ux-design, frontend | - | 2026-11-23 |
 | [gradium-ai/xn-ptts](https://github.com/gradium-ai/xn-ptts) | repository | content-creation, ai-automation | experimental | 2026-11-17 |
 | [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) | repository | content-creation, operations | - | 2026-11-17 |
 | [kyutai-labs/pocket-tts](https://github.com/kyutai-labs/pocket-tts) | repository | content-creation, ai-automation | - | 2026-11-17 |
@@ -145,6 +162,7 @@ Areas: `content-creation`, `marketing`
 | [plusxbt: Motion design workflow (X post)](https://x.com/plusxbt/status/2119418263029297167) | guide | content-creation, frontend, ux-design | - | 2026-11-17 |
 | [shinyobjectz/raea](https://github.com/shinyobjectz/raea) | repository | content-creation, ai-automation | experimental | 2026-11-23 |
 | [TubeLabHQ/youtube-research-skills](https://github.com/TubeLabHQ/youtube-research-skills) | repository | content-creation, marketing | tos-check | 2026-11-23 |
+| [vivekVells/mcp-pandoc](https://github.com/vivekVells/mcp-pandoc) | repository | content-creation | - | 2026-11-23 |
 | [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides) | repository | frontend, content-creation | - | 2026-11-17 |
 | [zenstory-ai/drama-skills](https://github.com/zenstory-ai/drama-skills) | repository | content-creation, ai-automation | - | 2026-11-23 |
 | [Zyphra/ZONOS3-Mini](https://github.com/Zyphra/ZONOS3-Mini) | repository | content-creation, ai-automation | licensing-check | 2026-11-17 |
@@ -283,7 +301,11 @@ Areas: `qa-testing`
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
 | [api-clientes-exemplo-microservico](https://github.com/vinnypessoni/api-clientes-exemplo-microservico) | repository | qa-testing | - | - |
+| [executeautomation/mcp-playwright](https://github.com/executeautomation/mcp-playwright) | repository | qa-testing, ai-automation | - | 2026-11-23 |
 | [gen-ai-para-produtividade-em-testes](https://github.com/juliodelimas/gen-ai-para-produtividade-em-testes) | repository | qa-testing | - | - |
+| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | repository | qa-testing, ai-automation | - | 2026-11-23 |
+| [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp) | repository | qa-testing, mobile-app | - | 2026-11-23 |
+| [QAInsights/k6-mcp-server](https://github.com/QAInsights/k6-mcp-server) | repository | qa-testing | - | 2026-11-23 |
 | QA tools: [4Devs test data](https://www.4devs.com.br/) | site | qa-testing | - | - |
 | QA tools: [AChecker](https://achecker.achecks.ca/checker/index.php) | site | qa-testing | - | - |
 | QA tools: [Android core app quality](https://developer.android.com/docs/quality-guidelines/core-app-quality) | site | qa-testing | - | - |
@@ -490,10 +512,16 @@ Areas: `reverse-engineering`, `decompilation`
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
 | [binwalk](https://github.com/ReFirmLabs/binwalk) | tool | reverse-engineering, decompilation | - | - |
+| [bx33661/Wireshark-MCP](https://github.com/bx33661/Wireshark-MCP) | repository | reverse-engineering, security | authorized-only | 2026-11-23 |
 | [Frida](https://github.com/frida/frida) | tool | reverse-engineering, decompilation | - | - |
+| [Gaffx/volatility-mcp](https://github.com/Gaffx/volatility-mcp) | repository | reverse-engineering, security | authorized-only | 2026-11-23 |
 | [Ghidra](https://github.com/NationalSecurityAgency/ghidra) | tool | reverse-engineering, decompilation | - | - |
 | [ImHex](https://github.com/WerWolv/ImHex) | tool | reverse-engineering, decompilation | - | - |
+| [jtang613/GhidrAssistMCP](https://github.com/jtang613/GhidrAssistMCP) | repository | reverse-engineering, decompilation | authorized-only | 2026-11-23 |
 | [Kaitai Struct](https://github.com/kaitai-io/kaitai_struct) | tool | reverse-engineering, decompilation | - | - |
+| [LaurieWired/GhidraMCP](https://github.com/LaurieWired/GhidraMCP) | repository | reverse-engineering, decompilation | authorized-only | 2026-11-23 |
+| [radareorg/radare2-mcp](https://github.com/radareorg/radare2-mcp) | repository | reverse-engineering, decompilation | authorized-only | 2026-11-23 |
+| [rison1337/x64dbgMCP](https://github.com/rison1337/x64dbgMCP) | repository | reverse-engineering, security | authorized-only | 2026-11-23 |
 | [x64dbg](https://github.com/x64dbg/x64dbg) | tool | reverse-engineering, decompilation | - | - |
 | Identify: [capa](https://github.com/mandiant/capa) | tool | reverse-engineering, decompilation | - | - |
 | Identify: [Detect-It-Easy](https://github.com/horsicq/Detect-It-Easy) | tool | reverse-engineering, decompilation | - | - |
@@ -516,6 +544,9 @@ Areas: `reverse-engineering`, `mobile-app`
 | [Apktool](https://github.com/iBotPeaches/Apktool) | tool | reverse-engineering, mobile-app | - | - |
 | [ILSpy](https://github.com/icsharpcode/ILSpy) | tool | reverse-engineering, mobile-app | - | - |
 | [jadx](https://github.com/skylot/jadx) | tool | reverse-engineering, mobile-app | - | - |
+| [pullkitsan/mobsf-mcp-server](https://github.com/pullkitsan/mobsf-mcp-server) | repository | reverse-engineering, security, mobile-app | authorized-only | 2026-11-23 |
+| [zinja-coder/apktool-mcp-server](https://github.com/zinja-coder/apktool-mcp-server) | repository | reverse-engineering, mobile-app | authorized-only | 2026-11-23 |
+| [zinja-coder/jadx-ai-mcp](https://github.com/zinja-coder/jadx-ai-mcp) | repository | reverse-engineering, decompilation, mobile-app | authorized-only | 2026-11-23 |
 | Android/TV: [RoutineMiku/apkstart](https://github.com/RoutineMiku/apkstart) | repository | mobile-app, desktop | experimental | - |
 | Watch it run: [objection](https://github.com/sensepost/objection) | tool | reverse-engineering, mobile-app | - | - |
 
@@ -527,6 +558,7 @@ Areas: `reverse-engineering`, `api-integration`, `security`
 |---|---|---|---|---|
 | [asar](https://github.com/electron/asar) | tool | reverse-engineering, api-integration, security | - | - |
 | [calcom/cal.diy](https://github.com/calcom/cal.diy) | repository | backend, api-integration | - | 2026-11-23 |
+| [kadykov/mcp-openapi-schema-explorer](https://github.com/kadykov/mcp-openapi-schema-explorer) | repository | api-integration | - | 2026-11-23 |
 | [mitmproxy](https://github.com/mitmproxy/mitmproxy) | tool | reverse-engineering, api-integration, security | - | - |
 | [mitmproxy2swagger](https://github.com/alufers/mitmproxy2swagger) | tool | reverse-engineering, api-integration, security | - | - |
 | [plausible/analytics](https://github.com/plausible/analytics) | repository | data-analytics, marketing | - | 2026-11-23 |

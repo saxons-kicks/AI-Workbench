@@ -16,7 +16,8 @@ from aiwh.enrich import enrich_candidates  # noqa: E402
 from aiwh.handoff_export import export_handoff  # noqa: E402
 from aiwh.handoff_plan import build_plan, plan_markdown, record_decision  # noqa: E402
 from aiwh.html_report import catalog_html  # noqa: E402
-from aiwh.project_map import map_project, project_map_markdown  # noqa: E402
+from aiwh.project_map import (graphify_summary, map_project, project_map_markdown,  # noqa: E402
+                              project_map_to_graph, save_graph)  # noqa: E402
 from aiwh.runtime_probe import probe_hardware  # noqa: E402
 from aiwh.security_audit import security_audit  # noqa: E402
 from aiwh.semantic import build_index, search_index, semantic_capabilities  # noqa: E402
@@ -178,3 +179,34 @@ class IntelligenceTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class GraphExportTests(unittest.TestCase):
+    def test_graph_export_and_graphify_summary(self):
+        import json
+        import tempfile
+        from pathlib import Path
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / 'pkg').mkdir()
+            (root / 'pkg' / 'a.py').write_text('from .b import B\n\ndef run():\n    pass\n', encoding='utf-8')
+            (root / 'pkg' / 'b.py').write_text('class B:\n    pass\n', encoding='utf-8')
+            mapping = map_project(root)
+            self.assertNotIn('graphify', mapping)
+            graph = project_map_to_graph(mapping)
+            ids = {n['id'] for n in graph['nodes']}
+            self.assertIn('pkg_a', ids)
+            self.assertIn('pkg_b_b', ids)
+            self.assertTrue(all(l['source'] in ids and l['target'] in ids for l in graph['links']))
+            self.assertTrue(any(l['relation'] == 'imports' for l in graph['links']))
+            out = Path(save_graph(root, mapping))
+            self.assertEqual(out, root.resolve() / '.ai-workbench' / 'graph.json')
+            self.assertEqual(json.loads(out.read_text(encoding='utf-8'))['nodes'], graph['nodes'])
+            (root / 'graphify-out').mkdir()
+            (root / 'graphify-out' / 'graph.json').write_text(json.dumps({
+                'nodes': [{'id': 'x', 'label': 'X'}, {'id': 'y', 'label': 'Y'}],
+                'links': [{'source': 'x', 'target': 'y'}]}), encoding='utf-8')
+            summary = graphify_summary(root)
+            self.assertEqual((summary['nodes'], summary['edges']), (2, 1))
+            self.assertIn('graphify', map_project(root))
+            self.assertIn('Graphify graph', project_map_markdown(map_project(root)))

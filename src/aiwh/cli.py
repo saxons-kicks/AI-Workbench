@@ -73,6 +73,11 @@ def get_parser():
     sl = sk_sub.add_parser('lint', help='report vague, oversized and boilerplate skills (warnings)')
     sl.add_argument('--json', action='store_true')
     sl.add_argument('--strict', action='store_true', help='exit 1 when findings exist')
+    sev = sk_sub.add_parser('eval', help='opt-in: generate a promptfoo config from skills evals.yaml (Ollama default)')
+    sev.add_argument('--write', type=Path, metavar='PATH', help='write the promptfoo YAML config to PATH')
+    sev.add_argument('--provider', help='promptfoo provider (default ollama:chat:llama3.1 or $AIWH_EVAL_PROVIDER)')
+    sev.add_argument('--skill', action='append', dest='skill_names', metavar='NAME', help='limit to a skill (repeatable)')
+    sev.add_argument('--coverage', action='store_true', help='list skills with and without evals.yaml')
     si = sk_sub.add_parser('import', help='copy validated local skills into a project (untrusted text, never executed)')
     si.add_argument('source', type=Path)
     si.add_argument('--project', type=Path, default=Path.cwd())
@@ -202,6 +207,8 @@ def get_parser():
     mp_cmd.add_argument('path', nargs='?', type=Path, default=Path.cwd())
     mp_cmd.add_argument('--save', action='store_true', help='write .ai-workbench/PROJECT_MAP.json and PROJECT_MAP.md')
     mp_cmd.add_argument('--json', action='store_true')
+    mp_cmd.add_argument('--graph', nargs='?', type=Path, const=True, default=None, metavar='PATH',
+                        help='also write graphify-compatible node-link JSON (default .ai-workbench/graph.json)')
     au = sub.add_parser('audit', help='read-only project status in JSON')
     au.add_argument('path', nargs='?', type=Path, default=Path.cwd())
     au.add_argument('--security', action='store_true', help='run non-executing workspace security gate')
@@ -238,7 +245,14 @@ def get_parser():
                     help='write an offline HTML view (default: <home>/catalog.html)')
     se = sub.add_parser('search', help='local hybrid/FTS5 search across catalog, references, skills and handoffs')
     se.add_argument('query', help='search query')
-    se.add_argument('--source', choices=['all', 'catalog', 'references', 'skills', 'handoffs'], default='all')
+    se.add_argument('--source', choices=['all', 'catalog', 'references', 'skills', 'handoffs', 'docs'], default='all')
+    dc = sub.add_parser('docs', help='register local documents for aiwh search (explicit paths only)')
+    dc_sub = dc.add_subparsers(dest='docs_action', required=True)
+    dca = dc_sub.add_parser('add', help='register files/directories; indexed on the next search --reindex')
+    dca.add_argument('paths', nargs='+', type=Path)
+    dc_sub.add_parser('list', help='list registered document roots')
+    dcr = dc_sub.add_parser('remove', help='unregister document roots')
+    dcr.add_argument('paths', nargs='+', type=Path)
     se.add_argument('--project', type=Path, default=None, help='project path for indexing .ai-workbench handoffs')
     se.add_argument('--limit', type=int, default=10)
     se.add_argument('--reindex', action='store_true', help='rebuild the local SQLite search index')
@@ -307,6 +321,15 @@ def _main(args):
         from .project_map import map_project, project_map_markdown, save_project_map
         mapping = map_project(args.path)
         saved = save_project_map(args.path, mapping) if args.save else None
+        if args.graph is not None:
+            from .project_map import save_graph
+            graph_path = save_graph(args.path, mapping, None if args.graph is True else args.graph)
+            if not args.json:
+                print(f'Graph written: {graph_path}')
+            elif saved:
+                saved = {**saved, 'graph': graph_path}
+            else:
+                saved = {'graph': graph_path}
         if args.json:
             payload = {**mapping, 'saved': saved} if saved else mapping
             print(json.dumps(payload, indent=2, ensure_ascii=False))
@@ -561,6 +584,32 @@ def _main(args):
                 print(f'{finding["rule"]:<18} {finding["skill"]}: {finding["detail"]}')
             print(f'{len(result["findings"])} findings across {result["skills"]} skills')
         return 1 if args.strict and result['findings'] else 0
+    if args.command == 'skills' and args.skills_action == 'eval':
+        from .skill_evals import build_promptfoo_config, eval_coverage, write_promptfoo_config
+        if args.coverage:
+            print(json.dumps(eval_coverage(args.skill_names), indent=2, ensure_ascii=False))
+            return 0
+        cfg = (write_promptfoo_config(args.write, args.skill_names, args.provider) if args.write
+               else build_promptfoo_config(args.skill_names, args.provider))
+        meta = cfg['metadata']
+        print(json.dumps({'written': str(args.write) if args.write else None, 'provider': cfg['providers'][0],
+                          'tests': len(cfg['tests']), 'skills_with_evals': meta['aiwh_skills_with_evals'],
+                          'skills_skipped': len(meta['aiwh_skills_skipped'])}, indent=2, ensure_ascii=False))
+        return 0
+    if args.command == 'docs':
+        from .doc_index import add_doc_roots, extract_documents, list_doc_roots, remove_doc_roots
+        if args.docs_action == 'list':
+            result = {'roots': list_doc_roots(home)}
+        elif args.docs_action == 'remove':
+            result = remove_doc_roots(args.paths, home=home)
+        else:
+            result = add_doc_roots(args.paths, home=home)
+            skipped = []
+            docs = extract_documents(list(result.get('added', [])) + list(result.get('existing', [])), skipped=skipped)
+            result = {**result, 'extractable': len(docs), 'skipped': skipped,
+                      'next': 'aiwh search --reindex <query>'}
+        print(json.dumps(result, indent=2, ensure_ascii=False, default=str))
+        return 0
     if args.command == 'skills' and args.skills_action == 'import':
         from .skilltools import import_skills
         result = import_skills(args.source, args.project, agent=args.agent,

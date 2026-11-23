@@ -1,0 +1,15 @@
+- description: flags shell=True command injection
+  prompt: "Review: subprocess.run(f'ping {host}', shell=True) where host comes from an HTTP query parameter."
+  assert:
+    - {type: icontains, value: injection}
+    - {type: icontains, value: shell=True}
+- description: flags unsafe yaml.load
+  prompt: "Review: data = yaml.load(request.body) in an upload handler."
+  assert:
+    - {type: regex, value: "(?i)(safe_load|deserializ)"}
+- description: flags hardcoded secrets
+  prompt: "Review: API_TOKEN = 'ghp_abcdefghijklmnop' committed in config.py."
+  assert:
+    - {type: regex, value: "(?i)(secret|hardcoded|rotate)"}
+    - type: llm-rubric
+      value: The answer treats the token as exposed, recommends removal and rotation, and gives file-level references.

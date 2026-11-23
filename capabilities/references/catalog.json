@@ -7167,6 +7167,433 @@
       ],
       "reviewed": "2026-11-23",
       "description": "Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6"
+    },
+    "microsoft-playwright-mcp": {
+      "title": "microsoft/playwright-mcp",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "category": "qa",
+      "kind": "repository",
+      "areas": [
+        "qa-testing",
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Official Microsoft Playwright MCP server: lets LLMs interact with web pages through structured accessibility snapshots."
+    },
+    "executeautomation-mcp-playwright": {
+      "title": "executeautomation/mcp-playwright",
+      "url": "https://github.com/executeautomation/mcp-playwright",
+      "category": "qa",
+      "kind": "repository",
+      "areas": [
+        "qa-testing",
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "MCP server using Playwright for browser automation and web scraping."
+    },
+    "upstash-context7": {
+      "title": "upstash/context7",
+      "url": "https://github.com/upstash/context7",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Up-to-date code documentation for LLMs and AI code editors, served over MCP."
+    },
+    "github-github-mcp-server": {
+      "title": "github/github-mcp-server",
+      "url": "https://github.com/github/github-mcp-server",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation",
+        "devops"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Official GitHub MCP server for repository management, pull requests, issues and more."
+    },
+    "getsentry-sentry-mcp": {
+      "title": "getsentry/sentry-mcp",
+      "url": "https://github.com/getsentry/sentry-mcp",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "qa-testing",
+        "devops"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Sentry MCP integration for error tracking and performance monitoring."
+    },
+    "oraios-serena": {
+      "title": "oraios/serena",
+      "url": "https://github.com/oraios/serena",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Coding agent toolkit that uses language servers for symbolic code operations."
+    },
+    "shashankss1205-codegraphcontext": {
+      "title": "shashankss1205/CodeGraphContext",
+      "url": "https://github.com/shashankss1205/CodeGraphContext",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Indexes local code into a graph database to give AI assistants context, with visualizations for humans."
+    },
+    "jetbrains-mcpproxy": {
+      "title": "JetBrains/mcpProxy",
+      "url": "https://github.com/JetBrains/mcpProxy",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Official JetBrains MCP proxy for working with IntelliJ, PyCharm, WebStorm and Android Studio."
+    },
+    "firecrawl-firecrawl-mcp-server": {
+      "title": "firecrawl/firecrawl-mcp-server",
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation",
+        "data-engineering"
+      ],
+      "risk": [
+        "tos-check"
+      ],
+      "reviewed": "2026-11-23",
+      "description": "Firecrawl web scraping MCP: search, scrape, crawl, map and extract structured data. Check target site terms before scraping."
+    },
+    "exa-labs-exa-mcp-server": {
+      "title": "exa-labs/exa-mcp-server",
+      "url": "https://github.com/exa-labs/exa-mcp-server",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Official Exa MCP server giving assistants real-time web search through the Exa AI Search API."
+    },
+    "vivekvells-mcp-pandoc": {
+      "title": "vivekVells/mcp-pandoc",
+      "url": "https://github.com/vivekVells/mcp-pandoc",
+      "category": "content-media",
+      "kind": "repository",
+      "areas": [
+        "content-creation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "MCP server for document format conversion with Pandoc: Markdown, HTML, PDF, DOCX, CSV and more."
+    },
+    "glips-figma-context-mcp": {
+      "title": "GLips/Figma-Context-MCP",
+      "url": "https://github.com/GLips/Figma-Context-MCP",
+      "category": "content-media",
+      "kind": "repository",
+      "areas": [
+        "ux-design",
+        "frontend"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Gives coding agents direct access to Figma data so they can implement designs in one shot."
+    },
+    "kadykov-mcp-openapi-schema-explorer": {
+      "title": "kadykov/mcp-openapi-schema-explorer",
+      "url": "https://github.com/kadykov/mcp-openapi-schema-explorer",
+      "category": "web-api",
+      "kind": "repository",
+      "areas": [
+        "api-integration"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Token-efficient access to OpenAPI/Swagger specs through MCP resources."
+    },
+    "supabase-community-supabase-mcp": {
+      "title": "supabase-community/supabase-mcp",
+      "url": "https://github.com/supabase-community/supabase-mcp",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "backend",
+        "data-engineering"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Official Supabase MCP server to manage tables, fetch config and query data in a Supabase project."
+    },
+    "mobile-next-mobile-mcp": {
+      "title": "mobile-next/mobile-mcp",
+      "url": "https://github.com/mobile-next/mobile-mcp",
+      "category": "qa",
+      "kind": "repository",
+      "areas": [
+        "qa-testing",
+        "mobile-app"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Android and iOS app and device automation on simulators, emulators and physical devices, via MCP."
+    },
+    "qainsights-k6-mcp-server": {
+      "title": "QAInsights/k6-mcp-server",
+      "url": "https://github.com/QAInsights/k6-mcp-server",
+      "category": "qa",
+      "kind": "repository",
+      "areas": [
+        "qa-testing"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "MCP server for performance testing with Grafana k6."
+    },
+    "semgrep-semgrep": {
+      "title": "semgrep/semgrep",
+      "url": "https://github.com/semgrep/semgrep",
+      "category": "review-security",
+      "kind": "repository",
+      "areas": [
+        "security",
+        "qa-testing"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Semgrep static analysis; its CLI ships an MCP server that lets agents scan code for security vulnerabilities."
+    },
+    "snyk-studio-mcp": {
+      "title": "snyk/studio-mcp",
+      "url": "https://github.com/snyk/studio-mcp",
+      "category": "review-security",
+      "kind": "repository",
+      "areas": [
+        "security"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Snyk MCP server that embeds its security engines into agentic workflows to secure AI-generated code."
+    },
+    "stackloklabs-osv-mcp": {
+      "title": "StacklokLabs/osv-mcp",
+      "url": "https://github.com/StacklokLabs/osv-mcp",
+      "category": "review-security",
+      "kind": "repository",
+      "areas": [
+        "security"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "MCP server to query the OSV open-source vulnerability database by package version or commit."
+    },
+    "anthropics-claude-code-security-review": {
+      "title": "anthropics/claude-code-security-review",
+      "url": "https://github.com/anthropics/claude-code-security-review",
+      "category": "review-security",
+      "kind": "repository",
+      "areas": [
+        "security",
+        "qa-testing"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Official GitHub Action that uses Claude to analyze pull-request diffs for security vulnerabilities."
+    },
+    "anthropics-claude-code-action": {
+      "title": "anthropics/claude-code-action",
+      "url": "https://github.com/anthropics/claude-code-action",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "devops",
+        "qa-testing"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Official GitHub Action to run Claude Code in CI: mention @claude in issues and PRs to delegate changes and reviews."
+    },
+    "anthropics-claude-plugins-official": {
+      "title": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Anthropic's official curated directory of Claude Code plugins installable from within Claude Code."
+    },
+    "nvidia-skillspector": {
+      "title": "NVIDIA/skillspector",
+      "url": "https://github.com/NVIDIA/skillspector",
+      "category": "review-security",
+      "kind": "repository",
+      "areas": [
+        "security",
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-23",
+      "description": "Security scanner for AI agent skills: detects vulnerabilities, malicious patterns and security risks."
+    },
+    "lauriewired-ghidramcp": {
+      "title": "LaurieWired/GhidraMCP",
+      "url": "https://github.com/LaurieWired/GhidraMCP",
+      "category": "re-tools",
+      "kind": "repository",
+      "areas": [
+        "reverse-engineering",
+        "decompilation"
+      ],
+      "risk": [
+        "authorized-only"
+      ],
+      "reviewed": "2026-11-23",
+      "description": "Ghidra MCP server for autonomous reverse engineering: decompile binaries, rename methods and data, list classes, imports and exports."
+    },
+    "jtang613-ghidrassistmcp": {
+      "title": "jtang613/GhidrAssistMCP",
+      "url": "https://github.com/jtang613/GhidrAssistMCP",
+      "category": "re-tools",
+      "kind": "repository",
+      "areas": [
+        "reverse-engineering",
+        "decompilation"
+      ],
+      "risk": [
+        "authorized-only"
+      ],
+      "reviewed": "2026-11-23",
+      "description": "Native Ghidra MCP integration with GUI configuration, logging and no external dependencies."
+    },
+    "radareorg-radare2-mcp": {
+      "title": "radareorg/radare2-mcp",
+      "url": "https://github.com/radareorg/radare2-mcp",
+      "category": "re-tools",
+      "kind": "repository",
+      "areas": [
+        "reverse-engineering",
+        "decompilation"
+      ],
+      "risk": [
+        "authorized-only"
+      ],
+      "reviewed": "2026-11-23",
+      "description": "MCP server to disassemble and inspect binaries for reverse engineering with Radare2."
+    },
+    "zinja-coder-jadx-ai-mcp": {
+      "title": "zinja-coder/jadx-ai-mcp",
+      "url": "https://github.com/zinja-coder/jadx-ai-mcp",
+      "category": "android-managed",
+      "kind": "repository",
+      "areas": [
+        "reverse-engineering",
+        "decompilation",
+        "mobile-app"
+      ],
+      "risk": [
+        "authorized-only"
+      ],
+      "reviewed": "2026-11-23",
+      "description": "JADX decompiler plugin providing live, LLM-assisted reverse engineering of Android code via MCP."
+    },
+    "zinja-coder-apktool-mcp-server": {
+      "title": "zinja-coder/apktool-mcp-server",
+      "url": "https://github.com/zinja-coder/apktool-mcp-server",
+      "category": "android-managed",
+      "kind": "repository",
+      "areas": [
+        "reverse-engineering",
+        "mobile-app"
+      ],
+      "risk": [
+        "authorized-only"
+      ],
+      "reviewed": "2026-11-23",
+      "description": "MCP server to automate reverse engineering of Android APKs with Apktool."
+    },
+    "pullkitsan-mobsf-mcp-server": {
+      "title": "pullkitsan/mobsf-mcp-server",
+      "url": "https://github.com/pullkitsan/mobsf-mcp-server",
+      "category": "android-managed",
+      "kind": "repository",
+      "areas": [
+        "reverse-engineering",
+        "security",
+        "mobile-app"
+      ],
+      "risk": [
+        "authorized-only"
+      ],
+      "reviewed": "2026-11-23",
+      "description": "MCP server for static and dynamic analysis of Android and iOS apps with MobSF."
+    },
+    "bx33661-wireshark-mcp": {
+      "title": "bx33661/Wireshark-MCP",
+      "url": "https://github.com/bx33661/Wireshark-MCP",
+      "category": "re-tools",
+      "kind": "repository",
+      "areas": [
+        "reverse-engineering",
+        "security"
+      ],
+      "risk": [
+        "authorized-only"
+      ],
+      "reviewed": "2026-11-23",
+      "description": "Wireshark packet analysis over MCP: capture, protocol statistics, field extraction and security analysis."
+    },
+    "rison1337-x64dbgmcp": {
+      "title": "rison1337/x64dbgMCP",
+      "url": "https://github.com/rison1337/x64dbgMCP",
+      "category": "re-tools",
+      "kind": "repository",
+      "areas": [
+        "reverse-engineering",
+        "security"
+      ],
+      "risk": [
+        "authorized-only"
+      ],
+      "reviewed": "2026-11-23",
+      "description": "Guarded x64dbg/x32dbg debugging on Windows: SHA-256 target identity, breakpoint capture, verified memory writes, PE dumps."
+    },
+    "gaffx-volatility-mcp": {
+      "title": "Gaffx/volatility-mcp",
+      "url": "https://github.com/Gaffx/volatility-mcp",
+      "category": "re-tools",
+      "kind": "repository",
+      "areas": [
+        "reverse-engineering",
+        "security"
+      ],
+      "risk": [
+        "authorized-only"
+      ],
+      "reviewed": "2026-11-23",
+      "description": "Memory forensics with Volatility 3, exposing plugins such as pslist and netscan through REST APIs for an AI assistant."
     }
   }
 }

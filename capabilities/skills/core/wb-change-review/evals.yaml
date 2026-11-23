@@ -1,0 +1,10 @@
+- description: findings carry severity and location
+  prompt: "Review this diff: `- if user.is_admin:` becomes `+ if user:` in auth/check.py line 42."
+  assert:
+    - {type: regex, value: "P[0-3]"}
+    - {type: icontains, value: auth/check.py}
+- description: states unverified checks
+  prompt: "Review a PR you only have a description of: 'refactors the cache layer, no behavior change'."
+  assert:
+    - {type: regex, value: "(?i)(read|inspect|examine).{0,40}(diff|code)"}
+    - {type: regex, value: "(?i)(not (been )?(run|verified)|could not be (run|verified)|unverified)"}

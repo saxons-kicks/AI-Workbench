@@ -21,6 +21,8 @@ description: Run evidence-based AI pull request reviews locally or in CI, rankin
 ## CI integration (opt-in)
 `templates/ai-pr-review.yml` is a starting GitHub Actions workflow. It is not installed by `aiwh init` copying alone: review the action version, inputs, permissions and secrets against the action's current documentation before committing it to `.github/workflows/`. Keep `permissions` minimal and never expose secrets to workflows triggered by forks.
 
+For large diffs, split the work: a deterministic step (script or CLI) selects files, groups them and resolves which project rules apply; the agent's model then reviews each group with only those rules in context. This keeps reviews cheaper and reproducible.
+
 Related open-source reviewers to evaluate: opencodereview and alibaba/open-code-review (see docs/REFERENCES.md).
 
 ## Deliverables
