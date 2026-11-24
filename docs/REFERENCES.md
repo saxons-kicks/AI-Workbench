@@ -24,18 +24,26 @@ Areas: `ai-automation`
 |---|---|---|---|---|
 | [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action) | repository | devops, qa-testing | - | 2026-11-23 |
 | [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | repository | ai-automation | - | 2026-11-23 |
+| [ccusage/ccusage](https://github.com/ccusage/ccusage) | repository | ai-automation | - | 2026-11-24 |
+| [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | repository | ai-automation | - | 2026-11-24 |
 | [EL4CTEO/fast-anything](https://github.com/EL4CTEO/fast-anything) | repository | ai-automation, backend | experimental | 2026-11-23 |
+| [EL4CTEO/shrink-anything](https://github.com/EL4CTEO/shrink-anything) | repository | qa-testing, ai-automation | experimental | 2026-11-24 |
 | [exa-labs/exa-mcp-server](https://github.com/exa-labs/exa-mcp-server) | repository | ai-automation | - | 2026-11-23 |
 | [firecrawl/firecrawl-mcp-server](https://github.com/firecrawl/firecrawl-mcp-server) | repository | ai-automation, data-engineering | tos-check | 2026-11-23 |
 | [getsentry/sentry-mcp](https://github.com/getsentry/sentry-mcp) | repository | qa-testing, devops | - | 2026-11-23 |
 | [github/github-mcp-server](https://github.com/github/github-mcp-server) | repository | ai-automation, devops | - | 2026-11-23 |
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | repository | ai-automation, data-engineering | - | 2026-11-17 |
+| [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | repository | ai-automation | - | 2026-11-24 |
 | [JetBrains/mcpProxy](https://github.com/JetBrains/mcpProxy) | repository | ai-automation | - | 2026-11-23 |
+| [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | repository | ai-automation | experimental | 2026-11-24 |
+| [microsoft/markitdown](https://github.com/microsoft/markitdown) | repository | ai-automation, content-creation | - | 2026-11-24 |
 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | repository | ai-automation, api-integration | - | 2026-11-23 |
 | [oraios/serena](https://github.com/oraios/serena) | repository | ai-automation | - | 2026-11-23 |
 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | repository | ai-automation | - | 2026-11-23 |
+| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | repository | ai-automation, devops | licensing-check | 2026-11-24 |
 | [shashankss1205/CodeGraphContext](https://github.com/shashankss1205/CodeGraphContext) | repository | ai-automation | - | 2026-11-23 |
 | [supabase-community/supabase-mcp](https://github.com/supabase-community/supabase-mcp) | repository | backend, data-engineering | - | 2026-11-23 |
+| [toon-format/toon](https://github.com/toon-format/toon) | repository | ai-automation, data-engineering | - | 2026-11-24 |
 | [upstash/context7](https://github.com/upstash/context7) | repository | ai-automation | - | 2026-11-23 |
 | Code understanding: [build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | list | ai-automation | - | - |
 | Code understanding: [craft-anything](https://github.com/storytold/craft-anything) | repository | ai-automation | - | - |
@@ -411,6 +419,7 @@ Areas: `desktop`, `mobile-app`
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
 | [renanleonel/windows-taskbar-battery](https://github.com/renanleonel/windows-taskbar-battery) | tool | desktop | - | 2026-11-17 |
+| [storytold/pdfcraft](https://github.com/storytold/pdfcraft) | repository | desktop, content-creation | - | 2026-11-24 |
 | [XiaoYouChR/Ghost-Downloader-3](https://github.com/XiaoYouChR/Ghost-Downloader-3) | tool | desktop | licensing-check | 2026-11-23 |
 | Android/TV: [blockads-android](https://github.com/pass-with-high-score/blockads-android) | repository | desktop, mobile-app | - | - |
 | Android/TV: [cleanyourtv](https://github.com/Gathin23/cleanyourtv) | repository | desktop, mobile-app | - | - |
@@ -447,8 +456,10 @@ Areas: `game-modding`, `game-port`
 
 | Reference | Kind | Areas | Risk | Reviewed |
 |---|---|---|---|---|
+| [boykopovar/AnyBox](https://github.com/boykopovar/AnyBox) | repository | game-port, reverse-engineering | experimental, licensing-check | 2026-11-24 |
 | [ItsNotRexed/Leonida](https://github.com/ItsNotRexed/Leonida) | repository | game-port, decompilation | experimental, licensing-check | 2026-11-23 |
 | [Lucas-blip-png/dkb-pc-recomp](https://github.com/Lucas-blip-png/dkb-pc-recomp) | repository | game-port, decompilation | experimental, licensing-check | 2026-11-23 |
+| [Marvisak/VIctory](https://github.com/Marvisak/VIctory) | repository | game-port, recompilation | experimental, licensing-check | 2026-11-24 |
 | [R0Y00/Xbox2Windows](https://github.com/R0Y00/Xbox2Windows) | repository | game-port, decompilation | experimental, licensing-check | 2026-11-23 |
 | [sammwyy/xvalkyrie](https://github.com/sammwyy/xvalkyrie) | repository | game-port | experimental, licensing-check | 2026-11-23 |
 | [smoovplay/smoovplay](https://github.com/smoovplay/smoovplay) | repository | game-port, game-modding | experimental | 2026-11-17 |

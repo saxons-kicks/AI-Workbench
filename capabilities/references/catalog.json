@@ -7594,6 +7594,157 @@
       ],
       "reviewed": "2026-11-23",
       "description": "Memory forensics with Volatility 3, exposing plugins such as pslist and netscan through REST APIs for an AI assistant."
+    },
+    "juliusbrussee-caveman": {
+      "title": "JuliusBrussee/caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [
+        "experimental"
+      ],
+      "reviewed": "2026-11-24",
+      "description": "Skill and local proxy that trims agent response and tool-output verbosity while keeping the original recoverable."
+    },
+    "rtk-ai-rtk": {
+      "title": "rtk-ai/rtk",
+      "url": "https://github.com/rtk-ai/rtk",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation",
+        "devops"
+      ],
+      "risk": [
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-24",
+      "description": "CLI proxy compressing dev-command output before it reaches the LLM; optional global hook rewrites shell commands (Apache-2.0/BUSL-1.1)."
+    },
+    "headroomlabs-ai-headroom": {
+      "title": "headroomlabs-ai/headroom",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-24",
+      "description": "Compresses tool outputs, logs, files and RAG chunks before the LLM; library, proxy and MCP server with offline mode."
+    },
+    "colbymchenry-codegraph": {
+      "title": "colbymchenry/codegraph",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-24",
+      "description": "Local pre-indexed SQLite code knowledge graph kept in sync for Claude Code, Cursor and Codex; review hooks before install."
+    },
+    "toon-format-toon": {
+      "title": "toon-format/toon",
+      "url": "https://github.com/toon-format/toon",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation",
+        "data-engineering"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-24",
+      "description": "Token-Oriented Object Notation: compact JSON encoding for LLM prompts (SDK and CLI)."
+    },
+    "microsoft-markitdown": {
+      "title": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation",
+        "content-creation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-24",
+      "description": "Python tool converting PDF, Office, HTML, images and more into Markdown for LLM ingestion."
+    },
+    "ccusage-ccusage": {
+      "title": "ccusage/ccusage",
+      "url": "https://github.com/ccusage/ccusage",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "ai-automation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-24",
+      "description": "Token and cost reports for Claude Code/Codex from local logs; has --offline mode and opt-out telemetry."
+    },
+    "el4cteo-shrink-anything": {
+      "title": "EL4CTEO/shrink-anything",
+      "url": "https://github.com/EL4CTEO/shrink-anything",
+      "category": "agent-tooling",
+      "kind": "repository",
+      "areas": [
+        "qa-testing",
+        "ai-automation"
+      ],
+      "risk": [
+        "experimental"
+      ],
+      "reviewed": "2026-11-24",
+      "description": "Removes dead code, files and dependencies, keeping each cut only if the project's own tests still pass."
+    },
+    "storytold-pdfcraft": {
+      "title": "storytold/pdfcraft",
+      "url": "https://github.com/storytold/pdfcraft",
+      "category": "desktop-tools",
+      "kind": "repository",
+      "areas": [
+        "desktop",
+        "content-creation"
+      ],
+      "risk": [],
+      "reviewed": "2026-11-24",
+      "description": "Offline native PDF reader/editor (merge, split, protect) with CLI and optional MCP server."
+    },
+    "marvisak-victory": {
+      "title": "Marvisak/VIctory",
+      "url": "https://github.com/Marvisak/VIctory",
+      "category": "gaming",
+      "kind": "repository",
+      "areas": [
+        "game-port",
+        "recompilation"
+      ],
+      "risk": [
+        "experimental",
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-24",
+      "description": "Early attempt to run an Xbox Series title natively on PC from user-supplied files; not playable."
+    },
+    "boykopovar-anybox": {
+      "title": "boykopovar/AnyBox",
+      "url": "https://github.com/boykopovar/AnyBox",
+      "category": "gaming",
+      "kind": "repository",
+      "areas": [
+        "game-port",
+        "reverse-engineering"
+      ],
+      "risk": [
+        "experimental",
+        "licensing-check"
+      ],
+      "reviewed": "2026-11-24",
+      "description": "Early-stage compatibility layer for running Xbox Series apps on Windows."
     }
   }
 }
