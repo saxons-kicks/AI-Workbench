@@ -2,7 +2,7 @@
 
 Only explicitly registered paths are read (never an automatic home scan).
 Built-in stdlib extractors cover text-like formats and .docx; PDF and other
-formats use optional backends (docling, unstructured, pypdf) when importable.
+formats use optional backends (docling, markitdown, unstructured, pypdf) when importable.
 Registered roots persist in ``<home>/docs.json``.
 """
 from __future__ import annotations
@@ -23,7 +23,7 @@ MAX_BODY_CHARS = 20_000
 SKIP_DIRS = {'.git', 'node_modules', '__pycache__', '.venv', 'venv'}
 TEXT_EXTS = {'.md', '.txt', '.rst', '.json', '.yaml', '.yml', '.csv', '.html', '.htm'}
 OPTIONAL_EXTS = {'.pdf', '.pptx', '.xlsx', '.epub', '.odt', '.rtf'}
-BACKENDS = ('docling', 'unstructured', 'pypdf')
+BACKENDS = ('docling', 'markitdown', 'unstructured', 'pypdf')
 _W_NS = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
 
 
@@ -146,6 +146,9 @@ def _extract_optional(path, max_bytes):
             if name == 'docling':
                 from docling.document_converter import DocumentConverter
                 return DocumentConverter().convert(str(path)).document.export_to_markdown()
+            if name == 'markitdown':
+                from markitdown import MarkItDown
+                return MarkItDown(enable_plugins=False).convert_local(str(path)).text_content
             if name == 'unstructured':
                 from unstructured.partition.auto import partition
                 return '\n'.join(str(e) for e in partition(filename=str(path)))
@@ -158,7 +161,7 @@ def _extract_optional(path, max_bytes):
             errors.append(f'{name}: {exc}')
     if errors:
         raise ValueError('; '.join(errors))
-    raise LookupError('no backend installed (pip install ai-workbench[docs] or [docs-lite])')
+    raise LookupError('no backend installed (pip install ai-workbench[docs], [ingest] or [docs-lite])')
 
 
 def _extract(path, ext, max_bytes):

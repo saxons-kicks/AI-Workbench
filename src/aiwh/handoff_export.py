@@ -22,7 +22,7 @@ from pathlib import Path
 
 from .workbench import _continuity_state, continuation_markdown, inspect_project, state_gaps
 
-FORMATS = ('json', 'markdown', 'claude-memory', 'wiki', 'slides')
+FORMATS = ('json', 'toon', 'markdown', 'claude-memory', 'wiki', 'slides')
 
 
 def _slug(text):
@@ -141,12 +141,16 @@ def export_handoff(project, fmt, output=None):
         raise ValueError('Unknown format: ' + fmt)
     data, state = build_handoff(project)
     name = Path(data['project']).name
-    if fmt == 'json':
+    if fmt in ('json', 'toon'):
         payload = {'schema': 'aiwh-handoff/1', 'project': name, 'generated_at': data['generated_at'],
                    'observed': data, 'tasks': state['tasks'], 'decisions': state['decisions'],
                    'resources': state['resources'], 'rejections': state['rejections'],
                    'gaps': state_gaps(data, state), 'latest_delta': state['latest_delta']}
-        files = {'handoff.json': json.dumps(payload, indent=2, ensure_ascii=False) + '\n'}
+        if fmt == 'toon':
+            from .toon import dumps as toon_dumps
+            files = {'handoff.toon': toon_dumps(payload)}
+        else:
+            files = {'handoff.json': json.dumps(payload, indent=2, ensure_ascii=False) + '\n'}
     elif fmt == 'markdown':
         files = {'CONTEXT.md': continuation_markdown(data, delta=state['latest_delta'], state=state)}
     elif fmt == 'claude-memory':

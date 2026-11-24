@@ -97,9 +97,9 @@ def get_parser():
     mp.add_argument('--json', action='store_true')
     ho = sub.add_parser('handoff', help='export the continuity handoff')
     ho_sub = ho.add_subparsers(dest='handoff_action', required=True)
-    he = ho_sub.add_parser('export', help='export to json, markdown, claude-memory or wiki (read-only for the project)')
+    he = ho_sub.add_parser('export', help='export to json, toon, markdown, claude-memory or wiki (read-only for the project)')
     he.add_argument('path', nargs='?', type=Path, default=Path.cwd())
-    he.add_argument('--format', choices=['json', 'markdown', 'claude-memory', 'wiki', 'slides'], default='markdown')
+    he.add_argument('--format', choices=['json', 'toon', 'markdown', 'claude-memory', 'wiki', 'slides'], default='markdown')
     he.add_argument('--output', type=Path, help='directory to write files; omitted prints to stdout')
     hp = ho_sub.add_parser('plan', help='self-contained execution plan for the next eligible task (read-only)')
     hp.add_argument('path', nargs='?', type=Path, default=Path.cwd())
@@ -260,6 +260,10 @@ def get_parser():
     d = sub.add_parser('doctor', help='check runtime and registry')
     d.add_argument('--project', type=Path, default=Path.cwd())
     d.add_argument('--hardware', action='store_true', help='also probe CPU, RAM, GPU and local Ollama models')
+    d.add_argument('--usage', action='store_true',
+                   help='offline token usage from local Claude Code logs (counts only) vs. installed skill cost')
+    d.add_argument('--usage-root', type=Path, help='transcript root (default ~/.claude/projects)')
+    d.add_argument('--since', help='--usage: only entries on/after this ISO date')
     return p
 
 
@@ -767,6 +771,16 @@ def _main(args):
             for row in result['results']:
                 tags = f' [{", ".join(row["tags"][:4])}]' if row['tags'] else ''
                 print(f'- {row["title"]} <{row["url"]}>{tags}')
+        return 0
+    if args.command == 'doctor' and args.usage:
+        from .usage import format_usage, skill_token_comparison, usage_report
+        report = usage_report(args.usage_root, project=args.project, since=args.since)
+        print(format_usage(report).rstrip())
+        cmp = skill_token_comparison(args.project, root=args.usage_root, since=args.since)
+        pct = cmp['metadata_pct_of_avg_input']
+        print(f"Installed skills: {cmp['skill_count']}; metadata ~{cmp['metadata_tokens']} tokens"
+              + (f' ({pct:.1f}% of avg input/session)' if pct is not None else '')
+              + f"; all bodies ~{cmp['body_tokens_if_all_loaded']} tokens")
         return 0
     if args.command == 'doctor':
         reg = registry()

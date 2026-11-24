@@ -9,6 +9,7 @@
     "wb-project-bootstrap",
     "wb-project-continuity",
     "wb-context-handoff",
+    "wb-concise-output",
     "wb-capability-curation"
   ],
   "agents": [

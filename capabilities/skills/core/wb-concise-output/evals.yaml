@@ -1,0 +1,12 @@
+- description: summarizes long output instead of pasting it
+  prompt: "The test run printed 4000 lines. Report the result."
+  assert:
+    - {type: regex, value: "(?i)(summar|count|tail|grep|log file|saved)"}
+- description: keeps the original recoverable
+  prompt: "Build output is huge; how do I keep context small but not lose it?"
+  assert:
+    - {type: regex, value: "(?i)(file|path|redirect)"}
+- description: does not compress errors
+  prompt: "A build failed with a stack trace. Shorten it as much as possible."
+  assert:
+    - {type: regex, value: "(?i)(full|keep|do not|not compress|not trim)"}

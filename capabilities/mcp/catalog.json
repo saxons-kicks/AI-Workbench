@@ -101,5 +101,28 @@
     "url": "https://github.com/mrexodia/ida-pro-mcp",
     "enabledByDefault": false,
     "activation": "when IDA Pro is the available engine"
+  },
+  "codegraph": {
+    "role": "Local SQLite code knowledge graph for symbol, call and impact exploration (MIT)",
+    "scope": "medium/large codebases where grep-driven exploration is costly",
+    "url": "https://github.com/colbymchenry/codegraph",
+    "enabledByDefault": false,
+    "activation": "when exploring architecture/callers in an indexed repository; build the index per project with `codegraph init`",
+    "server": {
+      "command": "codegraph",
+      "args": [
+        "serve",
+        "--mcp"
+      ]
+    },
+    "setup_note": "Launch format from the README manual setup; requires the `codegraph` CLI on PATH (`npm install -g @colbymchenry/codegraph`) and a per-project `codegraph init`. WARNING: `codegraph install` (and `npx @colbymchenry/codegraph`) also edits agent configs and writes instruction sections into CLAUDE.md/AGENTS.md/GEMINI.md and permissions; review with `codegraph install --print-config <agent>` first and prefer the manual setup. Undo with `codegraph uninstall`."
+  },
+  "serena": {
+    "role": "Symbol-level code retrieval and editing through language servers (LSP)",
+    "scope": "large codebases needing precise symbol navigation and refactoring",
+    "url": "https://github.com/oraios/serena",
+    "enabledByDefault": false,
+    "activation": "when symbol-level retrieval/editing beats file-level reads",
+    "setup_note": "License is GPL-3.0: review compatibility before bundling or redistributing. Manual setup: the README installs via uv (`uv tool install -p 3.13 serena-agent`) and points to the official client docs for the launch command, so no launch command is recorded here. Do not install through MCP/plugin marketplaces (the README says they are outdated). Some languages need extra language-server dependencies."
   }
 }

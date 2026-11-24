@@ -73,6 +73,18 @@ class DocIndexTests(unittest.TestCase):
         self.assertEqual(len(docs), 1)
         self.assertIn('platypus', docs[0]['body'])
 
+    def test_markitdown_backend_used(self):
+        pptx = self.root / 'deck.pptx'
+        pptx.write_bytes(b'fake')
+        converter = mock.Mock()
+        converter.convert_local.return_value = mock.Mock(text_content='# markitdown okapi slide')
+        fake_mod = mock.Mock(MarkItDown=mock.Mock(return_value=converter))
+        with mock.patch.object(doc_index, '_backend_available', side_effect=lambda n: n == 'markitdown'), \
+                mock.patch.dict(sys.modules, {'markitdown': fake_mod}):
+            docs = doc_index.extract_documents([pptx])
+        self.assertIn('okapi', docs[0]['body'])
+        fake_mod.MarkItDown.assert_called_once_with(enable_plugins=False)
+
     def test_registry_roundtrip(self):
         r = doc_index.add_doc_roots([self.root, self.root / 'nope'], home=self.home)
         self.assertEqual(len(r['added']), 1)

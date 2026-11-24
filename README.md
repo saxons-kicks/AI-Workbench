@@ -9,13 +9,13 @@ AI Workbench (`aiwh`) is an independent, offline-capable CLI and curated capabil
 ## Key Capabilities
 
 - **Transactional Project Bootstrap (`aiwh init`, `aiwh managed remove`):** Detects project technology or composes explicit `--area` / `--profile` selections, installs validated skills into agent-specific directories, preserves existing instructions (`AGENTS.md` / `CLAUDE.md`), and tracks every owned file in `.ai-workbench/managed-files.json` with SHA-256 hashes and rollback journaling.
-- **Durable Cross-Session Continuity (`aiwh resume`, `aiwh handoff ...`):** Scans local Git state, recent commits, test indicators, and up to 60 documented pending items without executing project code. Maintains `.ai-workbench/state.json` (schema v2, up to 10 snapshots with session deltas), `depends_on` task dependencies, single-owner claims (`handoff claim`), drift checks (`handoff check`), state linting (`handoff lint`), self-contained execution plans (`handoff plan`), and exports (`json`, `markdown`, `claude-memory`, `wiki`).
+- **Durable Cross-Session Continuity (`aiwh resume`, `aiwh handoff ...`):** Scans local Git state, recent commits, test indicators, and up to 60 documented pending items without executing project code. Maintains `.ai-workbench/state.json` (schema v2, up to 10 snapshots with session deltas), `depends_on` task dependencies, single-owner claims (`handoff claim`), drift checks (`handoff check`), state linting (`handoff lint`), self-contained execution plans (`handoff plan`), and exports (`json`, compact `toon`, `markdown`, `claude-memory`, `wiki`, `slides`).
 - **Explicit CLI State Management (`aiwh handoff decide | reject | feedback | task`):** Record approved or retracted decisions, rejected findings, resource usefulness feedback, and task status/blockers/dependencies directly from the CLI without hand-editing JSON.
 - **Supervised Validation Evidence (`aiwh validate`):** Previews the validation command, working directory, timeout, and revision by default; executes only with `--approve`, redacts common credential patterns, bounds output, and marks evidence `stale` when `HEAD` moves or the working tree changes.
 - **Contextual Resource Intelligence (`aiwh recommend`, `aiwh game-port`):** Ranks **27** composable capability areas from bounded project evidence and stated goals, producing a **top-5 contextual shortlist** with reasons/limits, an **MCP Advisor**, and specialized triage across **16** game-porting platforms.
 - **Curated Reference & Private Resource Hub (`aiwh sync`, `aiwh curate`, `aiwh search`, `aiwh report`):** Indexes GitHub stars (`gh` CLI), Chromium bookmarks, and Netscape HTML into a private home catalog (`~/.ai-workbench-hub`). Includes **578** curated public references with risk labels, **SQLite FTS5** local search (upgradable to hybrid vector + BM25 RRF via `.[semantic]`), and a paginated offline HTML explorer (`report --html`).
 - **Clean-Room & Artifact Triage (`aiwh inspect`, `aiwh spec check`, `aiwh cleanroom init`):** Identifies native/managed/Electron/Web/APK/game binaries, checks behavior-only specs for decompiler/address leaks, and scaffolds a two-room (`lab/` + `clean/`) workspace with firewalled devcontainer templates.
-- **Skill Quality & Imports (`aiwh skills lint`, `aiwh skills import`):** Validates **54** canonical skills (passing `--strict` with 0 findings), estimates context-token cost on `init`, and imports local third-party skills with provenance tracking and script exclusion by default.
+- **Skill Quality & Imports (`aiwh skills lint`, `aiwh skills import`):** Validates **55** canonical skills (passing `--strict` with 0 findings), estimates context-token cost on `init`, and imports local third-party skills with provenance tracking and script exclusion by default.
 
 ---
 
@@ -29,6 +29,9 @@ py -m pip install -e .
 
 # Optional: enable local hybrid semantic search (sqlite-vec + FastEmbed ONNX)
 py -m pip install -e ".[semantic]"
+
+# Optional: Markdown conversion of PDF/Office/HTML for aiwh docs + search (markitdown)
+py -m pip install -e ".[ingest]"
 
 # Verify installation, catalogs, local tools, and hardware/Ollama tiers
 aiwh doctor --hardware
@@ -71,9 +74,9 @@ Global option: `--home PATH` (overrides `~/.ai-workbench-hub`) precedes the subc
 | `resume` | Refresh `.ai-workbench/CONTEXT.md` and bounded `state.json` v2 history (`--dry-run`) |
 | `audit` | Print observed local project state as JSON without writes |
 | `validate` | Preview or (`--approve`) execute a validation command with secret redaction and revision-bound evidence |
-| `handoff plan \| check \| lint \| claim \| export` | Execution plans (`depends_on`-aware), HEAD drift checks, state lint, task claims, and exports (`json`, `markdown`, `claude-memory`, `wiki`) |
+| `handoff plan \| check \| lint \| claim \| export` | Execution plans (`depends_on`-aware), HEAD drift checks, state lint, task claims, and exports (`json`, compact `toon`, `markdown`, `claude-memory`, `wiki`, `slides`) |
 | `handoff decide \| reject \| feedback \| task` | Record approved/retracted decisions, rejected findings, resource feedback, and task status/blockers/dependencies |
-| `areas` / `profiles` / `capabilities` | List the 27 composable areas, 29 technical profiles, 54 skills, and 21 agent role templates |
+| `areas` / `profiles` / `capabilities` | List the 27 composable areas, 29 technical profiles, 55 skills, and 21 agent role templates |
 | `recommend` | Explainable area/skill/MCP/plugin plan with top-5 contextual shortlist and MCP Advisor (`--json`) |
 | `search` | Local SQLite FTS5 (or hybrid `sqlite-vec` + `fastembed` RRF) search across private catalog and public references |
 | `sync` / `curate` / `attach` / `report` | Read-only ingestion (`gh` stars, Chromium/HTML bookmarks; account-specific and credential-bearing URLs are dropped or redacted), candidate triage with `curate --accept`/`--reject`/`--decisions` (rejections stay private), project attachment, and offline HTML view (`--html`) |
@@ -83,7 +86,7 @@ Global option: `--home PATH` (overrides `~/.ai-workbench-hub`) precedes the subc
 | `inspect` / `spec check` / `cleanroom init` | Binary/app identification, behavior-only spec leak check, and two-room clean-room scaffolding |
 | `game-port` | Triage game binaries/platforms (`--binary`, `--platform`, `--track`, `--save`) |
 | `global-integration` | Opt-in managed global instruction block for `codex`, `claude`, or `antigravity` (`--apply`, `--disable`) |
-| `doctor` | Validate all catalogs, detect executables (`git`, `gh`, `codex`, `claude`, `hermes`, `rea`, `java`, `Ghidra`), and probe `--hardware` |
+| `doctor` | Validate all catalogs, detect executables (`git`, `gh`, `codex`, `claude`, `hermes`, `rea`, `java`, `Ghidra`), probe `--hardware`, and report offline token usage from local Claude Code logs vs. installed skill cost (`--usage`, counts only) |
 
 ---
 
