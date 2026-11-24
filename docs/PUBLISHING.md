@@ -1,6 +1,6 @@
 # Publishing releases
 
-The repository is published at `mateussmeneses/AI-Workbench`. Regular changes are pushed to `main` after tests pass:
+The repository is published at `saxons-kicks/AI-Workbench`. Regular changes are pushed to `main` after tests pass:
 
 ```powershell
 py -m unittest discover -s tests -v

@@ -1,5 +1,5 @@
 # Run from the root of the extracted AI Workbench repository.
-param([string]$Repository = "mateussmeneses/AI-Workbench")
+param([string]$Repository = "saxons-kicks/AI-Workbench")
 $version = (Select-String -Path pyproject.toml -Pattern '^version = "(.+)"').Matches[0].Groups[1].Value
 if ($version -match '[a-z]') { throw "Refusing to tag pre-release version $version; bump pyproject.toml first" }
 $ErrorActionPreference = 'Stop'
